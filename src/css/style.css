@@ -1,0 +1,251 @@
+.navbar {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-link {
+  color: #ffffff;
+}
+.dropdown-menu {
+  background: black;
+}
+.dropdown-item {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.dropdown-divider {
+  width: 50px;
+  color: #ffffff;
+}
+.dropdown-toggle:after {
+  color: black;
+}
+.search-menu {
+  margin-right: 2px;
+  margin-left: 1090px;
+}
+.search-box {
+  position: relative;
+  height: 35px;
+  width: 270px;
+  text-align: center;
+}
+.close-icon {
+  position: absolute;
+  right: 7px;
+  top: 18px;
+}
+.filter-icon {
+  position: absolute;
+  left: 9px;
+  top: 15px;
+}
+.line-icon {
+  position: absolute;
+  left: 35px;
+  top: 15px;
+}
+.search-icon {
+  position: absolute;
+  left: 41px;
+  top: 15px;
+}
+.img-fluid {
+  height:200px;
+  weight:200px
+}
+.icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin-right: 5px;
+}
+.icon {
+  color: white;
+  font-size: 12px;
+}
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 300 to 800 */
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../webfonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype") ;
+}
+@font-face {
+  font-family: 'Oranienbaum';
+  src: url("../webfonts/Oranienbaum/Oranienbaum-Regular.ttf") format("truetype") ;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("../webfonts/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype") ;
+}
+body{
+  font-family: 'Open Sans';
+}
+.secondary-font {
+  font-family: 'Oranienbaum';
+}
+.third-font {
+  font-family: 'Inter';
+}
+.custom-width {
+  width: 220px;
+}
+
+#top-nav{
+  width:100%;
+  height:55px !important;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding:0px 5px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+ 
+ }
+ 
+ .trend-animated-txt{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  height:100%;
+ }
+ /* News & Trends */
+ #trend{
+ font-weight:700;
+ line-height: 25px;
+ /* width:142px;
+ height:100%; */
+ background-color: black;
+ padding-top: 15px;
+ }
+ /*animated text*/
+ .text-animation {
+   position: relative;
+   padding-top: 15px;
+   width: 256px;
+   height: 100%;
+ 
+   div {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     overflow: hidden;
+     white-space: nowrap;
+     animation: fadeText 24s linear infinite;
+   }
+ 
+   div:nth-child(1) { animation-delay: 0s; }
+   div:nth-child(2) { animation-delay: 6s; }
+   div:nth-child(3) { animation-delay: 12s; }
+   div:nth-child(4) { animation-delay: 18s; }
+ }
+ 
+ @keyframes fadeText {
+   0%, 25% { opacity: 0; }
+   6%, 21% { opacity: 1; }
+   25% { opacity: 0; }
+ }
+ 
+ /*dropdown list from account icon*/ 
+ .dropdown {
+     position: relative;
+     display: inline-block;
+     margin-right: 0 12px 0 12px;
+ }
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: black; /* Changed background color to black */
+     color: white; /* Changed text color to white */
+     min-width: 120px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 15px 2px 27px 2px;
+     z-index: 1;
+     top: calc(100% + 5px); /* Position right under top-nav with some space */
+     left: 50%; /* Center horizontally */
+     transform: translateX(-50%); /* Center horizontally */
+ }
+ 
+ /* Show the dropdown content when dropdown is active */
+ .show {
+     display: block;
+ }
+ 
+ /* Style for the line */
+ .dropdown-content a {
+     display: block;
+     color:white;
+     text-decoration: none;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.8); /* Added border-bottom */
+     padding: 12px 0 12px 0; 
+     margin: 0 auto; /* Center the link */
+     width: 80%; /* Set width to 80% */
+ }
+ 
+ /* Toggle button styles */
+ .form-check-input {
+     position: relative;
+     width:60px; 
+     height: 28px; 
+     -webkit-appearance: none;
+     appearance: none; /* Standard property */
+     background-color: #BE111F;
+     border: 3px solid white; /* Default border color */
+     border-radius: 20px; /* Adjust border radius as needed */
+     outline: none;
+     cursor: pointer;
+     transition: background-color 0.3s, border-color 0.3s;
+ }
+ 
+ .form-check-input:checked {
+     border-color: black; /* Dark theme border color */
+     /*background-color: #333; /* Dark theme background color */
+ }
+ 
+ .form-check-input::before {
+     content: '';
+     position: absolute;
+     width: 20px; /* Circle width */
+     height: 20px; /* Circle height */
+     background-color: #BE111F; 
+     border: 3px solid white; /* Circle border color */
+     border-radius: 50%; /* Circle border radius */
+     top: 50%;
+     transform: translateY(-50%);
+     left: 1px; /* Adjust initial position */
+     transition: left 0.3s, border-color 0.3s;
+ }
+ 
+ .form-check-input:checked::before {
+     left: calc(100% - 21px); /* Adjust final position */
+     border-color: black; /* Dark theme circle border color */
+ }
+ 
+ .form-check-input:disabled {
+     cursor: not-allowed;
+     opacity: 0.5;
+ }

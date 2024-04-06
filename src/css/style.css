@@ -99,7 +99,10 @@ html,body {
 .show .dropdown-toggle::after {
   transform: rotate(180deg);
 }
-
+/*bottom nav..The form*/
+.centered-placeholder{
+  text-align: center;
+}
 /*//////////////////////////////////////////////////////////////////*/
 /* Responsive Adjustments */
 @media (min-width: 375px){

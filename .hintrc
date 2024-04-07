@@ -3,17 +3,10 @@
     "development"
   ],
   "hints": {
-    "axe/forms": [
-      "default",
-      {
-        "label": "off"
-      }
-    ],
     "axe/name-role-value": [
       "default",
       {
-        "button-name": "off",
-        "link-name": "off"
+        "button-name": "off"
       }
     ],
     "no-inline-styles": "off"

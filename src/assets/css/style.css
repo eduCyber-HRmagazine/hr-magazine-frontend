@@ -1,0 +1,211 @@
+
+/* Font Definitions */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../webfonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300 800;
+  font-display: swap; /* Improves text visibility while font is loading */
+}
+
+@font-face {
+  font-family: "Oranienbaum";
+  src: url("../webfonts/Oranienbaum/Oranienbaum-Regular.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../webfonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Basic Styles */
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Navbar*/
+.navbar {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+/*Top NavBar*/
+/*Animated Text*/
+.text-animation {
+  position: relative;
+  div {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadeText 24s linear infinite;
+  }
+  div:nth-child(1) {
+    animation-delay: 0s;
+  }
+  div:nth-child(2) {
+    animation-delay: 6s;
+  }
+  div:nth-child(3) {
+    animation-delay: 12s;
+  }
+  div:nth-child(4) {
+    animation-delay: 18s;
+  }
+}
+
+@keyframes fadeText {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  6%,
+  21% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+/*all drop downs in nav*/
+/* styling for dropdown-menus in nav*/
+nav .dropdown-menu {
+  margin-top: 5px !important;
+  padding: 10px 8px 25px 8px !important;
+  border-radius: 0;
+}
+/* styling for dropdown-items in nav*/
+nav .dropdown-item {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 12px 0 12px 0;
+  margin: 0 auto; /* Center the link */
+  width: 94%;
+}
+/*drop down arrows on bottom navbar*/
+/*to make the arrow color black*/
+#navbarDropdownArticles::after,
+#navbarDropdownLadiesInHR::after,
+#navbarDropdownWorkplaceCulture::after,
+#navbarDropdownEvents::after,
+#navbarDropdownCareers::after {
+  border-top-color: black !important; /* Change the arrow color to black */
+}
+/* to make the arrow flip up when menu is opened*/
+.dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  border-top: 0.3em solid; /* Creates the top part of the arrow */
+  border-right: 0.3em solid transparent; /* Makes the right side of the invisible box transparent */
+  border-bottom: 0; /* No border at the bottom */
+  border-left: 0.3em solid transparent; /* Makes the left side of the invisible box transparent */
+}
+.dropdown-toggle.show::after {
+  transform: rotate(180deg); /* Flips the arrow to face upwards */
+}
+.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+/*bottom nav..The form*/
+.centered-placeholder {
+  text-align: center;
+}
+/*//////////////////////////////////////////////////////////////////*/
+/* Responsive Adjustments */
+@media (min-width: 375px) {
+  #account-icon-bottom {
+    display: none !important; /* Hide the account icon in the bottom navbar */
+  }
+  #account-icon-top {
+    display: block !important; /* Show the account icon in the top navbar */
+  }
+}
+
+@media (max-width: 940px) and (min-width: 600px) {
+  #date-trend {
+    flex-direction: column;
+    align-items: start !important;
+    margin-bottom: 20px !important;
+  }
+  #trend {
+    padding: 5px !important;
+  }
+}
+@media (max-width: 600px) and (min-width: 375px) {
+  #trend-animated-txt,
+  #trend,
+  .text-animation {
+    display: none;
+  }
+}
+@media (max-width: 374px) {
+  #social-icon-container,
+  #trend-animated-txt,
+  #trend,
+  .text-animation {
+    display: none;
+  }
+  #account-icon-bottom {
+    display: block !important; /* Show the account icon in the bottom navbar */
+  }
+  #account-icon-top {
+    display: none !important; /* Hide the account icon in the top navbar */
+  }
+}
+
+.dropdown-menu-dark{
+  background-color: black;
+}
+
+
+/*login users page*/
+#login-container p,#login-container h2,#login-container h3{
+  font-family: 'Inter';
+  }
+  
+  .nxt-btn{
+    height: 180px;
+    line-height: 57px !important;
+    font-size: 42px !important;
+    width:100% !important;
+  }
+    
+  #login-container h2{
+  width: 665px;
+  height: 56px;
+  font-size: 46px !important;
+  line-height: 56px;
+  }
+
+  #login-container h3{
+    width: 702px;
+    height: 56px;
+    font-weight: 500 !important;
+    font-size: 32px !important;
+    line-height: 39px;    
+  }
+
+  #login-container p {
+    height: 117px;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 29px;
+    }
+  
+  .continue-btn{
+      margin-bottom: 80px !important;
+    }
+  /*end of styling for login users page*/

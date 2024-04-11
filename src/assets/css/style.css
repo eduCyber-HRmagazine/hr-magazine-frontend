@@ -208,4 +208,8 @@ nav .dropdown-item {
   .continue-btn{
       margin-bottom: 80px !important;
     }
+  
+  .link {
+    color: #0B86CBCC;
+  }
   /*end of styling for login users page*/

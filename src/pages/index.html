@@ -350,7 +350,7 @@
             </ul>
           </div>
         </nav>
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-self-start justify-content-between">
           <!-- Account Dropdown --showing on mobiles on bottom-->
           <div class="dropdown" id="account-icon-bottom">
             <a
@@ -381,7 +381,7 @@
               <li><a class="dropdown-item text-white" href="#">Logout</a></li>
             </ul>
           </div>
-          
+
           <!--search box-->
           <div class="dropdown">
             <div class="ms-auto dropdown">
@@ -442,159 +442,290 @@
     <!--End of Navbar-->
     <!--content-->
     <!--user login-->
- 
-  <div class="container py-5 g-0">
-    <div class="row justify-content-center g-0">
-        <div class="col-12 text-center g-0 ">
-            <img src="../assets/images/big-logo.svg" alt="logo" class="mb-3 img-fluid">
-            <button class="nxt-btn btn mb-2 btn-dark text-white rounded-0 py-2 w-100 fw-bold">Next Step</button>
-            <h2 class="text-primary mt-2 fw-bold">Ready to take the next step?</h2>
-            <h3>Create an account or Sign in before applying</h3>
-            <p>
-                By creating an account or signing in, you understand and agree to HRs Magazine's 
-                <a href="#" class="text-decoration-none">Terms</a>. 
-                You also acknowledge our 
-                <a href="#" class="text-decoration-none">Cookie</a> and 
-                <a href="#" class="text-decoration-none">Privacy policies.</a>
-                You will receive marketing messages from HRs Magazine and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
+
+    <div class="container-xxl pt-5 g-0">
+      <div class="row justify-content-center g-0">
+        <div class="col-12 text-center g-0">
+          <img
+            src="../assets/images/big-logo.svg"
+            alt="logo"
+            class="mb-3 img-fluid"
+          />
+          <button
+            class="nxt-btn btn mb-2 btn-dark text-white rounded-0 py-2 w-100 fw-bold"
+          >
+            Next Step
+          </button>
+          <div style="background-color: #f9f9f9" class="p-5">
+            <h2 class="text-primary mt-2 fw-bold pt-2 display-5 my-3">
+              Ready to take the next step?
+            </h2>
+            <h3 class="fs-2">Create an account or Sign in before applying</h3>
+            <p class="text-muted fs-4 px-2 my-3 text-start">
+              By creating an account or signing in, you understand and agree to
+              HRs Magazine's
+              <a href="#" class="text-decoration-none link">Terms</a>. You also
+              acknowledge our
+              <a href="#" class="text-decoration-none link">Cookie</a> and
+              <a href="#" class="text-decoration-none link">Privacy policies.</a>
+              You will receive marketing messages from HRs Magazine and may opt
+              out at any time by following the unsubscribe link in our messages,
+              or as detailed in our terms.
             </p>
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 my-3">
-                <span>Be sure to include an update</span>
-                <a href="#" class="text-decoration-none">Resume</a>
-                <span>(PDF, PNG, JPG (5 MB))</span>
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 my-5"
+            >
+              <span class="fw-bold fs-4">Be sure to include an update</span>
+              <a href="#" class="fw-bold fs-4 link">Resume</a>
+              <span class="text-muted">(PDF, PNG, JPG (5 MB))</span>
             </div>
             <div class="d-flex flex-column align-items-center my-4">
-                <span>You can log in or register with</span>
-                <button type="button" class="btn mb-2 bg-dark text-white w-50 px-4 py-2 my-2">
-                    <img src="../assets/images/blue-linkedin.svg" class="me-2" alt="linked-icon">
-                    Continue With Linkedin
+              <span class="fs-4 fw-bold">You can log in or register with</span>
+              <button
+                type="button"
+                class="btn mb-2 bg-dark text-white px-4 py-2 my-2 fw-bold"
+              >
+                <img
+                  src="../assets/images/blue-linkedin.svg"
+                  class="me-2"
+                  alt="linked-icon"
+                />
+                Continue With Linkedin
+              </button>
+              <h2 class="fs-2 my-4 fw-bold">OR</h2>
+              <div class="w-100">
+                <label
+                  for="emailInput"
+                  class="form-label text-primary w-100 fs-2 fw-bold"
+                  style="text-align: left"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="emailInput"
+                  class="form-control mb-5"
+                  placeholder="Email address"
+                />
+                <button
+                  type="submit"
+                  class="btn bg-primary text-white px-5 py-3 mt-2 mb-5 fw-bold"
+                >
+                  Continue
                 </button>
-                <h2 class="fs-4 my-4">OR</h2>
-                <div class="w-75">
-                    <label for="emailInput" class="form-label text-primary w-100" style="text-align: left;">Email</label>
-                    <input type="email" id="emailInput" class="form-control mb-4" placeholder="Your email address">
-                    <button type="submit" class="btn bg-primary text-white w-50 py-3">Continue</button>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
- <!--end of user login-->
-  <!--end of content-->
+    <!--end of user login-->
+    <!--end of content-->
     <!-- Footer Start -->
     <footer class="bg-primary" class="footer d-flex flex-column">
       <div class="container py-5 flex-grow-1">
-          <div class="row justify-content-between">
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                  <div class="img-container text-center">
-                      <img src="../assets/images/logo.png" alt="Logo">
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="img-container text-center">
+              <img src="../assets/images/logo.png" alt="Logo" />
+            </div>
+            <!-- <p class="fs-1">HRs Magazin</p> -->
+            <p class="font-italic text-light fw-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
+              pellentesque dictum posuere id diam rutrum.
+            </p>
+            <!-- Social links -->
+            <div class="d-flex justify-content-center">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img
+                      src="../assets/images/facebook.svg"
+                      class="icon"
+                      alt="facebook"
+                    />
                   </div>
-                  <!-- <p class="fs-1">HRs Magazin</p> -->
-                  <p class="font-italic text-light fw-light">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, pellentesque dictum posuere id
-                      diam rutrum.
-                  </p>
-                  <!-- Social links -->
-                  <div class="d-flex justify-content-center">
-                     <ul class="list-inline">
-                      <li class="list-inline-item">
-                          <div class="icon-circle me-2"><img src="../assets/images/facebook.svg" class="icon" alt="facebook"></div>
-                      </li>
-                      <li class="list-inline-item">
-                          <div class="icon-circle me-2"><img src="../assets/images/twitter.svg" class="icon" alt="twitter"></div>
-                      </li>
-                      <li class="list-inline-item">
-                          <div class="icon-circle me-2"><img src="../assets/images/youtube.svg"  alt="youtube"></div>
-                      </li>
-                      <li class="list-inline-item">
-                          <div class="icon-circle me-2"><img src="../assets/images/instagram.svg" class="icon" alt="instagram"></div>
-                      </li>
-                      <li class="list-inline-item">
-                          <div class="icon-circle me-2"><img src="../assets/images/linkedin.svg" class="icon" alt="linkedin"></div>
-                      </li>
-                     </ul>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img
+                      src="../assets/images/twitter.svg"
+                      class="icon"
+                      alt="twitter"
+                    />
                   </div>
-              </div>
-              <!--Two colums of links div-->
-              <div class=" col-lg-6 mb-4 mb-lg-0 d-flex justify-content-between align-items-center">
-                 <!-- <div class="col-lg-1"></div> -->
-                 <div class="col-lg-6 mb-lg-0 fw-semibold">
-                  <ul class="list-unstyled mb-0 text-center">
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Articles</a></li>
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Workplace Culture</a>
-                      </li>
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Ladies in HR</a></li>
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">About us</a></li>
-                  </ul>
-                 </div>
-                 <div class="col-lg-6 mb-lg-0 fw-semibold ">
-                  <ul class="list-unstyled mb-0 text-center">
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Events</a></li>
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Community</a></li>
-                      <li class="mb-5"><a href="#"
-                              class="text-light link-underline link-underline-opacity-0 fw-bold">Careers</a></li>
-                      <li class="mb-5">
-                          <a href="#" class="text-light link-underline link-underline-opacity-0 fw-bold">Contact
-                              us</a>
-                      </li>
-                  </ul>
-                 </div>
-              </div>
-              <!-- Third Column: Subscription Form -->
-              <div class="col-lg-3 col-md-6 text-white text-center bg-dark rounded-4 py-4">
-              <h6 class="text-uppercase fw-bold mb-4">Stay In Touch</h6>
-              <p class="small mb-4">
-                  To be updated with all the latest news, offers and special announcements.
-              </p>
-              <form class="d-flex flex-column align-items-center">
-                  <input type="email" class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder" placeholder="Your email address">
-                  <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
-                  <button type="submit" class="btn btn-lg btn-primary text-white rounded-pill px-4">Send</button>
-              </form>
-              </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/youtube.svg" alt="youtube" />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img
+                      src="../assets/images/instagram.svg"
+                      class="icon"
+                      alt="instagram"
+                    />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img
+                      src="../assets/images/linkedin.svg"
+                      class="icon"
+                      alt="linkedin"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
+          <!--Two colums of links div-->
+          <div
+            class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-between align-items-center"
+          >
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-6 mb-lg-0 fw-semibold">
+              <ul class="list-unstyled mb-0 text-center">
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Articles</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Workplace Culture</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Ladies in HR</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >About us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 mb-lg-0 fw-semibold">
+              <ul class="list-unstyled mb-0 text-center">
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Events</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Community</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Careers</a
+                  >
+                </li>
+                <li class="mb-5">
+                  <a
+                    href="#"
+                    class="text-light link-underline link-underline-opacity-0 fw-bold"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Third Column: Subscription Form -->
+          <div
+            class="col-lg-3 col-md-6 text-white text-center bg-dark rounded-4 py-4"
+          >
+            <h6 class="text-uppercase fw-bold mb-4">Stay In Touch</h6>
+            <p class="small mb-4">
+              To be updated with all the latest news, offers and special
+              announcements.
+            </p>
+            <form class="d-flex flex-column align-items-center">
+              <input
+                type="email"
+                class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder"
+                placeholder="Your email address"
+              />
+              <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
+              <button
+                type="submit"
+                class="btn btn-lg btn-primary text-white rounded-pill px-4"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
 
       <!-- Copyrights -->
       <div class="bg-dark">
         <div class="container">
           <div class="row text-light">
-              <div class="col-md-6">
-                <div class="copyright-menu in">
-                  <ul class="d-flex flex-row list-unstyled mt-3 justify-content-start ">
-                    <li class=" me-5">
-                      <a href="#" class="text-light link-underline link-underline-opacity-0 ">Privacy
-                        Policy</a>
-                    </li>
-                    <li class="mx-4">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Terms &
-                    Conditions</a>
-                </li>
+            <div class="col-md-6">
+              <div class="copyright-menu in">
+                <ul
+                  class="d-flex flex-row list-unstyled mt-3 justify-content-start"
+                >
+                  <li class="me-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="mx-4">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Terms & Conditions</a
+                    >
+                  </li>
 
-                <li class="mx-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Sitmap</a>
-                </li>
-              </ul>
+                  <li class="mx-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Sitmap</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <!-- End Col -->
+            <!-- End Col -->
 
-          <div class="col-md-6 text-light  d-flex justify-content-end align-items-center me-0 ">
-            <span>© Copyright 2024 HRs Magazin
-              <span>|</span>
-              <span>Registered in Egypt No. 02120366</span>
-
+            <div
+              class="col-md-6 text-light d-flex justify-content-end align-items-center me-0"
+            >
+              <span
+                >© Copyright 2024 HRs Magazin
+                <span>|</span>
+                <span>Registered in Egypt No. 02120366</span>
+              </span>
+            </div>
+            <!-- End col -->
           </div>
-          <!-- End col -->
+          <!-- End Row -->
         </div>
-        <!-- End Row -->
-      </div>
       </div>
     </footer>
     <!-- Footer End -->

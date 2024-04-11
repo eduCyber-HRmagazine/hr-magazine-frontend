@@ -1,5 +1,6 @@
 $primary: #be111f;
 $danger: #E32E3C;
+$dark: #0d0d0d;
 
 $grid-breakpoints: (
   xs: 0,
@@ -9,6 +10,15 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px,
 );
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1356px
+);
+
 
 @import "~/bootstrap/scss/bootstrap";
 

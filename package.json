@@ -2,7 +2,7 @@
   "name": "hr-magazine-website",
   "version": "1.0.0",
   "description": "",
-  "src": "./src/pages/index.html", 
+  "src": "./src/pages/index.html",
   "scripts": {
     "start": "http-server src -o /pages/index.html",
     "dev": "http-server src -o /pages/index.html"
@@ -10,13 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    
-  },
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  
+    "bootstrap": "^5.3.3",
+    "sass": "^1.74.1"
   }
-  
 }
-

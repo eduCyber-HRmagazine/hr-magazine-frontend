@@ -1,6 +1,7 @@
 $primary: #be111f;
 $danger: #E32E3C;
 $dark: #0d0d0d;
+$light: #F9F9F9;
 
 $grid-breakpoints: (
   xs: 0,
@@ -18,6 +19,14 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1356px
 );
+
+$carousel-caption-width: 100%;
+$carousel-caption-spacer: 0;
+$carousel-indicator-active-bg: $primary;
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+$carousel-indicator-spacer: 8px;
+$carousel-caption-padding-y: 1rem;
 
 
 @import "~/bootstrap/scss/bootstrap";

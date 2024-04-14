@@ -272,6 +272,13 @@ nav .dropdown-item {
     font-size: 14px;
   }
 
+  .image-center {
+    position: absolute; 
+    margin: auto; 
+    top:50%; 
+    transform: translateY(-50%);
+  }
+
 
   /*end of styling for login users page*/
 

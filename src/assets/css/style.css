@@ -32,6 +32,15 @@ body {
   padding: 0;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .Oranienbaum-font {
   font-family: "Oranienbaum";
 }
@@ -245,4 +254,23 @@ nav .dropdown-item {
     z-index: 2;
     bottom: 6rem; 
   }
+
+  .gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(0, 0, 0, 0.4) 58.8%, rgba(0, 0, 0, 0.4) 100%);
+  }
+
+  .card-img-overlay {
+    top: 65%;
+    left: 0.75rem;
+  }
+
+  .text-border {
+    text-shadow: 1px 1px 2px #0d0d0d;
+  }
+
+  .fs-14px {
+    font-size: 14px;
+  }
+
+
   /*end of styling for login users page*/

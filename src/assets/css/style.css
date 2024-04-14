@@ -299,3 +299,22 @@ nav .dropdown-item {
   background-color: #ffffff;
 }
 /* end register users style */
+/* Start About */
+#about-landing .landing-img ,
+#landing-author .landing-img {
+  height: 650px;
+}
+.bg-secondary {
+  background-color: #f9f9f9 !important;
+}
+  /* End About */
+
+/* Start Authors */
+#nav-author .breadcrumb-item.active {
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+#nav-author .breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  content: ">";
+}
+/* End Authors */

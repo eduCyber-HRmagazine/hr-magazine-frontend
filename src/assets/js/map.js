@@ -10,13 +10,13 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 var marker = L.marker([30.0444, 31.2357]).addTo(map);
 
 
-// Define a custom icon with the desired color
+// //Define a custom icon with the desired color
 // var customIcon = L.icon({
-//     iconUrl: 'location-icon.svg', // Replace with the path to your SVG icon
+//     iconUrl: '../images/location-icon-black.svg', // Replace with the path to your SVG icon
 //     iconSize: [80, 80], // Set the icon size
 // });
 
-// Add a marker to Cairo, Egypt with the custom icon
+// //Add a marker to Cairo, Egypt with the custom icon
 // var marker = L.marker([30.0444, 31.2357], { icon: customIcon }).addTo(map);
 
 // Add a popup to the marker

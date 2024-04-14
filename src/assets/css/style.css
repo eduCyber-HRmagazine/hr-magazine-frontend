@@ -274,3 +274,14 @@ nav .dropdown-item {
 
 
   /*end of styling for login users page*/
+
+  /* register users style */
+
+.btn-users:hover,.btn-users:active,.btn-users:focus,
+.btn-employer:hover,.btn-employer:active{
+  color: #0d0d0d!important;
+  background-color: #ffffff;
+  
+
+}
+  /* end register users style */

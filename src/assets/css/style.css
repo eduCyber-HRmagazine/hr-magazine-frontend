@@ -179,7 +179,7 @@ nav .dropdown-item {
   text-align: center;
 }
 /* Responsive Adjustments  for navbar */
-@media (min-width: 375px) {
+@media (min-width: 421px) {
   #account-icon-bottom {
     display: none !important; /* Hide the account icon in the bottom navbar */
   }
@@ -206,7 +206,7 @@ nav .dropdown-item {
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 421px) {
   #social-icon-container,
   #trend-animated-txt,
   #trend,

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR's Magazin</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/Red Black Minimalistic Square It Software Logo 1.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-md p-0">
+      <!-- navbar -->
+      <nav class="navbar mb-3">
+        <!--Top-nav start-->
+        <div id="top-nav" class="container-fluid bg-primary">
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
+          >
+            <div
+              id="date-trend"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <!-- Left Side: Today's Date -->
+              <div
+                id="currentDate"
+                class="navbar-brand text-white me-5 pe-3"
+              ></div>
+              <!-- Center: News, Trends, and Animated Text -->
+              <div
+                class="trend-animated-txt d-flex justify-content-center align-items-center"
+              >
+                <a
+                  id="trend"
+                  href="#"
+                  class="nav-link text-white bg-dark text-center p-3"
+                  >News and Trends</a
+                >
+                <div class="text-animation text-white pb-4 ms-3">
+                  <div>HR Magazine News and Trends</div>
+                  <div>Ladies in HR News</div>
+                  <div>HR Training and Development News</div>
+                  <div>HR Industry Trends and Insights</div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Side: Language, Account -->
+            <div class="d-flex align-items-center">
+              <!--language-->
+              <a
+                href="#"
+                class="fs-4 fw-bold nav-link text-white"
+                id="languageToggle"
+                >EN</a
+              >
+              <!-- Account Dropdown --showing in large screens and tablets on top-->
+              <div class="dropdown" id="account-icon-top">
+                <a
+                  class="nav-link px-2"
+                  href="#"
+                  role="button"
+                  id="accountDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/images/account.svg"
+                    alt="account"
+                    class="bi bi-person-circle"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                  aria-labelledby="accountDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Login</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Register</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Top-nav Ends-->
+        <!-- Mid Nav Start -->
+        <div id="mid-nav" class="container-fluid bg-white">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+              <!-- Logo Section -->
+              <div class="col-12 col-md-auto mb-3 mb-md-0">
+                <a
+                  href="#"
+                  class="navbar-brand d-flex justify-content-center justify-content-md-start"
+                >
+                  <img
+                    src="../assets/images/logo-s.png"
+                    alt="Logo"
+                    class="d-inline-block align-text-top"
+                  />
+                </a>
+              </div>
+              <!-- Contact and Social Icons Section -->
+              <div
+                id="social-icon-container"
+                class="col-12 col-md-auto"
+                style="margin-right: 2vw"
+              >
+                <div class="text-center">
+                  <p>Contact Us</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/facebook.svg"
+                        class="icon"
+                        alt="facebook"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/twitter.svg"
+                        class="icon"
+                        alt="twitter"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img src="../assets/images/youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/insta.svg"
+                        class="icon"
+                        alt="instagram"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/link.svg"
+                        class="icon"
+                        alt="linkedin"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Mid Nav Ends-->
+        <!--Bottom Nav starts-->
+        <div class="container-fluid d-flex flex-nowrap bg-primary py-2">
+          <nav class="navbar navbar-expand-md">
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end navbar toggler -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownArticles"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Articles
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownArticles"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Industry News and Updates</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Trends and Insights</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Global HR Perspectives</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Expert Interviews</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Professionals Spotlights</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Training and Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#">Authors</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownLadiesInHR"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ladies in HR
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownLadiesInHR"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Case Studies</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Journey to Excellence</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownWorkplaceCulture"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Workplace Culture
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownWorkplaceCulture"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Workplace Culture</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Wellness Programs</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Mental Health in the Workplace</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Diversity, Equity and Inclusion (DEI)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownEvents"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Events
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownEvents"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Upcoming Events</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Event Calendar</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Latest Events</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="#">Community</a>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownCareers"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Careers
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownCareers"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Browse Jobs</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >For Employers</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="d-flex align-self-start justify-content-between">
+            <!-- Account Dropdown --showing on mobiles on bottom-->
+            <div class="dropdown" id="account-icon-bottom">
+              <a
+                class="nav-link px-2"
+                href="#"
+                role="button"
+                id="accountDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../assets/images/account.svg"
+                  alt="account"
+                  class="bi bi-person-circle"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                aria-labelledby="accountDropdown"
+              >
+                <li><a class="dropdown-item text-white" href="#">Login</a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Register</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Profile</a>
+                </li>
+                <li><a class="dropdown-item text-white" href="#">Logout</a></li>
+              </ul>
+            </div>
+
+            <!--search box-->
+            <div class="dropdown">
+              <div class="ms-auto dropdown">
+                <a
+                  class="nav-link mt-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="../assets/images/search-icon-black-circle.svg"
+                    alt="Search"
+                    class="img-fluid"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end search-menu bg-dark"
+                  style="width: 320px"
+                >
+                  <li>
+                    <div
+                      class="d-flex align-items-center bg-white rounded-pill border border-dark mt-2 px-2"
+                    >
+                      <img
+                        src="../assets/images/filter-icon.svg"
+                        alt="Filter"
+                        class="me-2"
+                        style="width: 20px; height: 20px"
+                      />
+                      <div class="border-end me-2" style="height: 20px"></div>
+                      <img
+                        src="../assets/images/search-icon.svg"
+                        alt="Search"
+                        class="me-2"
+                        style="width: 20px; height: 20px"
+                      />
+                      <input
+                        type="text"
+                        class="flex-grow-1 border-0"
+                        placeholder=" Search..."
+                      />
+                      <button type="button" class="btn p-0 ms-2">
+                        <img
+                          src="../assets/images/close-icon.svg"
+                          alt="Close"
+                          style="width: 15px; height: 15px"
+                        />
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Bottom NavBar Ends-->
+      </nav>
+      <!--End of Navbar-->
+
+      <!-- start of content -->
+      <div class="container-fluid">
+        <div class="row bg-light my-5">
+          <div class="bg-primary py-5">
+            <h3 class="d-flex justify-content-center fw-bold fs-2 text-light">
+              Contact Us
+            </h3>
+          </div>
+
+          <div class="row py-5 m-auto gx-5">
+            <div class="col">
+              <div class="border border-dark border-4 rounded-3 ">
+                  <div id="map" style="height: 699px"></div>
+              </div>
+            </div>
+          </div>
+          <!-- form -->
+          <div class="row py-5 px-5 g-0">
+                <form >
+                    <div class="row gy-5 ">
+                        <div class="col-12">
+                            <label for="name" class="form-label mb-3 text-primary fw-bold fs-3">Name</label>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <input type="text" class=" col-6 form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4" id="firstName" name="firstName" placeholder="First Name">
+                              </div>
+                              <div class="col-md-6 pt-lg-0 pt-md-0 pt-sm-5">
+                                <input type="text" class="col-6 form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4" id="secondName" name="secondName" placeholder="Second Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class=" col-12">
+                            <label for="email" class="form-label mb-3 text-primary fw-bold fs-3">Email</label>
+                            <input type="email" class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4" id="email" name="email" placeholder="Email Address">
+                          </div>
+                          <div class="col-12">
+                            <label for="phone" class="form-label mb-3 text-primary fw-bold fs-3">Phone</label>
+                            <input type="text" class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4" id="phone" name="phone" placeholder="Phone Number">
+                          </div>
+                          <div class=" col-12">
+                            <label for="message" class="form-label mb-3 text-primary fw-bold fs-3">Message</label>
+                            <textarea class="form-control input-textarea border border-dark border-3 rounded-4 py-4 ps-5 fs-4" id="message" placeholder="Write Your Message" style="height:379px ;"></textarea>
+                          </div>
+                          <div class="col-md-12 d-flex py-4 w-100">
+                            <button type="submit" class="btn btn-primary text-light fs-5 fw-semibold rounded-4 py-3 px-5 m-auto">Send Massage</button>
+                          </div>
+                    </div>
+                </form>
+          </div>
+
+          <!-- contact us info -->
+          <div class="row g-0" style="border: 1px solid green;">
+            <h3 class=" fw-bold text-center">For more information:</h3>
+            <div class="col-6 m-auto d-flex flex-column" style="border: 1px solid red;">
+                <!-- iiiiiiiiiiiiiiiiiiiiiiiiii -->
+
+                <div class="d-flex mt-4">
+                  <div class="d-inline ">
+                    <img src="../assets/images/location-icon-black.svg">
+                  </div>
+                  <div class="d-inline ms-2">
+                    <p class="fs-3 fw-bold text-primary ">Location: <span class="fs-5 fw-normal text-dark"
+                    >1, My Address, My Street, New York City, NY, USA</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex mt-3 ms-lg-5 ps-lg-4 ms-md-5 ps-md-4  ms-sm-1 ps-sm-1" style="border: 1px solid blue;">
+                    <div class="d-inline">
+                      <img src="../assets/images/email-icon-black.svg">
+                    </div>
+                    <div class="d-inline ms-4 ">
+                      <p class="fs-3 fw-bold text-primary">Email: <span class="fs-5 fw-normal text-dark"
+                      >contact@domain.com</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex mt-4 ms-lg-5 ps-lg-5 ms-md-5 ps-md-5 ms-sm-1 ps-sm-1" style="border: 1px solid blue;">
+                    <div class="d-inline ">
+                      <img src="../assets/images/phon-icon-black.svg">
+                    </div>
+                    <div class="d-inline ms-4 ">
+                      <p class="fs-3 fw-bold text-primary ">Phone: <span class="fs-5 fw-normal text-dark"
+                      >+1234567890</span>
+                      </p>
+                    </div>
+                  </div>
+            
+              </div>
+          </div>
+
+          <!-- follow us  -->
+          <div class="row m-auto" style="border: 1px solid blueviolet">
+            <div class="">
+                <p class="fs-3 fw-bold text-primary text-center">Follow Us</p>
+                <!-- Social links -->
+                <ul class="list-inline d-flex justify-content-center mt-4">
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" title="facebook">
+                        <img src="../assets/images/facebook-colored.svg">
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" title="twitter">
+                        <img src="../assets/images/twitter-colored.svg">
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" title="youtube">
+                        <img src="../assets/images/youtube-colored.svg">
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+0                    <a href="#" target="_blank" title="instagram">
+                        <img src="../assets/images/instagram-colored.svg">
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" target="_blank" title="linkedin">
+                        <img src="../assets/images/linkedin-colored.svg">                      
+                    </a>
+                  </li>
+                </ul>
+          
+              </div>
+          </div>
+
+
+
+        </div>
+        <!-- end bg light-->
+      </div>
+      <!-- end container-->
+
+      <!--end of content-->
+
+      <!-- Footer Start -->
+      <footer class="bg-primary mt-3" class="footer d-flex flex-column">
+        <div class="p-5 container-fluid">
+          <div class="row justify-content-between g-0 gx-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="img-container text-center">
+                <img src="../assets/images/logo.png" alt="Logo" />
+              </div>
+              <!-- <p class="fs-1">HRs Magazin</p> -->
+              <p class="font-italic text-light fw-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
+                pellentesque dictum posuere id diam rutrum.
+              </p>
+              <!-- Social links -->
+              <div class="d-flex justify-content-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/facebook.svg"
+                        class="icon"
+                        alt="facebook"
+                      />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/twitter.svg"
+                        class="icon"
+                        alt="twitter"
+                      />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img src="../assets/images/youtube.svg" alt="youtube" />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/instagram.svg"
+                        class="icon"
+                        alt="instagram"
+                      />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/linkedin.svg"
+                        class="icon"
+                        alt="linkedin"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Two colums of links div-->
+            <div
+              class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center"
+            >
+              <!-- <div class="col-lg-1"></div> -->
+              <div class="col-lg-6 mb-lg-0 fw-semibold">
+                <ul class="list-unstyled mb-0 text-center">
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Articles</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Workplace Culture</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Ladies in HR</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >About us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 mb-lg-0 fw-semibold">
+                <ul class="list-unstyled mb-0 text-center">
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Events</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Careers</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Third Column: Subscription Form -->
+            <div
+              class="col-lg-4 col-md-6 text-white text-center bg-dark rounded-4 py-4 px-5"
+            >
+              <h6 class="text-uppercase mb-4 Oranienbaum-font fs-4">
+                Stay In Touch
+              </h6>
+              <p class="small mb-4">
+                To be updated with all the latest news, offers and special
+                announcements.
+              </p>
+              <form class="d-flex flex-column align-items-center">
+                <input
+                  type="email"
+                  class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder"
+                  placeholder="Your email address"
+                />
+                <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
+                <button
+                  type="submit"
+                  class="btn btn-lg btn-primary text-white rounded-pill px-4 Oranienbaum-font fs-4"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="bg-dark">
+          <div class="container">
+            <div class="row text-light">
+              <div class="col-md-6">
+                <div class="copyright-menu in">
+                  <ul
+                    class="d-flex flex-row list-unstyled mt-3 justify-content-start"
+                  >
+                    <li class="me-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li class="mx-4">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Terms & Conditions</a
+                      >
+                    </li>
+
+                    <li class="mx-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Sitmap</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div
+                class="col-md-6 text-light d-flex justify-content-end align-items-center me-0"
+              >
+                <span
+                  >© Copyright 2024 HRs Magazin
+                  <span>|</span>
+                  <span>Registered in Egypt No. 02120366</span>
+                </span>
+              </div>
+              <!-- End col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+  </body>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/date.js"></script>
+  <!-- map jsfile -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../assets/js/map.js"></script>
+</html>

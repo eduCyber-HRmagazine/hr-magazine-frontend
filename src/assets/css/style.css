@@ -1,4 +1,3 @@
-
 /* Font Definitions */
 @font-face {
   font-family: "Open Sans";
@@ -10,9 +9,8 @@
 
 @font-face {
   font-family: "Oranienbaum";
-  src: url("../webfonts/Oranienbaum/Oranienbaum-Regular.ttf")
-    format("truetype");
-    font-weight: 400;
+  src: url("../webfonts/Oranienbaum/Oranienbaum-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -37,8 +35,8 @@ body {
 }
 
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .Oranienbaum-font {
@@ -180,115 +178,124 @@ nav .dropdown-item {
   }
 }
 
-.dropdown-menu-dark{
+.dropdown-menu-dark {
   background-color: black;
 }
 
-
 /*login users page*/
-#login-container p,#login-container h2,#login-container h3{
-  font-family: 'Inter';
-  }
-  
-  .nxt-btn{
-    height: 180px;
-    line-height: 57px !important;
-    font-size: 42px !important;
-    width:100% !important;
-  }
-    
-  #login-container h2{
+#login-container p,
+#login-container h2,
+#login-container h3 {
+  font-family: "Inter";
+}
+
+.nxt-btn {
+  height: 180px;
+  line-height: 57px !important;
+  font-size: 42px !important;
+  width: 100% !important;
+}
+
+#login-container h2 {
   width: 665px;
   height: 56px;
   font-size: 46px !important;
   line-height: 56px;
-  }
-
-  #login-container h3{
-    width: 702px;
-    height: 56px;
-    font-weight: 500 !important;
-    font-size: 32px !important;
-    line-height: 39px;    
-  }
-
-  #login-container p {
-    height: 117px;
-    font-weight: 400 !important;
-    font-size: 24px !important;
-    line-height: 29px;
-    }
-  
-  .continue-btn{
-      margin-bottom: 80px !important;
-    }
-  
-  .link {
-    color: #0B86CBCC;
-  }
-
-  .fw-600 {
-    font-weight: 600;
-  }
-
-  .border-light {
-    border: 3px solid #c4c7c5;
-  }
-
-  .border-dark {
-    border: 3px solid #0d0d0d;
-  }
-
-  .carousel-indicators > button {
-    border-radius: 2000000px;
-    border: 2px solid black !important;
-  }
-
-  .carousel-indicators > button:not(.active) {
-    background: #ffffff;
-  }
-
-  .carousel-indicators {
-    position: absolute;
-    margin-top: 20px; 
-    z-index: 2;
-    bottom: 6rem; 
-  }
-
-  .gradient {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(0, 0, 0, 0.4) 58.8%, rgba(0, 0, 0, 0.4) 100%);
-  }
-
-  .card-img-overlay {
-    top: 65%;
-    left: 0.75rem;
-  }
-
-  .text-border {
-    text-shadow: 1px 1px 2px #0d0d0d;
-  }
-
-  .fs-14px {
-    font-size: 14px;
-  }
-
-  .image-center {
-    position: absolute; 
-    margin: auto; 
-    top:50%; 
-    transform: translateY(-50%);
-  }
-
-
-  /*end of styling for login users page*/
-
-  /* register users style */
-
-.btn-users:hover,.btn-users:active,.btn-users:focus,
-.btn-employer:hover,.btn-employer:active{
-  color: #0d0d0d!important;
-  background-color: #ffffff;
-  
-
 }
-  /* end register users style */
+
+#login-container h3 {
+  width: 702px;
+  height: 56px;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 39px;
+}
+
+#login-container p {
+  height: 117px;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 29px;
+}
+
+.continue-btn {
+  margin-bottom: 80px !important;
+}
+
+.link {
+  color: #0b86cbcc;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.border-light {
+  border: 3px solid #c4c7c5;
+}
+
+.border-dark {
+  border: 3px solid #0d0d0d;
+}
+
+.carousel-indicators > button {
+  border-radius: 2000000px;
+  border: 2px solid black !important;
+}
+
+.carousel-indicators > button:not(.active) {
+  background: #ffffff;
+}
+
+.carousel-indicators {
+  position: absolute;
+  margin-top: 20px;
+  z-index: 2;
+  bottom: 6rem;
+}
+
+.gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(0, 0, 0, 0.4) 58.8%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.card-img-overlay {
+  top: 65%;
+  left: 0.75rem;
+}
+
+.text-border {
+  text-shadow: 1px 1px 2px #0d0d0d;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.image-center {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*end of styling for login users page*/
+
+/* register users style */
+
+.btn-users:hover,
+.btn-users:active,
+.btn-users:focus,
+.btn-employer:hover,
+.btn-employer:active {
+  color: #0d0d0d !important;
+  background-color: #ffffff;
+}
+/* end register users style */

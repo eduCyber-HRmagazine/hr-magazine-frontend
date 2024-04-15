@@ -458,114 +458,171 @@
             <h1 class="text-white py-5 fw-bold text-center">Users Profile</h1>
           </div>
         </div>
+
         <div class="row d-flex mx-2 mb-5 bg-light">
           <div class="col-xl-12 col-md-12 col-sm-12">
-            <div class="card-block justify-content-center">
-              <h3 class="p-3 mt-5 fw-bold text-primary">First Name</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">Amged</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Second Name</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">S. El-Hawrani</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Email</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">Amged S. El-Hawrani@gmail.com</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Phone Number</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">012345678910</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Gender</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">Male</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Birthday</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <input
-                  name="Date"
-                  form="edit-profile"
-                  type="date"
-                  id="Date"
-                  class="border-0 text-muted m-2 w-100"
-                  value="15-6-1990"
-                />
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">Country</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+            <form>
+              <div class="card-block justify-content-center">
+                <h3 class="p-3 mt-5 fw-bold text-primary">First Name</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="text"
+                    class="form-control border-0 text-muted m-2"
+                    id="firstName"
+                    name="firstName"
+                    value="Amged"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Second Name</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="text"
+                    class="form-control border-0 text-muted m-2"
+                    id="secondName"
+                    name="secondName"
+                    value="S. El-Hawrani"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Email</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="email"
+                    class="form-control border-0 text-muted m-2"
+                    id="email"
+                    name="email"
+                    value="Amged S. El-Hawrani@gmail.com"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-5 fw-bold text-primary">Phone Number</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="tel"
+                    class="form-control border-0 text-muted m-2"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value="012345678910"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Gender</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <select
+                    class="form-select m-3 border-0 text-muted"
+                    id="gender"
+                    name="gender"
+                    aria-label="Default select example"
+                    style="width: calc(99% - 1rem)"
                   >
-                    Egypt
+                    <option selected>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Birthday</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    name="Date"
+                    form="edit-profile"
+                    type="date"
+                    id="Date"
+                    class="border-0 text-muted m-3"
+                    value="15-6-1990"
+                    style="width: calc(99% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Country</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <select
+                    class="form-select m-3 border-0 text-muted"
+                    id="country"
+                    name="country"
+                    aria-label="Default select example"
+                    style="width: calc(99% - 1rem)"
+                  >
+                    <option selected>Egypt</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                  </select>
+                </div>
+                <small class="ms-3 form-text"
+                  >Please select your country of origin</small
+                >
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">
+                  Highest Level of Education
+                </h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <select
+                    class="form-select m-3 border-0 text-muted"
+                    id="education"
+                    name="education"
+                    aria-label="Default select example"
+                    style="width: calc(99% - 1rem)"
+                  >
+                    <option selected>Bachelor's Degree</option>
+                    <option>High School</option>
+                  </select>
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Job Title</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="text"
+                    class="form-control border-0 text-muted m-2"
+                    id="jobTitle"
+                    name="jobTitle"
+                    value="Job Title"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <h3 class="p-3 mt-3 fw-bold text-primary">Linkedin</h3>
+                <div
+                  class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
+                >
+                  <input
+                    type="url"
+                    class="form-control border-0 text-muted m-2"
+                    id="linkedin"
+                    name="linkedin"
+                    value="https://eg.linkedin.com/in/amged-bekhet-87a34024"
+                    style="width: calc(100% - 1rem)"
+                  />
+                </div>
+
+                <div class="d-grid col-2 mx-auto m-5">
+                  <button class="btn btn-primary py-3" type="submit">
+                    Edit
                   </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <li><a class="dropdown-item" href="#">Egypt</a></li>
-                    <li><a class="dropdown-item" href="#">USA</a></li>
-                    <li><a class="dropdown-item" href="#">Canada</a></li>
-                  </ul>
                 </div>
               </div>
-              <div id="emailHelp" class="form-text ms-3">
-                Please select your country of origin
-              </div>
-
-              <h3 class="p-3 mt-3 fw-bold text-primary">
-                Highest Level of Education
-              </h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <select
-                  class="form-select m-3 border-0"
-                  aria-label="Default select example"
-                  style="width: 100%"
-                >
-                  <option selected>Bachelor's Degree</option>
-                  <option value="highschool">High School</option>
-                </select>
-              </div>
-
-              <h3 class="p-3 mt-3 fw-bold text-primary">Job Title</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">Job Title</h6>
-              </div>
-              <h3 class="p-3 mt-3 fw-bold text-primary">linkedin</h3>
-              <div
-                class="block border border-dark border rounded-4 mt-1 mx-2 bg-white"
-              >
-                <h6 class="m-4 text-muted">
-                  https://eg.linkedin.com/in/amged-bekhet-87a34024
-                </h6>
-              </div>
-              <div class="d-grid col-2 mx-auto m-5">
-                <button class="btn btn-primary" type="button">Edit</button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

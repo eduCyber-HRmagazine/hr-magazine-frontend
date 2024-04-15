@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <div class="container-md p-0">
+    <main class="p-0">
       <!-- navbar -->
-      <nav class="navbar mb-3">
+      <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
         <!--Top-nav start-->
         <div id="top-nav" class="container-fluid bg-primary">
           <div
@@ -162,7 +162,7 @@
         <!--Mid Nav Ends-->
         <!--Bottom Nav starts-->
         <div class="container-fluid d-flex flex-nowrap bg-primary py-2">
-          <nav class="navbar navbar-expand-md">
+          <div class="navbar navbar-expand-md">
             <!-- navbar toggler -->
             <button
               class="navbar-toggler"
@@ -356,7 +356,7 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </div>
           <div class="d-flex align-self-start justify-content-between">
             <!-- Account Dropdown --showing on mobiles on bottom-->
             <div class="dropdown" id="account-icon-bottom">
@@ -371,7 +371,7 @@
                 <img
                   src="../assets/images/account.svg"
                   alt="account"
-                  class="bi bi-person-circle"
+                  class="bi mt-2 bi-person-circle"
                 />
               </a>
               <ul
@@ -401,7 +401,7 @@
                   <img
                     src="../assets/images/search-icon-black-circle.svg"
                     alt="Search"
-                    class="img-fluid"
+                    class="img-fluid mt-2"
                   />
                 </a>
                 <ul
@@ -495,7 +495,7 @@
                       alt="..."
                     />
                     <div class="card-body bg-white text-dark text-start px-3">
-                      <p class="fw-600">
+                      <p class="fw-semibold">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Neque, pellentesque dictum posuere id diam rutrum.
                       </p>
@@ -510,7 +510,7 @@
                       alt="..."
                     />
                     <div class="card-body bg-white text-dark text-start px-3">
-                      <p class="fw-600">
+                      <p class="fw-semibold">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Neque, pellentesque dictum posuere id diam rutrum.
                       </p>
@@ -525,7 +525,7 @@
                       alt="..."
                     />
                     <div class="card-body bg-white text-dark text-start px-3">
-                      <p class="fw-600">
+                      <p class="fw-semibold">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Neque, pellentesque dictum posuere id diam rutrum.
                       </p>
@@ -540,7 +540,7 @@
                       alt="..."
                     />
                     <div class="card-body bg-white text-dark text-start px-3">
-                      <p class="fw-600">
+                      <p class="fw-semibold">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Neque, pellentesque dictum posuere id diam rutrum.
                       </p>
@@ -918,6 +918,7 @@
           <div class="col-lg-7 bg-light pb-5">
             <div class="py-5"></div>
             <div class="card mx-lg-4 border-dark rounded-4">
+              <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
               <iframe
                 src="https://www.youtube.com/embed/pb5SF20Kd8M?si=auvE_Mpj1VxCsr0H"
                 title="YouTube video player"
@@ -926,10 +927,11 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
                 class="card-img-top"
-                height="315"
+                height="453"
               ></iframe>
+              </div>
               <div class="card-body bg-dark text-white text-start px-3">
-                <p class="fw-600">
+                <p class="fw-semibold">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Neque, pellentesque dictum posuere id diam rutrum.
                 </p>
@@ -965,8 +967,8 @@
           </div>
         </div>
 
-        <div class="bg-light ps-3">
-          <h3 class="fw-bold fs-2 pt-5">
+        <div class="bg-light">
+          <h3 class="fw-bold fs-2 ps-3 pt-5">
             Upcomming Events
           </h3>
           <div class="row">
@@ -980,7 +982,7 @@
       <!-- Footer Start -->
       <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">
-          <div class="row justify-content-between g-0 gx-5">
+          <div class="row justify-content-between g-0">
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <div class="img-container text-center">
                 <img src="../assets/images/logo.png" alt="Logo" />
@@ -1041,7 +1043,6 @@
             <div
               class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center"
             >
-              <!-- <div class="col-lg-1"></div> -->
               <div class="col-lg-6 mb-lg-0 fw-semibold">
                 <ul class="list-unstyled mb-0 text-center">
                   <li class="mb-5">
@@ -1135,7 +1136,6 @@
             </div>
           </div>
         </div>
-
         <!-- Copyrights -->
         <div class="bg-dark">
           <div class="container">

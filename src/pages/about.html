@@ -11,14 +11,7 @@
     />
     <link rel="stylesheet" href="../assets/css/main.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!-- map -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
   </head>
-
   <body>
     <main class="p-0">
       <!-- navbar -->
@@ -453,170 +446,156 @@
         <!--Bottom NavBar Ends-->
       </nav>
       <!--End of Navbar-->
+      <!--Start About landing -->
 
-      <!-- start of content -->
-      <h2 class="text-center bg-primary text-white py-4 mt-5 mb-0 fs-2 fw-bold mx-0">Contact Us</h2>
-      <div class="container-fluid">
-        <div class="row bg-light">
-          <div class="row py-5 m-auto gx-5">
-            <div class="col">
-              <div class="border border-dark border-4 rounded-3">
-                <div id="map" style="height: 699px"></div>
-              </div>
-            </div>
+      <h2 class="text-center bg-primary text-white py-4 mt-5 mb-0 fs-2 fw-bold">About Us</h2>
+      <section id="about-landing" class="bg-secondary">
+        <div class="container-fluid pt-3">
+          <div
+            class="landing-img d-flex mw-100 mt-4 rounded-4 mx-lg-5 mx-md-3 mx-1"
+          >
+            <img
+              class="img-fluid d-flex flex-grow-1 h-100"
+              src="../assets/images/landing.png"
+              alt="landing"
+            />
           </div>
-          <!-- form -->
-          <div class="row py-5 px-5 g-0">
-            <form>
-              <div class="row gy-5">
-                <div class="col-12">
-                  <label
-                    for="name"
-                    class="form-label mb-3 text-primary fw-bold fs-3"
-                    >Name</label
-                  >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <input
-                        type="text"
-                        class="col-6 form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="First Name"
-                      />
-                    </div>
-                    <div class="col-md-6 pt-lg-0 pt-md-0 pt-sm-5">
-                      <input
-                        type="text"
-                        class="col-6 form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
-                        id="secondName"
-                        name="secondName"
-                        placeholder="Second Name"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <label
-                    for="email"
-                    class="form-label mb-3 text-primary fw-bold fs-3"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
-                    id="email"
-                    name="email"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div class="col-12">
-                  <label
-                    for="phone"
-                    class="form-label mb-3 text-primary fw-bold fs-3"
-                    >Phone</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone Number"
-                  />
-                </div>
-                <div class="col-12">
-                  <label
-                    for="message"
-                    class="form-label mb-3 text-primary fw-bold fs-3"
-                    >Message</label
-                  >
-                  <textarea
-                    class="form-control input-textarea border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
-                    id="message"
-                    placeholder="Write Your Message"
-                    style="height: 379px"
-                  ></textarea>
-                </div>
-                <div class="col-md-12 d-flex py-4 w-100">
-                  <button
-                    type="submit"
-                    class="btn btn-primary text-light fs-5 fw-semibold rounded-4 py-3 px-5 m-auto"
-                  >
-                    Send Massage
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <!-- contact us info -->
-          <div class="row g-0 align-items-center text-center flex-column">
-            <h3 class="fw-bold">For more information:</h3>
-            <div class="col-auto d-flex align-items-start">
-              <img src="../assets/images/location-icon-black.svg" />
-              <p class="fs-3 fw-bold text-primary">
-                Location:
-                <span class="fs-5 fw-normal text-dark"
-                  >1, My Address, My Street, New York City, NY, USA</span
-                >
-              </p>
-            </div>
-            <div class="col-auto d-flex align-items-start">
-              <img src="../assets/images/email-icon-black.svg" />
-              <p class="fs-3 fw-bold text-primary">
-                Email:
-                <span class="fs-5 fw-normal text-dark">contact@domain.com</span>
-              </p>
-            </div>
-            <div class="col-auto d-flex align-items-start">
-              <img src="../assets/images/phon-icon-black.svg" />
-              <p class="fs-3 fw-bold text-primary">
-                Phone:
-                <span class="fs-5 fw-normal text-dark">+1234567890</span>
-              </p>
-            </div>
-            <div class="col-auto d-flex flex-column mb-2">
-              <p class="fs-3 fw-bold text-primary text-center">Follow Us</p>
-              <ul class="list-inline d-flex justify-content-center">
-                <li class="list-inline-item">
-                  <a href="#" target="_blank" title="facebook">
-                    <img src="../assets/images/facebook-colored.svg" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" target="_blank" title="twitter">
-                    <img src="../assets/images/twitter-colored.svg" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" target="_blank" title="youtube">
-                    <img src="../assets/images/youtube-colored.svg" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" target="_blank" title="instagram">
-                    <img src="../assets/images/instagram-colored.svg" />
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" target="_blank" title="linkedin">
-                    <img src="../assets/images/linkedin-colored.svg" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- end bg light-->
         </div>
-      </div>
-      <!-- end container-->
-
-      <!--end of content-->
-
+      </section>
+      <!--End About landing -->
+      <!--Start Who We Are -->
+      <section id="who" class="bg-secondary">
+        <div class="container-fluid py-4">
+          <h2 class="text-center mb-5 mt-5">Who We Are</h2>
+          <p class="mx-lg-5 mx-md-3 mx-1 px-lg-5">
+            Lorem ipsum dolor sit amet consectetur. Est maecenas tellus nulla
+            sed pulvinar fringilla accumsan quam. Orci lectus ornare nisi et
+            aliquet vitae nisl. Ultrices in bibendum pellentesque a pharetra
+            lacus ante fermentum dui. Vestibulum vitae eget hendrerit tristique.
+            Sagittis et viverra arcu maecenas tristique libero elit egestas at.
+            Scelerisque bibendum quam interdum lobortis consectetur. Nam
+            pulvinar senectus aliquam tincidunt malesuada. Cursus faucibus
+            venenatis metus non sem. Aliquet magna molestie mus semper
+            scelerisque nisl amet faucibus nibh. Lectus commodo quam leo
+            elementum. Proin id commodo ipsum ut sagittis nec nisi. Adipiscing
+            ullamcorper nulla et malesuada. Sollicitudin curabitur eros vitae
+            fusce quam fringilla in.
+          </p>
+        </div>
+      </section>
+      <!--End Who We Are -->
+      <!--Start Team -->
+      <section id="team" class="bg-secondary pt-5">
+        <div class="container-fluid">
+          <h2 class="text-center mb-4">Our Team</h2>
+          <div class="row text-center">
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 1.png"
+                alt="member photo 1"
+              />
+              <h3>Amged S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 2.png"
+                alt="member photo 2"
+              />
+              <h3>Nadia S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 3.png"
+                alt="member photo 3"
+              />
+              <h3>Amany S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 4.png"
+                alt="member photo 4"
+              />
+              <h3>Amged S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 5.png"
+                alt="member photo 5"
+              />
+              <h3>Nadia S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12">
+              <img
+                class="mb-4"
+                src="../assets/images/team 6.png"
+                alt="member photo 6"
+              />
+              <h3>Amany S. El-Hawrani</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus
+                turpis vitae nunc urna sodales mauris.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--End Team -->
+      <!--Start Conatact Us -->
+      <section id="conatact" class="bg-secondary px-lg-5 px-3 mb-5 py-5">
+        <div class="container-fluid">
+          <h2 class="mb-3">For more information:</h2>
+          <span class="text-decoration-underline text-secondary me-lg-3 me-2"
+            >Contact Us</span
+          >
+          <img src="../assets/images/conatact_facebook .png" alt="facebook" />
+          <img src="../assets/images/conatact_twitter X.png" alt="twitter" />
+          <img src="../assets/images/conatact_youtube.png" alt="youtube" />
+          <img src="../assets/images/conatact_instagram.png" alt="instagram" />
+          <img src="../assets/images/conatact_linkedin.png" alt="linkedin" />
+        </div>
+      </section>
+      <!--End Conatact Us -->
       <!-- Footer Start -->
       <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">
-          <div class="row justify-content-between g-0">
+          <div class="row justify-content-between g-0 gx-5">
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <div class="img-container text-center">
                 <img src="../assets/images/logo.png" alt="Logo" />
@@ -677,6 +656,7 @@
             <div
               class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center"
             >
+              <!-- <div class="col-lg-1"></div> -->
               <div class="col-lg-6 mb-lg-0 fw-semibold">
                 <ul class="list-unstyled mb-0 text-center">
                   <li class="mb-5">
@@ -770,6 +750,7 @@
             </div>
           </div>
         </div>
+
         <!-- Copyrights -->
         <div class="bg-dark">
           <div class="container">
@@ -823,10 +804,7 @@
       </footer>
       <!-- Footer End -->
     </main>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/date.js"></script>
   </body>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/date.js"></script>
-  <!-- map jsfile -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="../assets/js/map.js"></script>
 </html>

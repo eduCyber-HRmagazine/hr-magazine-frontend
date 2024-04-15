@@ -16,7 +16,7 @@
   <body class="open-font p-0 m-0">
     <main class="p-0">
       <!-- navbar -->
-      <nav class="container-fluid navbar fw-semibold p-0 m-0">
+      <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
         <!--Top-nav start-->
         <div id="top-nav" class="container-fluid bg-primary">
           <div
@@ -449,42 +449,100 @@
       <!--End of Navbar-->
       <!--content-->
       <!--user login-->
-      <div class="container-fluid  min-vh-100 g-0">
-        <div id="send-job-container"  class="d-flex flex-column justify-content-center align-items-center">
+      <div class="container-fluid min-vh-100 g-0">
+        <div
+          id="send-job-container"
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
           <div class="col-12">
-            <img src="../assets/images/big-logo.svg" alt="logo" class="img-fluid mx-auto d-block">
-            <button class="nxt-btn w-100 btn btn-lg btn-dark mb-3 text-white rounded-0 py-2 w-sm fw-bold fs-1">Login</button>
+            <img
+              src="../assets/images/big-logo.svg"
+              alt="logo"
+              class="img-fluid mx-auto d-block"
+            />
+            <button
+              class="nxt-btn w-100 btn btn-lg btn-dark mb-3 text-white rounded-0 py-2 w-sm fw-bold fs-1"
+            >
+              Login
+            </button>
           </div>
-          <div class="col-10 d-flex flex-column justify-content-center align-items-center mt-5">
-              <div class="w-100 g-0  my-4">
-                  <label for="emailInput" class="form-label text-primary w-100 fw-bold">Email</label>
-                  <input type="email" id="emailInput" class="border-dark form-control mb-4 fs-7" placeholder="Email address">
-                  <label for="pwdinput" class="form-label text-primary w-100 fw-bold">Password</label>
-                  <input type="password" id="pwdinput" class="border-dark form-control mb-2 fs-7" placeholder="Password">
-                  <a href="#" class="text-decoration-none">Forget password?</a> 
-                  <div  class="mb-5 mt-3">
-                     <input type="radio" id="stay-logged" >
-                     <label for="stay-logged" class="form-label fw-bold">keep Me logged in</label>
-                  </div>
+          <div
+            class="col-10 d-flex flex-column justify-content-center align-items-center mt-5"
+          >
+            <div class="w-100 g-0 my-4">
+              <div class="form-group mb-4">
+                <label
+                  for="email"
+                  class="form-label mb-3 text-primary fw-bold fs-3"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                />
               </div>
-              <div class="col-8 d-flex text-center flex-column justify-content-center align-items-center mt-5">
-                  <button type="submit" class="btn bg-primary text-white w-50 py-3 rounded-4 mb-4">Login</button>
-                  <span class="text-center">
-                      <span class="min-md-fs fs-5 mt-2" >Dont have an Account?</span>
-                      <a href="#" class="min-md-fs fs-5 mb-2">Create an account</a>
-                  </span>
-                  <h2 class="fs-2 my-5 fw-bold">OR</h2>
-                  <span class="min-md-fs fw-bold fs-5 " >You can log in or register with</span>
-                  <img src="../assets/images/linkedin-login.svg" class="me-2 mt-3 mb-5" alt="linked-icon">
+              <div class="form-group mb-4">
+                <label
+                  for="pwd"
+                  class="form-label mb-3 text-primary fw-bold fs-3"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control border border-dark border-3 rounded-4 py-4 ps-5 fs-4"
+                  id="pwd"
+                  name="password"
+                  placeholder="Password"
+                />
               </div>
+              <a href="#" class="link fs-3 fw-bold">Forget password?</a>
+              <div class="mb-5 mt-3 form-check">
+                <label for="stay-logged" class="form-check-label fs-4">
+                  <input
+                    type="radio"
+                    id="stay-logged"
+                    class="form-check-input"
+                  />
+                  keep Me logged in</label
+                >
+              </div>
+            </div>
+            <div
+              class="col-8 d-flex text-center flex-column justify-content-center align-items-center mt-5"
+            >
+              <button
+                type="submit"
+                class="btn btn-primary text-light fs-5 fw-semibold rounded-4 py-3 px-5 w-50 mb-2"
+              >
+                Login
+              </button>
+              <span class="text-center">
+                <span class="min-md-fs fs-4 mt-2">Dont have an Account?</span>
+                <a href="#" class="min-md-fs fs-4 mb-2 fw-bold link"
+                  >Create an account</a
+                >
+              </span>
+              <h2 class="fs-2 my-4 fw-bold">OR</h2>
+              <span class="min-md-fs fw-bold fs-4"
+                >You can log in or register with</span
+              >
+              <img
+                src="../assets/images/Vectorlinkedin.svg"
+                class="mt-3 mb-5"
+                alt="linked-icon"
+                style="width: 85px"
+              />
+            </div>
           </div>
-      </div>  
+        </div>
       </div>
       <!--end of user login-->
       <!--end of content-->
       <!-- Footer Start -->
-      <footer
-        class="bg-primary mt-3" class="footer d-flex flex-column">
+      <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">
           <div class="row justify-content-between g-0">
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -641,55 +699,55 @@
           </div>
         </div>
         <!-- Copyrights -->
-      <div class="bg-dark">
-        <div class="container">
-          <div class="row text-light">
-            <div class="col-md-6">
-              <div class="copyright-menu in">
-                <ul
-                  class="d-flex flex-row list-unstyled mt-3 justify-content-start"
-                >
-                  <li class="me-5">
-                    <a
-                      href="#"
-                      class="text-light link-underline link-underline-opacity-0"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li class="mx-4">
-                    <a
-                      href="#"
-                      class="text-light link-underline link-underline-opacity-0"
-                      >Terms & Conditions</a
-                    >
-                  </li>
+        <div class="bg-dark">
+          <div class="container">
+            <div class="row text-light">
+              <div class="col-md-6">
+                <div class="copyright-menu in">
+                  <ul
+                    class="d-flex flex-row list-unstyled mt-3 justify-content-start"
+                  >
+                    <li class="me-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li class="mx-4">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Terms & Conditions</a
+                      >
+                    </li>
 
-                  <li class="mx-5">
-                    <a
-                      href="#"
-                      class="text-light link-underline link-underline-opacity-0"
-                      >Sitmap</a
-                    >
-                  </li>
-                </ul>
+                    <li class="mx-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Sitmap</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <!-- End Col -->
+              <!-- End Col -->
 
-            <div
-              class="col-md-6 text-light d-flex justify-content-end align-items-center me-0"
-            >
-              <span
-                >© Copyright 2024 HRs Magazin
-                <span>|</span>
-                <span>Registered in Egypt No. 02120366</span>
-              </span>
+              <div
+                class="col-md-6 text-light d-flex justify-content-end align-items-center me-0"
+              >
+                <span
+                  >© Copyright 2024 HRs Magazin
+                  <span>|</span>
+                  <span>Registered in Egypt No. 02120366</span>
+                </span>
+              </div>
+              <!-- End col -->
             </div>
-            <!-- End col -->
+            <!-- End Row -->
           </div>
-          <!-- End Row -->
         </div>
-      </div>
       </footer>
       <!-- Footer End -->
     </main>

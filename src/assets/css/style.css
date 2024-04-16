@@ -444,8 +444,8 @@ nav .dropdown-item {
   /* end legal-compliance page */
 
   /* workplaceCulture-wellBeing */
-
-/* .carousel-control-prev-icon,.carousel-control-next-icon {
+/*   carousel */
+.carousel-control-prev-icon,.carousel-control-next-icon {
   background-color:rgba(0, 0, 0, 1);
   color: white!important;
   opacity: 100;
@@ -460,5 +460,6 @@ nav .dropdown-item {
 }
 .carousel-control-next-icon{
 right: 0;
-} */
+}
+/* end workplaceCulture-wellBeing */
 

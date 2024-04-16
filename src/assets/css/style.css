@@ -434,7 +434,7 @@ nav .dropdown-item {
 .responsive-card{
   width:92%;
 }
-/*////////////////End of vedio container////////////////////*/
+/* ////////////////End of vedio container//////////////////// */
 
   /* legal-compliance page */
   .readMoreLink:hover,.readMoreLink:active{
@@ -442,6 +442,8 @@ nav .dropdown-item {
     color: #0b86cbcc!important;
   }
   /* end legal-compliance page */
+
+  /* workplaceCulture-wellBeing */
 
 /* .carousel-control-prev-icon,.carousel-control-next-icon {
   background-color:rgba(0, 0, 0, 1);

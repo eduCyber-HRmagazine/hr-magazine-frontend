@@ -1,0 +1,41 @@
+
+// Color scheme
+$primary: #be111f;
+$danger: #E32E3C;
+$dark: #0d0d0d;
+$light: #F9F9F9;
+
+// Responsive breakpoints
+$grid-breakpoints: (
+  xs: 250px,
+  sm: 420px,
+  md: 600px,
+  lg: 940px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+// Incremental spacing(margin and paddings) values
+$spacing-scale: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  7: 28px,
+  8: 32px,
+  9: 36px,
+  10: 40px
+);
+
+
+// Carousel styles
+$carousel-caption-width: 100%;
+$carousel-caption-spacer: 0;
+$carousel-indicator-active-bg: $primary;
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+$carousel-indicator-spacer: 8px;
+$carousel-caption-padding-y: 1rem;

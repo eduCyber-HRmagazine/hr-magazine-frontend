@@ -449,32 +449,47 @@
 
       <!-- start of content -->
       <!-- video -->
-      <div class="bg-light py-5 mb-5 ">
-        <div class="container-fluid ">
-            <h2 class="ps-4 fw-bold">HRs Legal and Compliance</h2>
-            <div class="row m-auto gy-0 pt-4">
-                <div class="ratio ratio-16x9 col">
-                    <!-- Default Image -->
-                    <img src="../assets/images/legal-compliance-video.svg" alt="Default Video Image" class="embed-cover d-flex flex-grow-1 h-100">
-                    <!-- Iframe for Video -->
-                    <iframe 
-                     src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
-                     class="youtube-video embed-cover" style="display: none;" 
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowfullscreen>
-                    </iframe>
-  
-                    <!-- Custom Play Button -->
-                    <button type="button" class="btn position-absolute top-50 start-50 translate-middle" aria-label="Play Video" onclick="playVideo()">
-                        <img src="../assets/images/video-play-btn.svg" alt="Play Video" class="embed-cover-btn">
-                    </button>
-                  </div>
+      <div class="bg-light py-5 mb-5">
+        <div class="container-fluid">
+          <h2 class="ps-4 fw-bold">HRs Legal and Compliance</h2>
+          <div class="row m-auto gy-0 pt-4">
+            <div class="ratio ratio-16x9 col">
+              <!-- Default Image -->
+              <img
+                src="../assets/images/legal-compliance-video.svg"
+                alt="Default Video Image"
+                class="embed-cover d-flex flex-grow-1 h-100"
+              />
+              <!-- Iframe for Video -->
+              <iframe
+                src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                class="youtube-video embed-cover"
+                style="display: none"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+
+              <!-- Custom Play Button -->
+              <button
+                type="button"
+                class="btn position-absolute top-50 start-50 translate-middle"
+                aria-label="Play Video"
+                onclick="playVideo()"
+              >
+                <img
+                  src="../assets/images/video-play-btn.svg"
+                  alt="Play Video"
+                  class="embed-cover-btn"
+                />
+              </button>
             </div>
+          </div>
         </div>
       </div>
-<!-- end video -->
-<!-- cards -->
+      <!-- end video -->
+      <!-- cards -->
       <div class="bg-primary py-5 mb-5 justify-content-center">
         <div class="container-fluid">
           <div class="row gx-4 gy-5">
@@ -1009,7 +1024,7 @@
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/date.js"></script>
     <!--youtube api needed.....also video-play.js*/-->
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <script src="../assets/js/play-video.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../assets/js/play-video.js"></script>
   </body>
 </html>

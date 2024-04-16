@@ -13,9 +13,9 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 //Define a custom icon with the desired color
 var redIcon = L.icon({
     iconUrl: '../assets/images/location-icon-darkred.svg', // Replace with the path to your SVG icon
-    iconSize: [40, 40], // Set the icon size
-    iconAnchor:   [25, 40], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-9, -30] // point from which the popup should open relative to the iconAnchor
+    iconSize: [50, 50], // Set the icon size
+    iconAnchor:   [26, 48], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-2, -40] // point from which the popup should open relative to the iconAnchor
 })
 
 //Add a marker to Cairo, Egypt with the custom icon

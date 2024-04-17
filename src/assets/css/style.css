@@ -363,7 +363,9 @@ nav .dropdown-item {
 /* Start About */
 #about-landing .landing-img ,
 #landing-author .landing-img {
-  height: 699px; 
+  height: 699px;
+  overflow: hidden;
+  position: relative; 
 }
 .bg-secondary {
   background-color: #f9f9f9 !important;

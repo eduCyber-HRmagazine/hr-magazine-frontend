@@ -918,17 +918,25 @@
           <div class="col-lg-7 bg-light pb-5">
             <div class="py-5"></div>
             <div class="card mx-lg-4 border-dark rounded-4">
-              <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
-              <iframe
-                src="https://www.youtube.com/embed/pb5SF20Kd8M?si=auvE_Mpj1VxCsr0H"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                class="card-img-top"
-                height="453"
-              ></iframe>
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  padding-bottom: 56.25%;
+                  height: 0;
+                  overflow: hidden;
+                "
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/pb5SF20Kd8M?si=auvE_Mpj1VxCsr0H"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="card-img-top"
+                  height="453"
+                ></iframe>
               </div>
               <div class="card-body bg-dark text-white text-start px-3">
                 <p class="fw-semibold">
@@ -942,7 +950,7 @@
         <div class="row bg-primary mb-3">
           <div class="card border-0 bg-primary">
             <div class="row g-0 justify-content-between">
-              <div class="col-9">
+              <div class="col-lg-9 col-8">
                 <div class="card-body ps-3">
                   <h3 class="card-title fw-bold fs-2 py-3">
                     Professional Advice
@@ -956,25 +964,25 @@
                   </p>
                 </div>
               </div>
-              <div class="col-2">
-                <img
-                  src="../assets/images/professional1.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle p-3"
-                />
+              <div class="col-lg-2 col-4">
+                <div
+                  class="position-relative overflow-hidden"
+                  style="aspect-ratio: 1"
+                >
+                  <img
+                    src="../assets/images/professional1.jpg"
+                    alt=""
+                    class="image-center rounded-circle p-3"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="bg-light">
-          <h3 class="fw-bold fs-2 ps-3 pt-5">
-            Upcomming Events
-          </h3>
-          <div class="row">
-            
-          </div>
-
+          <h3 class="fw-bold fs-2 ps-3 pt-5">Upcomming Events</h3>
+          <div class="row"></div>
         </div>
       </div>
       <!--end of content-->
@@ -1112,9 +1120,7 @@
             <div
               class="col-lg-4 col-md-6 text-white text-center bg-dark rounded-4 py-4 px-5"
             >
-              <h6 class="text-uppercase mb-4 oran-font fs-4">
-                Stay In Touch
-              </h6>
+              <h6 class="text-uppercase mb-4 oran-font fs-4">Stay In Touch</h6>
               <p class="small mb-4">
                 To be updated with all the latest news, offers and special
                 announcements.
@@ -1188,7 +1194,7 @@
         </div>
       </footer>
       <!-- Footer End -->
-    </div>
+    </main>
   </body>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/date.js"></script>

@@ -539,5 +539,18 @@ nav .dropdown-item {
   .carousel-control-next{margin-right:-5px;}
 }
 
+.offcanvas-item {
+  color: #FFF;
+  opacity: 1;
+  border-bottom: 2px solid;
+  margin-bottom: 0.75rem;
+}
 
+.offcanvas-item.active {
+  color: #0d0d0d;
+}
+
+.offcanvas-item:hover {
+  opacity: 0.7;
+}
 

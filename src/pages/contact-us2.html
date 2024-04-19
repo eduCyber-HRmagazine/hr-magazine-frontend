@@ -11,8 +11,12 @@
     />
     <link rel="stylesheet" href="../assets/css/main.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
   </head>
-
   <body>
     <main class="p-0">
       <!-- navbar -->
@@ -447,141 +451,95 @@
         <!--Bottom NavBar Ends-->
       </nav>
       <!--End of Navbar-->
-      <!--content-->
+
+      <!-- start of content -->
+      <h2
+        class="text-center bg-primary text-white py-4 mt-5 mb-0 fs-2 fw-bold mx-0"
+      >
+        Contact Us
+      </h2>
       <div class="container-fluid">
-        <div class="row justify-content-center g-0">
-          <div class="col-12 text-center g-0">
-            <img
-              src="../assets/images/big-logo.svg"
-              alt="logo"
-              class="mb-3 img-fluid"
-            />
+        <div class="row bg-light">
+          <div class="row py-5 m-auto gx-5">
+            <div class="col">
+              <div class="border border-dark border-4 rounded-3">
+                <div id="map" style="height: 699px"></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Profile Users Account Start  -->
-        <div class="row justify-content-center">
-          <div class="col-xl-12 col-md-12 col-sm-12 bg-dark rounded-0 h-25">
-            <h1 class="text-white py-5 fw-bold text-center">Users Profile</h1>
+          <div class="row pb-5">
+            <div class="col-12 text-center">
+              <h3 class="text-primary fs-1 fw-bolder pb-2">Thank You</h3>
+              <p class="fs-3 fw-semibold">
+                We have received your request and will be in touch<br />shortly
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row overflow-auto" style="max-height: 200vh">
-          <div class="col-xl-4 col-md-0 col-sm-0 bg-primary">
-            <div class="navbar navbar-expand-xl">
-              <div class="card-block text-center text-white">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasScrolling"
-                  aria-controls="offcanvasScrolling"
+
+          <!-- contact us info -->
+          <div class="row g-0 align-items-center text-center flex-column">
+            <h3 class="fw-bold">For more information:</h3>
+            <div class="col-auto d-flex align-items-start">
+              <img src="../assets/images/location-icon-black.svg" />
+              <p class="fs-3 fw-bold text-primary">
+                Location:
+                <span class="fs-5 fw-normal text-dark"
+                  >1, My Address, My Street, New York City, NY, USA</span
                 >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="offcanvas offcanvas-start bg-primary text-center text-white"
-                  tabindex="-1"
-                  data-bs-scroll="true"
-                  id="offcanvasScrolling"
-                  aria-labelledby="offcanvasScrollingLabel"
-                >
-                  <div class="offcanvas-header float-end">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <img
-                    src="../assets/images/profile.jpeg"
-                    class="img-fluid rounded-circle m-4"
-                    alt="User-Profile-Image"
-                    style="aspect-ratio: 1"
-                  />
-                  <a
-                    href="profile-users-account.html"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item active pb-2 d-block"
-                    style="width: 250px"
-                    >Account</a
-                  >
-                  <a
-                    href="profile-users.html"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Profile</a
-                  >
-                  <a
-                    href="#"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Newsletters</a
-                  >
-                  <a
-                    href="#"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Logout</a
-                  >
-                </div>
-              </div>
+              </p>
+            </div>
+            <div class="col-auto d-flex align-items-start">
+              <img src="../assets/images/email-icon-black.svg" />
+              <p class="fs-3 fw-bold text-primary">
+                Email:
+                <span class="fs-5 fw-normal text-dark">contact@domain.com</span>
+              </p>
+            </div>
+            <div class="col-auto d-flex align-items-start">
+              <img src="../assets/images/phon-icon-black.svg" />
+              <p class="fs-3 fw-bold text-primary">
+                Phone:
+                <span class="fs-5 fw-normal text-dark">+1234567890</span>
+              </p>
+            </div>
+            <div class="col-auto d-flex flex-column mb-2">
+              <p class="fs-3 fw-bold text-primary text-center">Follow Us</p>
+              <ul class="list-inline d-flex justify-content-center">
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" title="facebook">
+                    <img src="../assets/images/facebook-colored.svg" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" title="twitter">
+                    <img src="../assets/images/twitter-colored.svg" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" title="youtube">
+                    <img src="../assets/images/youtube-colored.svg" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" title="instagram">
+                    <img src="../assets/images/instagram-colored.svg" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" title="linkedin">
+                    <img src="../assets/images/linkedin-colored.svg" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-xl-8 col-md-12 col-sm-12">
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Name</h3>
-                  <h6 class="px-3 pb-2 text-muted">Amged S.El-Hawrani</h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Email</h3>
-                  <h6 class="px-3 pb-2 text-muted">
-                    Amged S.El-Hawrani@gmail.com
-                  </h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Password</h3>
-                  <h6 class="px-3 pb-2 text-muted">**********</h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Profile Users Account End  -->
+          <!-- end bg light-->
         </div>
       </div>
+      <!-- end container-->
+
       <!--end of content-->
+
       <!-- Footer Start -->
       <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">
@@ -790,7 +748,10 @@
       </footer>
       <!-- Footer End -->
     </main>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/date.js"></script>
+    <!-- map jsfile -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../assets/js/map.js"></script>
   </body>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/date.js"></script>
 </html>

@@ -155,6 +155,13 @@ nav .dropdown-item {
   margin: 0 auto; /* Center the link */
   width: 94%;
 }
+a.dropdown-item {
+  white-space: normal;
+}
+.dropdown-item:hover {
+  background-color: #dbdbdb ;
+}
+
 /*drop down arrows on bottom navbar*/
 /*to make the arrow color black*/
 #navbarDropdownArticles::after,
@@ -163,6 +170,15 @@ nav .dropdown-item {
 #navbarDropdownEvents::after,
 #navbarDropdownCareers::after {
   border-top-color: black !important; /* Change the arrow color to black */
+}
+/*drop down arrows on navbar*/
+/*to make the arrow color red*/
+#navbarDropdownBrowseJobsDate::after,
+#navbarDropdownBrowseJobsCity::after,
+#navbarDropdownBrowseJobsCategory::after
+  {
+  border-top-color: #BE111F !important; /* Change the arrow color to red */
+
 }
 /* to make the arrow flip up when menu is opened*/
 .dropdown-toggle::after {
@@ -185,8 +201,6 @@ nav .dropdown-item {
 .centered-placeholder {
   text-align: center;
 }
-
-
 .dropdown-menu-dark {
   background-color: black;
 }
@@ -217,7 +231,6 @@ nav .dropdown-item {
     width: 55px; 
     height: 55px; 
 }
-
 /*////////////////End of partial carousel/////////////////////*/
 /*//////////////////partial video container//////////////////*/
 /*vedio container*/

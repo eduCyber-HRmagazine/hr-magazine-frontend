@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR's Magazin</title>
+  <link rel="shortcut icon" href="../assets/images/Red Black Minimalistic Square It Software Logo 1.png"
+    type="image/png" />
+  <link rel="stylesheet" href="../assets/css/main.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <main class="p-0">
+    <!-- navbar -->
+    <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
+      <!--Top-nav start-->
+      <div id="top-nav" class="container-fluid bg-primary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div id="date-trend" class="d-flex justify-content-center align-items-center">
+            <!-- Left Side: Today's Date -->
+            <div id="currentDate" class="navbar-brand text-white me-5 pe-3"></div>
+            <!-- Center: News, Trends, and Animated Text -->
+            <div class="trend-animated-txt d-flex justify-content-center align-items-center">
+              <a id="trend" href="#" class="nav-link text-white bg-dark text-center p-3">News and Trends</a>
+              <div class="text-animation text-white pb-4 ms-3">
+                <div>HR Magazine News and Trends</div>
+                <div>Ladies in HR News</div>
+                <div>HR Training and Development News</div>
+                <div>HR Industry Trends and Insights</div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Side: Language, Account -->
+          <div class="d-flex align-items-center">
+            <!--language-->
+            <a href="#" class="fs-4 fw-bold nav-link text-white" id="languageToggle">EN</a>
+            <!-- Account Dropdown --showing in large screens and tablets on top-->
+            <div class="dropdown" id="account-icon-top">
+              <a class="nav-link px-2" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/images/account.svg" alt="account" class="bi bi-person-circle" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="accountDropdown">
+                <li>
+                  <a class="dropdown-item text-white" href="#">Login</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Register</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Top-nav Ends-->
+      <!-- Mid Nav Start -->
+      <div id="mid-nav" class="container-fluid bg-white">
+        <div class="container-fluid">
+          <div class="row justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div class="col-12 col-md-auto mb-3 mb-md-0">
+              <a href="#" class="navbar-brand d-flex justify-content-center justify-content-md-start">
+                <img src="../assets/images/logo-s.png" alt="Logo" class="d-inline-block align-text-top" />
+              </a>
+            </div>
+            <!-- Contact and Social Icons Section -->
+            <div id="social-icon-container" class="col-12 col-md-auto" style="margin-right: 2vw">
+              <div class="text-center">
+                <p>Contact Us</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/facebook.svg" class="icon" alt="facebook" />
+                  </div>
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/twitter.svg" class="icon" alt="twitter" />
+                  </div>
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/youtube.svg" alt="youtube" />
+                  </div>
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/insta.svg" class="icon" alt="instagram" />
+                  </div>
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/link.svg" class="icon" alt="linkedin" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Mid Nav Ends-->
+      <!--Bottom Nav starts-->
+      <div class="container-fluid d-flex flex-nowrap bg-primary py-2">
+        <div class="navbar navbar-expand-md">
+          <!-- navbar toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- end navbar toggler -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArticles" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Articles
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownArticles">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Industry News and Updates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Trends and Insights</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Global HR Perspectives</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Expert Interviews</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Professionals Spotlights</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Training and Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Authors</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownLadiesInHR" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Ladies in HR
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownLadiesInHR">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Journey to Excellence</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownWorkplaceCulture"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Workplace Culture
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownWorkplaceCulture">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Workplace Culture</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Wellness Programs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Mental Health in the Workplace</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Diversity, Equity and Inclusion (DEI)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownEvents" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownEvents">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Upcoming Events</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Event Calendar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Latest Events</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-white" href="#">Community</a>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownCareers" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Careers
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownCareers">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Browse Jobs</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">For Employers</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-self-start justify-content-between">
+          <!-- Account Dropdown --showing on mobiles on bottom-->
+          <div class="dropdown" id="account-icon-bottom">
+            <a class="nav-link px-2" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="../assets/images/account.svg" alt="account" class="bi mt-2 bi-person-circle" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="accountDropdown">
+              <li><a class="dropdown-item text-white" href="#">Login</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Register</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Profile</a>
+              </li>
+              <li><a class="dropdown-item text-white" href="#">Logout</a></li>
+            </ul>
+          </div>
+
+          <!--search box-->
+          <div class="dropdown">
+            <div class="ms-auto dropdown">
+              <a class="nav-link mt-1" href="#" role="button" data-bs-toggle="dropdown">
+                <img src="../assets/images/search-icon-black-circle.svg" alt="Search" class="img-fluid mt-2" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end search-menu bg-dark" style="width: 320px">
+                <li>
+                  <div class="d-flex align-items-center bg-white rounded-pill border border-dark mt-2 px-2">
+                    <img src="../assets/images/filter-icon.svg" alt="Filter" class="me-2"
+                      style="width: 20px; height: 20px" />
+                    <div class="border-end me-2" style="height: 20px"></div>
+                    <img src="../assets/images/search-icon.svg" alt="Search" class="me-2"
+                      style="width: 20px; height: 20px" />
+                    <input type="text" class="flex-grow-1 border-0" placeholder=" Search..." />
+                    <button type="button" class="btn p-0 ms-2">
+                      <img src="../assets/images/close-icon.svg" alt="Close" style="width: 15px; height: 15px" />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Bottom NavBar Ends-->
+    </nav>
+    <!--End of Navbar-->
+
+    <!-- start of content -->
+    <div class="container-fluid">
+      <!--the image-->
+      <div class="row bg-dark py-5 pb-3 pt-3 mb-3">
+        <h3 class="fw-bold fs-2 text-white mt-2 text-center">HRs Magazine Jobs</h3>
+        <div class="col mt-3">
+          <div class="card bg-dark text-white landing-img mx-lg-3 mx-md-3 mx-1" style="height: 695px">
+            <img src="../assets/images/browse-jobs.jpeg" class="card-img rounded-4 image-center" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!--single Card-->
+      <div class="row align-items-center justify-content-center bg-primary mb-3 mt-4 px-3 mx-1">
+        <div class="m-3 bg-light border-0">
+          <div class="row g-0 align-items-center justify-content-center">
+            <nav>
+              <div class="col my-4 ms-2">
+                <h2 class="fw-bold">Available Jobs
+                  <span class="float-end">
+                    Sort By:
+                    <span class="dropdown">
+                      <button type="button" class="bg-light border-0 text-muted dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        Publish Date
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark bg-light"
+                        aria-labelledby="navbarDropdownBrowseJobsDate">
+                        <li>
+                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                            href="#">All</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                            href="#">Today</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                            href="#">This Week</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                            href="#">This Month</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                            href="#">This Year</a>
+                        </li>
+                      </ul>
+                    </span>
+                    <span>
+                      Order:
+                      <svg class="m-0" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_162_12296)" />
+                        <defs>
+                          <pattern id="pattern0_162_12296" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_162_12296" transform="scale(0.00195312)" />
+                          </pattern>
+                          <image id="image0_162_12296" width="512" height="512"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAACXBIWXMAATr1AAE69QGXCHZXAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAEmZJREFUeJzt3X/I9Xddx/HXZ9NF6WoVxHLNbLWWuUD7sWCktbZgVoYU2khbkRSUQUU//vEfpR8SREhRkcRKlhJO6g8rGuGciaItAqsp5obr3ubMv4bbdGq7P/1xnY171+77vs65rnPO5/v9vh8P2F/bzvfN7p37/fx+vuc+V+u9BwCo5YLRAwAA+ycAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAIAFawe+q7V2a2vtgdba46210621fuiv06u/d39r7W2ttRePnh3YrdZ7Hz0DsGWttW9J8qYkP5Hky475Ml9IcluSN/be793WbMA0CABYkNbatyX50yTXbfml35Pkl3rv/73l1wUG8QgAFqC1dlFr7feT3J3tL/8kuT7Jx1prb26tPXsHrw/smRMAmLnW2vOT/EOSq/d0yY8keUXv/f49XQ/YAQEAM9ZauzoHx/Nft+dLfybJD/be797zdYEtEQAwU621K5LcleRrBo3wcJJreu+fGHR94AQEAMxQa+3iJP+V5PmDRzmV5EW990cHzwFsyIcAYZ7+OuOXf3Iww62jhwA2JwBgZlprNyf5sdFznOGVrbWfHT0EsBmPAGBGVn/O/z+TPGv0LIf8X5IX+1AgzIcTAJiJ1bf7fSDTW/7JwUzvW80IzIAAgBlorV2Z5M6M+8T/Or42yftbay8cPQhwNI8AYOJWd9V3Jrls8CjrejDJD/Te7xk9CHBuTgBgws6485/L8k8OZnUSABPnBAAmaoZ3/oc5CYAJcwIAEzTTO//DnATAhDkBgIlZwJ3/YU4CYIKcAMCELOTO/zAnATBBTgBgIhZ453+YkwCYECcAMAELvfM/zEkATIgTABiswJ3/YU4CYAKcAMBARe78D3MSABPgBAAGKXjnf5iTABjICQAMUPTO/zAnATCQEwDYM3f+z+AkAAZwAgB75M7/rJwEwABOAGBP3PkfyUkA7JETANgDd/5rcRIAe+QEAHbMnf/GnATAHjgBgB1y538sTgJgD5wAwI648z8xJwGwQ04AYAcs/624LMmdq/+WwJYJANgyx/5b5XEA7IhHALBF7vx3xuMA2DInALAl7vx3ykkAbJkTANgCd/574yQAtsQJAJyQO/+9chIAWyIA4ARWy/+9sfz36dIkd4gAOBkBAMdk+Q8lAuCEBAAcg+U/CSIATkAAwIYs/0kRAXBMAgA2YPlPkgiAYxAAsCbLf9JEAGxIAMAaLP9ZEAGwAQEAR7D8Z0UEwJoEAJyH5T9LIgDWIADgHCz/WRMBcAQBAGdh+S+CCIDzEABwiOW/KCIAzkEAwBks/0USAXAWAgBWLP9FEwFwiACAWP5FiAA4gwCgPMu/FBEAKwKA0iz/kkQARABQmOVfmgigPAFASZY/EQEUJwAox/LnDCKAsgQApVj+nIUIoCQBQBmWP+chAihHAFCC5c8aRAClCAAWz/JnAyKAMgQAi2b5cwwigBIEAItl+XMCIoDFEwAskuXPFogAFk0AsDiWP1skAlgsAcCiWP7sgAhgkQQAi2H5s0MigMURACyC5c8eiAAWRQAwe5Y/eyQCWAwBwKxZ/gwgAlgEAcBsWf4MJAKYPQHALBVc/h8ePcAGPjB6gD0RAcyaAGB2Ci7/v03yltFDbOCPk/zN6CH2RAQwWwKAWSm6/G9K8sToQTZwOslrIwJg0gQAs1F1+ffevzR6kE313p+ICIBJEwDMguU/PyIApk0AMHmW/3yJAJguAcCkWf7zJwJgmgQAk2X5L4cIgOkRAEyS5b88IgCmRQAwOZb/cokAmA4BwKRY/ssnAmAaBACTYfnXIQJgPAHAJFj+9YgAGEsAMJzlX5cIgHEEAENZ/ogAGEMAMIzlz5NEAOyfAGAIy5/DRADslwBg7yx/zkUEwP4IAPbK8ucoIgD2QwCwN5Y/6xIBsHsCgL2w/NmUCIDdEgDsnOXPcYkA2B0BwE5Z/pyUCIDdEADsjOXPtogA2D4BwE5Y/mybCIDtEgBsneXProgA2B4BwFZZ/uyaCIDtEABsjeXPvogAODkBwFZY/uybCICTEQCcmOXPKCIAjk8AcCKWP6OJADgeAcCxWf5MhQiAzQkAjsXyZ2pEAGxGALAxy5+pEgGwPgHARix/pk4EwHoEAGuz/JkLEQBHEwCsxfJnbkQAnJ8A4EiWP3MlAuDcBADnZfkzdyIAzk4AcE6WP0shAuCZBABnZfmzNCIAnk4A8AyttcuTvCeWPwuzioCbc/BrXsGlSW5vrX3D6EGYHgHA07TWvjrJ7UkuHz3Lnlj+xax+rW9KnQi4PAcRcMnoQZgWAcBTWmstyS1JqhwZWv5FrX7NX506jwO+Pcmtq/c4JBEAPN3rk7xy9BB7YvkXV/BxwI8m+cXRQzAdAoAkSWvt0iS/M3qOPbH8SVLyJODNrbXnjR6CaRAAPOn3knzV6CH2wPLnaYqdBHxlkjeNHoJpEAA8+an/14yeYw8sf86q2EnAz7TWvnH0EIwnAEiSX05y0eghdszy57wKnQQ8Oz4LQARAea21C5L81Og5dszyZy2FTgJe21q7cPQQjCUAuCbJkr8kxPJnI0VOAi5L8p2jh2AsAcB1owfYIcufYylyErDk9z5rEAB89+gBdsTy50QK/OyApb73WZMA4KrRA+yA5c9WLDwClvjeZwMCgK8fPcCWWf5s1YIjwBcCFScAeO7oAbbI8mcnFhoBF48egLEEAEth+bNTC40AChMAPDp6gC2w/NmLhUXAZ0cPwFgCgE+NHuCELH/2akERMPf3PickAPj46AFOwPJniIVEwJzf+2yBAODfRg9wTJY/Qy0gAub63mdLBADvHT3AMVj+TMLMvzZ4ju99tkgAcFeS+0cPsQHLn0mZ6dcGn0ry76OHYCwBUFzv/XSSd4yeY02WP5M0w5OAt6/e+xQmAEiSP0nyxdFDHMHyZ9JmdBLwpSR/PnoIxhMApPd+f5JbR89xHpY/szCTk4C/7L3/z+ghGE8A8KQ3JHl49BBnYfkzKxM/CfhskjeOHoJpEAAkSXrv/5uDCJgSy59ZmvBJwG/13h8aPQTTIAA4058l+bvRQ6xY/szaBE8C3p3kraOHYDoEAE/pvfckP5fk7sGjWP4swoROAu5OcvPqPQ5JBACH9N4fTnJjDv6c8AiWP4uy+n/5poyLgFNJbly9t+EpAoBn6L0/kOT7k9yz50u/I5Y/C3TG44C/2vOlP5nk+tV7Gp5GAHBWvff7krws+/u+8D9I8tOWP0u1ehzwuiR/uKdL3pXk2t77vkOemRAAnNPq08IvTXLLDi/zaJLX9N5/0zeTsXS999O991/PwQ8RenSHl/qLJC/rvX96h9dg5gQA59V7f7z3/rokr8j2f2bAPyW5uvc+l68ihq3ovb89yXckuX3LL30qyY/03n++9/74ll+bhREArKX3/vdJvjXJr+VkIdCT/EuSG3rvL/eNZFTVe7+v935jkh/KwXviJE4l+dUkV/Xe//HEw1FC86dC2FRr7YIk1+fgVOC6JC9McuF5/pXHknw4yR1J3tl7/8TOh1yY1tqrkrxz9BxrenXv/bbRQ8xNa+3KJD+Zg/fU9yZ5znn+8SeSfDQHP9L33Unu8AiNTQkATqy1dlGSb0ryvCRfnoPfuB5O8rkk9/XeHxw43iIIgHpaa5cleUGSr0hySQ5C+vNJHszB+2rqP8CLiXvW6AGYv9VvRB9f/QVswSqcxTM74zMAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJABgHvroATYwp1mhLAEA8/D46AE28PnRAwBHEwAwD58bPcAGHhs9AHA0AQDz8JnRA2xgTrNCWa13j+tg6lprz0nySJI2epYj9CTP7b3P6cQCSnICADPQe38syf2j51jDKcsf5kEAwHx8aPQAa/jg6AGA9QgAmI/3jR5gDe8fPQCwHp8BgJlorV2a5MFMN9xPJ7m89/6p0YMAR5vqbyTAIb33T2fapwB3Wv4wHwIA5uWPRg9wHm8ZPQCwPo8AYEZaaxck+UiSq0fPcsh/JHlJ7/306EGA9TgBgBlZLdhfGT3HWfyG5Q/zIgBgZnrvdyR52+g5znBL7/2fRw8BbMYjAJih1trFSe5KctXgUT6W5HtWX1QEzIgTAJih3vsjSV6e5KGBYzyU5Ictf5gnAQAz1Xv/ZJIbMuYrgk8luaH3ft+AawNbIABgxnrvH01ybZJ/3eNlP5Tk2tW1gZkSADBzvfcHknxfkt9N8sUdXuoLSX47yUt77w/u8DrAHvgQICxIa+3KHITAjye5cEsv+0SSdyV5Q+/93i29JjCYAIAFaq1dkeQXkrwqyRXHfJl7k9yW5K2rzxsACyIAYOFaay/KwecErknyzUlekOSSJBev/pFHkjyc5L4k9+Tg8wQf9Iwflk0AAEBBPgQIAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAU9P9t4s9H/I0u2QAAAABJRU5ErkJggg==" />
+                        </defs>
+                      </svg>
+                      <svg class="m-0" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect x="40" y="40" width="40" height="40" transform="rotate(-180 40 40)"
+                          fill="url(#pattern0_162_12297)" />
+                        <defs>
+                          <pattern id="pattern0_162_12297" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_162_12297" transform="scale(0.00195312)" />
+                          </pattern>
+                          <image id="image0_162_12297" width="512" height="512"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAACXBIWXMAATr1AAE69QGXCHZXAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAEmZJREFUeJzt3X/I9Xddx/HXZ9NF6WoVxHLNbLWWuUD7sWCktbZgVoYU2khbkRSUQUU//vEfpR8SREhRkcRKlhJO6g8rGuGciaItAqsp5obr3ubMv4bbdGq7P/1xnY171+77vs65rnPO5/v9vh8P2F/bzvfN7p37/fx+vuc+V+u9BwCo5YLRAwAA+ycAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAIAFawe+q7V2a2vtgdba46210621fuiv06u/d39r7W2ttRePnh3YrdZ7Hz0DsGWttW9J8qYkP5Hky475Ml9IcluSN/be793WbMA0CABYkNbatyX50yTXbfml35Pkl3rv/73l1wUG8QgAFqC1dlFr7feT3J3tL/8kuT7Jx1prb26tPXsHrw/smRMAmLnW2vOT/EOSq/d0yY8keUXv/f49XQ/YAQEAM9ZauzoHx/Nft+dLfybJD/be797zdYEtEQAwU621K5LcleRrBo3wcJJreu+fGHR94AQEAMxQa+3iJP+V5PmDRzmV5EW990cHzwFsyIcAYZ7+OuOXf3Iww62jhwA2JwBgZlprNyf5sdFznOGVrbWfHT0EsBmPAGBGVn/O/z+TPGv0LIf8X5IX+1AgzIcTAJiJ1bf7fSDTW/7JwUzvW80IzIAAgBlorV2Z5M6M+8T/Or42yftbay8cPQhwNI8AYOJWd9V3Jrls8CjrejDJD/Te7xk9CHBuTgBgws6485/L8k8OZnUSABPnBAAmaoZ3/oc5CYAJcwIAEzTTO//DnATAhDkBgIlZwJ3/YU4CYIKcAMCELOTO/zAnATBBTgBgIhZ453+YkwCYECcAMAELvfM/zEkATIgTABiswJ3/YU4CYAKcAMBARe78D3MSABPgBAAGKXjnf5iTABjICQAMUPTO/zAnATCQEwDYM3f+z+AkAAZwAgB75M7/rJwEwABOAGBP3PkfyUkA7JETANgDd/5rcRIAe+QEAHbMnf/GnATAHjgBgB1y538sTgJgD5wAwI648z8xJwGwQ04AYAcs/624LMmdq/+WwJYJANgyx/5b5XEA7IhHALBF7vx3xuMA2DInALAl7vx3ykkAbJkTANgCd/574yQAtsQJAJyQO/+9chIAWyIA4ARWy/+9sfz36dIkd4gAOBkBAMdk+Q8lAuCEBAAcg+U/CSIATkAAwIYs/0kRAXBMAgA2YPlPkgiAYxAAsCbLf9JEAGxIAMAaLP9ZEAGwAQEAR7D8Z0UEwJoEAJyH5T9LIgDWIADgHCz/WRMBcAQBAGdh+S+CCIDzEABwiOW/KCIAzkEAwBks/0USAXAWAgBWLP9FEwFwiACAWP5FiAA4gwCgPMu/FBEAKwKA0iz/kkQARABQmOVfmgigPAFASZY/EQEUJwAox/LnDCKAsgQApVj+nIUIoCQBQBmWP+chAihHAFCC5c8aRAClCAAWz/JnAyKAMgQAi2b5cwwigBIEAItl+XMCIoDFEwAskuXPFogAFk0AsDiWP1skAlgsAcCiWP7sgAhgkQQAi2H5s0MigMURACyC5c8eiAAWRQAwe5Y/eyQCWAwBwKxZ/gwgAlgEAcBsWf4MJAKYPQHALBVc/h8ePcAGPjB6gD0RAcyaAGB2Ci7/v03yltFDbOCPk/zN6CH2RAQwWwKAWSm6/G9K8sToQTZwOslrIwJg0gQAs1F1+ffevzR6kE313p+ICIBJEwDMguU/PyIApk0AMHmW/3yJAJguAcCkWf7zJwJgmgQAk2X5L4cIgOkRAEyS5b88IgCmRQAwOZb/cokAmA4BwKRY/ssnAmAaBACTYfnXIQJgPAHAJFj+9YgAGEsAMJzlX5cIgHEEAENZ/ogAGEMAMIzlz5NEAOyfAGAIy5/DRADslwBg7yx/zkUEwP4IAPbK8ucoIgD2QwCwN5Y/6xIBsHsCgL2w/NmUCIDdEgDsnOXPcYkA2B0BwE5Z/pyUCIDdEADsjOXPtogA2D4BwE5Y/mybCIDtEgBsneXProgA2B4BwFZZ/uyaCIDtEABsjeXPvogAODkBwFZY/uybCICTEQCcmOXPKCIAjk8AcCKWP6OJADgeAcCxWf5MhQiAzQkAjsXyZ2pEAGxGALAxy5+pEgGwPgHARix/pk4EwHoEAGuz/JkLEQBHEwCsxfJnbkQAnJ8A4EiWP3MlAuDcBADnZfkzdyIAzk4AcE6WP0shAuCZBABnZfmzNCIAnk4A8AyttcuTvCeWPwuzioCbc/BrXsGlSW5vrX3D6EGYHgHA07TWvjrJ7UkuHz3Lnlj+xax+rW9KnQi4PAcRcMnoQZgWAcBTWmstyS1JqhwZWv5FrX7NX506jwO+Pcmtq/c4JBEAPN3rk7xy9BB7YvkXV/BxwI8m+cXRQzAdAoAkSWvt0iS/M3qOPbH8SVLyJODNrbXnjR6CaRAAPOn3knzV6CH2wPLnaYqdBHxlkjeNHoJpEAA8+an/14yeYw8sf86q2EnAz7TWvnH0EIwnAEiSX05y0eghdszy57wKnQQ8Oz4LQARAea21C5L81Og5dszyZy2FTgJe21q7cPQQjCUAuCbJkr8kxPJnI0VOAi5L8p2jh2AsAcB1owfYIcufYylyErDk9z5rEAB89+gBdsTy50QK/OyApb73WZMA4KrRA+yA5c9WLDwClvjeZwMCgK8fPcCWWf5s1YIjwBcCFScAeO7oAbbI8mcnFhoBF48egLEEAEth+bNTC40AChMAPDp6gC2w/NmLhUXAZ0cPwFgCgE+NHuCELH/2akERMPf3PickAPj46AFOwPJniIVEwJzf+2yBAODfRg9wTJY/Qy0gAub63mdLBADvHT3AMVj+TMLMvzZ4ju99tkgAcFeS+0cPsQHLn0mZ6dcGn0ry76OHYCwBUFzv/XSSd4yeY02WP5M0w5OAt6/e+xQmAEiSP0nyxdFDHMHyZ9JmdBLwpSR/PnoIxhMApPd+f5JbR89xHpY/szCTk4C/7L3/z+ghGE8A8KQ3JHl49BBnYfkzKxM/CfhskjeOHoJpEAAkSXrv/5uDCJgSy59ZmvBJwG/13h8aPQTTIAA4058l+bvRQ6xY/szaBE8C3p3kraOHYDoEAE/pvfckP5fk7sGjWP4swoROAu5OcvPqPQ5JBACH9N4fTnJjDv6c8AiWP4uy+n/5poyLgFNJbly9t+EpAoBn6L0/kOT7k9yz50u/I5Y/C3TG44C/2vOlP5nk+tV7Gp5GAHBWvff7krws+/u+8D9I8tOWP0u1ehzwuiR/uKdL3pXk2t77vkOemRAAnNPq08IvTXLLDi/zaJLX9N5/0zeTsXS999O991/PwQ8RenSHl/qLJC/rvX96h9dg5gQA59V7f7z3/rokr8j2f2bAPyW5uvc+l68ihq3ovb89yXckuX3LL30qyY/03n++9/74ll+bhREArKX3/vdJvjXJr+VkIdCT/EuSG3rvL/eNZFTVe7+v935jkh/KwXviJE4l+dUkV/Xe//HEw1FC86dC2FRr7YIk1+fgVOC6JC9McuF5/pXHknw4yR1J3tl7/8TOh1yY1tqrkrxz9BxrenXv/bbRQ8xNa+3KJD+Zg/fU9yZ5znn+8SeSfDQHP9L33Unu8AiNTQkATqy1dlGSb0ryvCRfnoPfuB5O8rkk9/XeHxw43iIIgHpaa5cleUGSr0hySQ5C+vNJHszB+2rqP8CLiXvW6AGYv9VvRB9f/QVswSqcxTM74zMAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJABgHvroATYwp1mhLAEA8/D46AE28PnRAwBHEwAwD58bPcAGHhs9AHA0AQDz8JnRA2xgTrNCWa13j+tg6lprz0nySJI2epYj9CTP7b3P6cQCSnICADPQe38syf2j51jDKcsf5kEAwHx8aPQAa/jg6AGA9QgAmI/3jR5gDe8fPQCwHp8BgJlorV2a5MFMN9xPJ7m89/6p0YMAR5vqbyTAIb33T2fapwB3Wv4wHwIA5uWPRg9wHm8ZPQCwPo8AYEZaaxck+UiSq0fPcsh/JHlJ7/306EGA9TgBgBlZLdhfGT3HWfyG5Q/zIgBgZnrvdyR52+g5znBL7/2fRw8BbMYjAJih1trFSe5KctXgUT6W5HtWX1QEzIgTAJih3vsjSV6e5KGBYzyU5Ictf5gnAQAz1Xv/ZJIbMuYrgk8luaH3ft+AawNbIABgxnrvH01ybZJ/3eNlP5Tk2tW1gZkSADBzvfcHknxfkt9N8sUdXuoLSX47yUt77w/u8DrAHvgQICxIa+3KHITAjye5cEsv+0SSdyV5Q+/93i29JjCYAIAFaq1dkeQXkrwqyRXHfJl7k9yW5K2rzxsACyIAYOFaay/KwecErknyzUlekOSSJBev/pFHkjyc5L4k9+Tg8wQf9Iwflk0AAEBBPgQIAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAUJAAAoCABAAAFCQAAKEgAAEBBAgAAChIAAFCQAACAggQAABQkAACgIAEAAAUJAAAoSAAAQEECAAAKEgAAUJAAAICCBAAAFCQAAKAgAQAABQkAAChIAABAQQIAAAoSAABQkAAAgIIEAAAU9P9t4s9H/I0u2QAAAABJRU5ErkJggg==" />
+                        </defs>
+                      </svg>
+                      View:
+                      <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_162_12298)" />
+                        <defs>
+                          <pattern id="pattern0_162_12298" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_162_12298" transform="scale(0.00195312)" />
+                          </pattern>
+                          <image id="image0_162_12298" width="512" height="512"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAACXBIWXMAAOw4AADsOAFxK8o4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAACrBJREFUeJzt2SGPrdUZhuF3NSNIjgPqcZUET0NNdf8BjgRRwamEVBGQh4oKEhz/oLqGAr5B1h3PaR0JblW0YkCf/S2y7+tKRr9PJl/2vme+NTN74OX4dO/90ekRMzNrrW9m5u3TO7gL3+69f3t6xMzMWuuTmfnw9A7uw69ODwAAricAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIerjw1p9n5ocL7/FTH8/Mk9Mj7tCfTg+Ie3Z6wJ36x8z87fSIsHdm5g+3PnJlAHy+935x4T0eWWt9NALgpdt7f3Z6Q9laSwDcxj892+estWYuCACvAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAEPVx46+O11o8X3uOnnpwecI/WWp+d3gA38I5n+6i3rjhyZQC8f+EtuMoHpwfADbw1F30JcY5XAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAh6mJlPT4/gbnx1esAjX87M16dHcBeenx7wyFenB3A/1t779AYA4GJeAQBAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABA0JqZb06P4G58uff+4vSImZm11l9n5s3TO7gL3+29/3h6xMzMWuu9mXn39A7uw8PMvH16BHfj69MDHnlzPNvcnzfGc81L4hUAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAgh4uvPXrvfeLC+/xyFrrxcy8dnrHvdl7r9MbytZa+/SGO/WXvffT0yOq1lpPZ+bZre/4DwAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEEPF976fq114Tm4vbXWPr0BbuCDtdYHp0dwW/4DAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgKCHmfn29AjuxvPTAx757vQA7sYv6Vl6Pj6zeUnW3vv0BgDgYl4BAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAEDQmplPTo/gbny19/776REzM2ut92bmjdM7uAvP995fnB4xM7PW+v3M/O70Du7Dw8x8eHoEd+UXEQAz8+7MvH16BHfh25n5RQTA/O/L32c2L4VXAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABD1ceOs/M7MvvMdPvToz6/SIO/Tv0wPiXjs94E79ODM/nB4R9srMPLn1kSsD4Dd77xcX3uORtdaL8WH50u29Xz+9oWyt5Y+K2/h87/309IiqtdbTmXl26zteAQBAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIerjw1qtrrQvP8TN++Tew1nr99Aa4gVc820c9ueLIlQHwrwtvwVW+Pz0AbuD9//9wx7wCAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAIAgAQAAQQIAAIIEAAAECQAACBIAABAkAAAgSAAAQJAAAICg/wIgo3dQ8JdFywAAAABJRU5ErkJggg==" />
+                        </defs>
+                      </svg>
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="40" height="40" fill="url(#pattern0_162_12299)" />
+                        <defs>
+                          <pattern id="pattern0_162_12299" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_162_12299" transform="scale(0.00195312)" />
+                          </pattern>
+                          <image id="image0_162_12299" width="512" height="512"
+                            xlink:href="data:image/png;base64,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AAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQdDs94KJ+rLV+nR5xMX8edPfbg+4C/Nf2zJzeAAC8M68AACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACBIAABAkAAAgCABAABBAgAAggQAAAQJAAAIEgAAECQAACDoL+4PPISEqJyNAAAAAElFTkSuQmCC" />
+                        </defs>
+                      </svg>
+                    </span>
+                  </span>
+                </h2>
+              </div>
+            </nav>
+            <!-- navbar -->
+            <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
+              <div class="container-fluid d-flex flex-nowrap bg-dark py-2">
+                <!--search box-->
+                <div class="d-flex align-items-center bg-white w-50 h-50 rounded-2 border border-dark mt-2 px-2">
+                  <img src="../assets/images/search-icon.svg" alt="Search" class="me-2"
+                    style="width: 20px; height: 20px" />
+                  <input type="text" class="flex-grow-1 border-0" placeholder=" Search..." />
+                  <button type="button" class="btn p-0 ms-2">
+                    <img src="../assets/images/close-icon2.svg" alt="Close" style="width: 15px; height: 15px;" />
+                  </button>
+                </div>
+                <div class="navbar navbar-expand-md d-flex justify-content-end">
+                  <!-- navbar toggler -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <img src="../assets/images/Filter.svg" alt="filter" style="width: 30px; height: 30px;" />
+                  </button>
+                  <!-- end navbar toggler -->
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-0">
+                      <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownBrowseJobsDate"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Date
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-light"
+                          aria-labelledby="navbarDropdownBrowseJobsDate">
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">
+                              - Any -(5)
+                            </a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">May 2024(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">April 2024(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">March 2024(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-0 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">February 2024(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-0 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">January 2024(5)</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownBrowseJobsCity"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          City
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-light" style="width:auto;"
+                          aria-labelledby="navbarDropdownBrowseJobsCity">
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1"">
+                             All
+                            </a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item border border-start-0 border-top-0 border-end-0 border-dark
+                                text-dark" href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Cairo</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Giza</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Alexandria</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Sadat City</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Aswan</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Luxor</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Hurghada</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Sharm El Sheikh</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Ismailia</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Sohag</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">6th of October City</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">10th of Ramadan City</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownBrowseJobsCategory"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-light"
+                          aria-labelledby="navbarDropdownBrowseJobsCategory">
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">
+                              All(5)
+                            </a>
+                          </li>
+                          <li>
+                            <a class=" dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Arts(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Education(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Business(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Sales(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Communications(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Finance(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Legal(5)</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#">
+                              <input type="checkbox" class="float-start ms-2 form-check-input" id="checkbox1"
+                                name="optcheckbox" value="option1">Technology(5)</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-flex align-self-start justify-content-between">
+                  <!-- Account Dropdown --showing on mobiles on bottom-->
+                  <div class="dropdown" id="account-icon-bottom">
+                    <a class="nav-link px-2" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="../assets/images/account.svg" alt="account" class="bi mt-2 bi-person-circle" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="accountDropdown">
+                      <li><a class="dropdown-item text-white" href="#">Login</a></li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Register</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Profile</a>
+                      </li>
+                      <li><a class="dropdown-item text-white" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">
+                  Jobs Name
+                </h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi feugiat tristique purus penatibus
+                  mauris nam libero. Non aliquam varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                  vitae nunc urna sodales mauris. Vulputate sit est pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold w-25 px-5 py-2 m-auto">
+                    Apply Job
+                  </button>
+                </div>
+              </div>
+              <h5 class="ms-3 fs-3 fw-bold">
+                If you dont Found your jobs , click
+                <a href="#" class="text-primary">
+                  here
+                </a> 
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of single card-->
+    </div>
+    <!--end of content-->
+
+    <!-- Footer Start -->
+    <footer class="bg-primary mt-3" class="footer d-flex flex-column">
+      <div class="p-5 container-fluid">
+        <div class="row justify-content-between g-0">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="img-container text-center">
+              <img src="../assets/images/logo.png" alt="Logo" />
+            </div>
+            <!-- <p class="fs-1">HRs Magazin</p> -->
+            <p class="font-italic text-light fw-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
+              pellentesque dictum posuere id diam rutrum.
+            </p>
+            <!-- Social links -->
+            <div class="d-flex justify-content-center">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/facebook.svg" class="icon" alt="facebook" />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/twitter.svg" class="icon" alt="twitter" />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/youtube.svg" alt="youtube" />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/instagram.svg" class="icon" alt="instagram" />
+                  </div>
+                </li>
+                <li class="list-inline-item">
+                  <div class="icon-circle me-2">
+                    <img src="../assets/images/linkedin.svg" class="icon" alt="linkedin" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Two colums of links div-->
+          <div class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center">
+            <div class="col-lg-6 mb-lg-0 fw-semibold">
+              <ul class="list-unstyled mb-0 text-center">
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Articles</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Workplace Culture</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Ladies in HR</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">About us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 mb-lg-0 fw-semibold">
+              <ul class="list-unstyled mb-0 text-center">
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Events</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Community</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Careers</a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="text-light link-underline link-underline-opacity-0">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Third Column: Subscription Form -->
+          <div class="col-lg-4 col-md-6 text-white text-center bg-dark rounded-4 py-4 px-5">
+            <h6 class="text-uppercase mb-4 oran-font fs-4">Stay In Touch</h6>
+            <p class="small mb-4">
+              To be updated with all the latest news, offers and special
+              announcements.
+            </p>
+            <form class="d-flex flex-column align-items-center">
+              <input type="email" class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder"
+                placeholder="Your email address" />
+              <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
+              <button type="submit" class="btn btn-lg btn-primary text-white rounded-pill px-4 oran-font fs-4">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Copyrights -->
+      <div class="bg-dark">
+        <div class="container">
+          <div class="row text-light">
+            <div class="col-md-6">
+              <div class="copyright-menu in">
+                <ul class="d-flex flex-row list-unstyled mt-3 justify-content-start">
+                  <li class="me-5">
+                    <a href="#" class="text-light link-underline link-underline-opacity-0">Privacy Policy</a>
+                  </li>
+                  <li class="mx-4">
+                    <a href="#" class="text-light link-underline link-underline-opacity-0">Terms & Conditions</a>
+                  </li>
+
+                  <li class="mx-5">
+                    <a href="#" class="text-light link-underline link-underline-opacity-0">Sitmap</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-md-6 text-light d-flex justify-content-end align-items-center me-0">
+              <span>© Copyright 2024 HRs Magazin
+                <span>|</span>
+                <span>Registered in Egypt No. 02120366</span>
+              </span>
+            </div>
+            <!-- End col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </main>
+</body>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/date.js"></script>
+
+</html>

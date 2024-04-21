@@ -840,18 +840,32 @@
                           />
                         </svg>
                         <a
-                          class="replyicon text-light"
+                          class="replyicon text-light ms-2"
                           href="#"
                           onclick="toggleReplyBox()"
                           >Reply</a
                         >
                       </div>
-                      <div id="replyBox" style="display: none">
-                        <!-- reply box content -->
-                        <textarea class="form-control" rows="4"></textarea>
-                        <button>Comment</button>
-                      </div>
                     </div>
+                  </div>
+
+                  <div id="replyBox" class="block w-100" style="display: none">
+                    <!-- reply box content -->
+                    <textarea
+                      id="commentinput"
+                      class="form-control"
+                      rows="4"
+                    ></textarea>
+                    <button
+                      onclick="addComment()"
+                      class="btn btn-lg btn-primary text-white rounded-pill px-4 m-3"
+                    >
+                      Reply
+                    </button>
+                  </div>
+
+                  <div id="commentBox" class="block w-100">
+                    <!-- comments box content -->
                   </div>
                 </div>
               </div>

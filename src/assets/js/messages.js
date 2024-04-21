@@ -6,3 +6,7 @@ function toggleReplyBox() {
         replyBox.style.display = 'none';
     }
 }
+function addComment() {
+    const commentsarea = document.getElementById('commentBox');
+    commentsarea.innerHTML += '<p>' + document.getElementById("commentinput").value + '</p>'; 
+}

@@ -449,8 +449,7 @@
       <!--End of Navbar-->
 
       <!--content-->
-      <!--Start of Wellness Programs-->
-      <!-- breadcrumb -->
+      <!--Start of workplace-culture-->
       <section id="nav-author" class="bg-dark text-light py-3">
         <div class="container-fluid ps-3">
           <nav aria-label="breadcrumb">
@@ -461,30 +460,74 @@
                 >
               </li>
               <li class="breadcrumb-item active text-light" aria-current="page">
-                Wellness Programs
+                Professional Development
               </li>
             </ol>
           </nav>
-          <h2 class="fs-2 fw-bold">Wellness Programs</h2>
+          <h2 class="fs-2 fw-bold">Expert Interviews</h2>
           <p class="text-white-50 mb-0 fs-4">Thursday Dec 12 2023</p>
         </div>
       </section>
 
-      <div class="container-fluid g-0 bg-light pt-3 pb-5 px-5">
-        <!-- image header -->
-        <div
-          class="position-relative overflow-hidden mx-3 mb-3"
-          style="height: 695px"
-        >
-          <img
-            src="../assets/images/wellness-programs-header.png"
-            class="rounded image-center border border-dark border-4"
-            alt="WellnessPrograms-header-img"
-          />
+      <div class="container-fluid g-0 bg-light pt-3 px-lg-5 px-md-3">
+        <div class="card bg-light text-white mx-3 border-light">
+          <div class="ratio ratio-16x9">
+            <!-- Default Image -->
+            <img
+              src="../assets/images/video-image-exp-interview.svg"
+              alt="Default Video Image"
+              class="embed-cover"
+            />
+            <!-- Iframe for Video -->
+            <iframe
+              src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+              class="youtube-video embed-cover"
+              style="display: none"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+
+            <!-- Custom Play Button -->
+            <button
+              type="button"
+              class="btn position-absolute top-50 start-50 translate-middle"
+              aria-label="Play Video"
+              onclick="playVideo()"
+            >
+              <img
+                src="../assets/images/video-play-btn.svg"
+                alt="Play Video"
+                class="embed-cover-btn"
+              />
+            </button>
+          </div>
+          
         </div>
-        <!-- article -->
-        <div class="mx-auto" style="max-width: 1225px">
-          <article>
+        <div class="conatiner-fluid">
+          <div class="row justify-content-center my-3" >
+            <div class="col-xl-2 col-md-3 col-sm-6 align-self-center">
+              <div class="rounded-circle-container">
+                <img
+                  src="../assets/images/wellness-programs-profile.png"
+                  class="img-fluid"
+                  alt="User-Profile-Image"
+                />
+              </div>
+            </div>
+            <div class="col-xl-10 col-md-9 col-sm-6">
+              <h4 class="fw-bold mt-5 pb-2">Amged S. El-Hawrani</h4>
+              <p class="fs-4 fw-semibold mt-2 pb-2">
+                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
+                feugiat tristique purus penatibus mauris nam libero. Non aliquam
+                varius at amet lorem lobortis netus vulputate. Semper purus turpis
+                vitae nunc urna sodales mauris. Vulputate sit est pharetra velit
+                eget.
+              </p>
+            </div>
+          </div>
+          <article style="max-width: 90%;" class="mx-auto">
             <p>
               Lorem ipsum dolor sit amet consectetur. Est maecenas tellus nulla
               sed pulvinar fringilla accumsan quam. Orci lectus ornare nisi et
@@ -500,7 +543,7 @@
               eros vitae fusce quam fringilla in.
             </p>
 
-            <h2 class="fs-1">Title 1</h2>
+            <h2 class="fs-1">Title</h2>
             <p>
               Molestie interdum cras sit non magna vitae purus cum. Nisi in
               malesuada nunc eget id maecenas. Blandit porttitor quam tempus sed
@@ -512,7 +555,6 @@
               imperdiet enim diam viverra. Et egestas imperdiet tempor dictum
               leo eu.
             </p>
-
             <p>
               Sit suscipit neque mauris fames. Sit purus nullam in et. Massa
               aliquet neque scelerisque sed vestibulum porta velit scelerisque.
@@ -542,7 +584,6 @@
               ornare dignissim in sodales. Eu nam laoreet laoreet nunc morbi
               amet urna.
             </p>
-
             <p>
               Neque tincidunt enim ullamcorper nullam urna. Etiam interdum
               posuere laoreet enim enim imperdiet. Purus viverra in fusce
@@ -606,41 +647,12 @@
               proin sem facilisi lorem viverra
             </p>
           </article>
-        </div>
-        <!-- team info -->
-        <div class="row d-flex justify-content-center">
-          <div class="col-xl-2 col-md-3 col-sm-6">
-            <div class="mt-5 rounded-circle-container">
-              <img
-                src="../assets/images/wellness-programs-profile.png"
-                class="img-fluid"
-                alt="User-Profile-Image"
-              />
-            </div>
-          </div>
-          <div class="col-xl-10 col-md-9 col-sm-6">
-            <h4 class="fw-bold mt-5 pb-2">Amged S. El-Hawrani</h4>
-            <p class="fs-4 fw-semibold mt-2 pb-2">
-              Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
-              feugiat tristique purus penatibus mauris nam libero. Non aliquam
-              varius at amet lorem lobortis netus vulputate. Semper purus turpis
-              vitae nunc urna sodales mauris. Vulputate sit est pharetra velit
-              eget.
-            </p>
-          </div>
-        </div>
+      </div>
+      </div>
       </div>
 
-      <!-- add comments section -->
-      <div class="container-fluid py-3 g-0 justify-content-center">
-        <div class="mt-4 p-5 bg-dark text-white">
-          <h4 class="fw-bold">Add comments</h4>
-        </div>
-      </div>
-
-      <!--End of Wellness Programs-->
+      <!--End of workplace-culture-->
       <!--end of content-->
-
       <!-- Footer Start -->
       <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">

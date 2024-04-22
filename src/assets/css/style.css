@@ -789,3 +789,10 @@ a.dropdown-item {
 }
 
 /* end image circle */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

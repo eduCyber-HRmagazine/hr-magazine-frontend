@@ -7,7 +7,3 @@ function toggleReplyBox(replyBoxId) {
     }
 }
 
-function addComment() {
-    const commentsArea = document.getElementById('commentBox');
-    commentsArea.innerHTML += '<p>' + document.getElementById("commentinput").value + '</p>';
-}

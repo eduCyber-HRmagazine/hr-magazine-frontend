@@ -447,141 +447,454 @@
         <!--Bottom NavBar Ends-->
       </nav>
       <!--End of Navbar-->
-      <!--content-->
-      <div class="container-fluid">
-        <div class="row justify-content-center g-0">
-          <div class="col-12 text-center g-0">
-            <img
-              src="../assets/images/big-logo.svg"
-              alt="logo"
-              class="mb-3 img-fluid"
-            />
-          </div>
-        </div>
-        <!-- Profile Users Account Start  -->
-        <div class="row justify-content-center">
-          <div class="col-xl-12 col-md-12 col-sm-12 bg-dark rounded-0 h-25">
-            <h1 class="text-white py-5 fw-bold text-center">Users Profile</h1>
-          </div>
-        </div>
-        <div class="row overflow-auto" style="max-height: 200vh">
-          <div class="col-xl-4 col-md-0 col-sm-0 bg-primary">
-            <div class="navbar navbar-expand-xl">
-              <div class="card-block text-center text-white">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasScrolling"
-                  aria-controls="offcanvasScrolling"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="offcanvas offcanvas-start bg-primary text-center text-white"
-                  tabindex="-1"
-                  data-bs-scroll="true"
-                  id="offcanvasScrolling"
-                  aria-labelledby="offcanvasScrollingLabel"
-                >
-                  <div class="offcanvas-header float-end">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
+
+      <!-- start of content -->
+
+      <div class="bg-light py-5 mb-5">
+        <div class="container-fluid">
+          <h2 class="ps-4 fw-bold">HRs Legal and Compliance</h2>
+          <!-- video -->
+          <div class="row m-auto gy-0 pt-4">
+            <div class="col">
+              <div class="card bg-light text-white mx-3 border-light">
+                <div class="ratio ratio-16x9">
+                  <!-- Default Image -->
                   <img
-                    src="../assets/images/profile.jpeg"
-                    class="img-fluid rounded-circle m-4"
-                    alt="User-Profile-Image"
-                    style="aspect-ratio: 1"
+                    src="../assets/images/legal-compliance-video.svg"
+                    alt="Default Video Image"
+                    class="embed-cover"
                   />
-                  <a
-                    href="profile-users-account.html"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item active pb-2 d-block"
-                    style="width: 250px"
-                    >Account</a
+                  <!-- Iframe for Video -->
+                  <iframe
+                    src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                    class="youtube-video embed-cover"
+                    style="display: none"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
                   >
-                  <a
-                    href="profile-users.html"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Profile</a
+                  </iframe>
+
+                  <!-- Custom Play Button -->
+                  <button
+                    type="button"
+                    class="btn position-absolute top-50 start-50 translate-middle"
+                    aria-label="Play Video"
+                    onclick="playVideo()"
                   >
-                  <a
-                    href="#"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Newsletters</a
-                  >
-                  <a
-                    href="#"
-                    class="text-decoration-none mx-auto fw-bold fs-1 offcanvas-item pb-2 d-block"
-                    style="width: 250px"
-                    >Logout</a
-                  >
+                    <img
+                      src="../assets/images/video-play-btn.svg"
+                      alt="Play Video"
+                      class="embed-cover-btn"
+                    />
+                  </button>
+                </div>
+
+                <!-- <div
+                class="gradient position-absolute start-0 top-0 w-100 h-100"
+                  ></div>-->
+                <div class="card-img-overlay overflow-auto responsive-card">
+                  <h5 class="card-title fs-card-xl">
+                    HRs Legal and compliance
+                  </h5>
+                  <p class="fw-semibold fs-card-l">Thursday Dec 12 2023</p>
+                  <p class="fw-semibold fs-card-md">Nadia S. El-Hawrani</p>
+                  <p class="fs-card-sm open-font fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris. Vulputate sit est pharetra velit eget.....<a
+                      href="#"
+                      class="fw-bold text-decoration-none text-white"
+                      >Read more</a
+                    >
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-8 col-md-12 col-sm-12">
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Name</h3>
-                  <h6 class="px-3 pb-2 text-muted">Amged S.El-Hawrani</h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Email</h3>
-                  <h6 class="px-3 pb-2 text-muted">
-                    Amged S.El-Hawrani@gmail.com
-                  </h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="block border border-dark border rounded-4 mt-4 mx-4">
-              <div class="row">
-                <div class="col-xl-9 col-md-9 col-sm-9">
-                  <h3 class="px-3 pt-3 pb-2 fw-bold">Password</h3>
-                  <h6 class="px-3 pb-2 text-muted">**********</h6>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3">
-                  <button
-                    class="bg-light border-0 text-danger fw-semibold fs-2 me-5 my-3 float-end"
-                    href="#"
-                  >
-                    Edit
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Profile Users Account End  -->
+          <!-- end video -->
         </div>
       </div>
+
+      <!-- cards -->
+      <div class="bg-primary py-5 mb-5 justify-content-center">
+        <div class="container-fluid">
+          <div class="row gx-4 gy-5">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img1.png"
+                  class="card-img-top rounded-top img-fluid"
+                  alt="legal-compliance-img1"
+                  style="height: 390px"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img2.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img2"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img3.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img3"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img4.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img4"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img5.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img5"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img6.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img6"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img7.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img7"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img8.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img8"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img9.png"
+                  class="card-img-top rounded-top img-fluid"
+                  style="height: 390px"
+                  alt="legal-compliance-img9"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img10.jpg"
+                  class="card-img-top rounded-top img-fluid"
+                  alt="legal-compliance-img10"
+                  style="height: 390px"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img11.jpg"
+                  class="card-img-top rounded-top img-fluid"
+                  alt="legal-compliance-img11"
+                  style="height: 390px"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card h-100 border-0">
+                <img
+                  src="../assets/images/legal-compliance-img12.jpg"
+                  class="card-img-top rounded-top img-fluid"
+                  alt="legal-compliance-img12"
+                  style="height: 390px"
+                />
+                <div class="card-body bg-dark text-white pt-4">
+                  <h4 class="card-title">HRs Legal Industry Updates</h4>
+                  <h5>Thursday Dec 12 2023</h5>
+                  <h6>Amged S. El-Hawrani</h6>
+
+                  <p class="card-text fw-semibold">
+                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                    faucibus mi feugiat tristique purus penatibus mauris nam
+                    libero. Non aliquam varius at amet lorem lobortis netus
+                    vulputate. Semper purus turpis vitae nunc urna sodales
+                    mauris....
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none fw-bold readMoreLink"
+                    >
+                      Read more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end bg primary-->
+        </div>
+      </div>
+      <!-- end cards -->
+
       <!--end of content-->
+
       <!-- Footer Start -->
       <footer class="bg-primary mt-3" class="footer d-flex flex-column">
         <div class="p-5 container-fluid">
@@ -790,7 +1103,10 @@
       </footer>
       <!-- Footer End -->
     </main>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/date.js"></script>
+    <!--youtube api needed.....also video-play.js*/-->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../assets/js/play-video.js"></script>
   </body>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/date.js"></script>
 </html>

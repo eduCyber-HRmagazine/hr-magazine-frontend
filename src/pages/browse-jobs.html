@@ -1,867 +1,1390 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR's Magazin</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/Red Black Minimalistic Square It Software Logo 1.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HR's Magazin</title>
-  <link rel="shortcut icon" href="../assets/images/Red Black Minimalistic Square It Software Logo 1.png"
-    type="image/png" />
-  <link rel="stylesheet" href="../assets/css/main.min.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-
-<body>
-  <main class="p-0">
-    <!-- navbar -->
-    <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
-      <!--Top-nav start-->
-      <div id="top-nav" class="container-fluid bg-primary">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-          <div id="date-trend" class="d-flex justify-content-center align-items-center">
-            <!-- Left Side: Today's Date -->
-            <div id="currentDate" class="navbar-brand text-white me-5 pe-3"></div>
-            <!-- Center: News, Trends, and Animated Text -->
-            <div class="trend-animated-txt d-flex justify-content-center align-items-center">
-              <a id="trend" href="#" class="nav-link text-white bg-dark text-center p-3">News and Trends</a>
-              <div class="text-animation text-white pb-4 ms-3">
-                <div>HR Magazine News and Trends</div>
-                <div>Ladies in HR News</div>
-                <div>HR Training and Development News</div>
-                <div>HR Industry Trends and Insights</div>
+  <body>
+    <main class="p-0">
+      <!-- navbar -->
+      <nav class="container-fluid navbar fw-semibold p-0 m-0 mb-3">
+        <!--Top-nav start-->
+        <div id="top-nav" class="container-fluid bg-primary">
+          <div
+            class="container-fluid d-flex justify-content-between align-items-center"
+          >
+            <div
+              id="date-trend"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <!-- Left Side: Today's Date -->
+              <div
+                id="currentDate"
+                class="navbar-brand text-white me-5 pe-3"
+              ></div>
+              <!-- Center: News, Trends, and Animated Text -->
+              <div
+                class="trend-animated-txt d-flex justify-content-center align-items-center"
+              >
+                <a
+                  id="trend"
+                  href="#"
+                  class="nav-link text-white bg-dark text-center p-3"
+                  >News and Trends</a
+                >
+                <div class="text-animation text-white pb-4 ms-3">
+                  <div>HR Magazine News and Trends</div>
+                  <div>Ladies in HR News</div>
+                  <div>HR Training and Development News</div>
+                  <div>HR Industry Trends and Insights</div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Side: Language, Account -->
+            <div class="d-flex align-items-center">
+              <!--language-->
+              <a
+                href="#"
+                class="fs-4 fw-bold nav-link text-white"
+                id="languageToggle"
+                >EN</a
+              >
+              <!-- Account Dropdown --showing in large screens and tablets on top-->
+              <div class="dropdown" id="account-icon-top">
+                <a
+                  class="nav-link px-2"
+                  href="#"
+                  role="button"
+                  id="accountDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/images/account.svg"
+                    alt="account"
+                    class="bi bi-person-circle"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                  aria-labelledby="accountDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Login</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Register</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Logout</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- Right Side: Language, Account -->
-          <div class="d-flex align-items-center">
-            <!--language-->
-            <a href="#" class="fs-4 fw-bold nav-link text-white" id="languageToggle">EN</a>
-            <!-- Account Dropdown --showing in large screens and tablets on top-->
-            <div class="dropdown" id="account-icon-top">
-              <a class="nav-link px-2" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img src="../assets/images/account.svg" alt="account" class="bi bi-person-circle" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="accountDropdown">
-                <li>
-                  <a class="dropdown-item text-white" href="#">Login</a>
+        </div>
+        <!--Top-nav Ends-->
+        <!-- Mid Nav Start -->
+        <div id="mid-nav" class="container-fluid bg-white">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+              <!-- Logo Section -->
+              <div class="col-12 col-md-auto mb-3 mb-md-0">
+                <a
+                  href="#"
+                  class="navbar-brand d-flex justify-content-center justify-content-md-start"
+                >
+                  <img
+                    src="../assets/images/logo-s.png"
+                    alt="Logo"
+                    class="d-inline-block align-text-top"
+                  />
+                </a>
+              </div>
+              <!-- Contact and Social Icons Section -->
+              <div
+                id="social-icon-container"
+                class="col-12 col-md-auto"
+                style="margin-right: 2vw"
+              >
+                <div class="text-center">
+                  <p>Contact Us</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/facebook.svg"
+                        class="icon"
+                        alt="facebook"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/twitter.svg"
+                        class="icon"
+                        alt="twitter"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img src="../assets/images/youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/insta.svg"
+                        class="icon"
+                        alt="instagram"
+                      />
+                    </div>
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/link.svg"
+                        class="icon"
+                        alt="linkedin"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Mid Nav Ends-->
+        <!--Bottom Nav starts-->
+        <div class="container-fluid d-flex flex-nowrap bg-primary py-2">
+          <div class="navbar navbar-expand-md">
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end navbar toggler -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="#">Home</a>
                 </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownArticles"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Articles
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownArticles"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Industry News and Updates</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Trends and Insights</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Global HR Perspectives</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Expert Interviews</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Professionals Spotlights</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Training and Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#">Authors</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownLadiesInHR"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ladies in HR
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownLadiesInHR"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Case Studies</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Journey to Excellence</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownWorkplaceCulture"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Workplace Culture
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownWorkplaceCulture"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Workplace Culture</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Wellness Programs</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Mental Health in the Workplace</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Diversity, Equity and Inclusion (DEI)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownEvents"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Events
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownEvents"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Upcoming Events</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Event Calendar</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Latest Events</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="#">Community</a>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a
+                    class="nav-link text-white dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownCareers"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Careers
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDropdownCareers"
+                  >
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >Browse Jobs</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-white" href="#"
+                        >For Employers</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex align-self-start justify-content-between">
+            <!-- Account Dropdown --showing on mobiles on bottom-->
+            <div class="dropdown" id="account-icon-bottom">
+              <a
+                class="nav-link px-2"
+                href="#"
+                role="button"
+                id="accountDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../assets/images/account.svg"
+                  alt="account"
+                  class="bi mt-2 bi-person-circle"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                aria-labelledby="accountDropdown"
+              >
+                <li><a class="dropdown-item text-white" href="#">Login</a></li>
                 <li>
                   <a class="dropdown-item text-white" href="#">Register</a>
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">Profile</a>
                 </li>
-                <li>
-                  <a class="dropdown-item text-white" href="#">Logout</a>
-                </li>
+                <li><a class="dropdown-item text-white" href="#">Logout</a></li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      <!--Top-nav Ends-->
-      <!-- Mid Nav Start -->
-      <div id="mid-nav" class="container-fluid bg-white">
-        <div class="container-fluid">
-          <div class="row justify-content-between align-items-center">
-            <!-- Logo Section -->
-            <div class="col-12 col-md-auto mb-3 mb-md-0">
-              <a href="#" class="navbar-brand d-flex justify-content-center justify-content-md-start">
-                <img src="../assets/images/logo-s.png" alt="Logo" class="d-inline-block align-text-top" />
-              </a>
-            </div>
-            <!-- Contact and Social Icons Section -->
-            <div id="social-icon-container" class="col-12 col-md-auto" style="margin-right: 2vw">
-              <div class="text-center">
-                <p>Contact Us</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/facebook.svg" class="icon" alt="facebook" />
-                  </div>
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/twitter.svg" class="icon" alt="twitter" />
-                  </div>
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/youtube.svg" alt="youtube" />
-                  </div>
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/insta.svg" class="icon" alt="instagram" />
-                  </div>
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/link.svg" class="icon" alt="linkedin" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Mid Nav Ends-->
-      <!--Bottom Nav starts-->
-      <div class="container-fluid d-flex flex-nowrap bg-primary py-2">
-        <div class="navbar navbar-expand-md">
-          <!-- navbar toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- end navbar toggler -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item me-3">
-                <a class="nav-link text-white" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownArticles" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Articles
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownArticles">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Industry News and Updates</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Trends and Insights</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Global HR Perspectives</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Expert Interviews</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Professionals Spotlights</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Training and Development</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Authors</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownLadiesInHR" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Ladies in HR
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownLadiesInHR">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Case Studies</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Journey to Excellence</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownWorkplaceCulture"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Workplace Culture
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownWorkplaceCulture">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Workplace Culture</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Wellness Programs</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Mental Health in the Workplace</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Diversity, Equity and Inclusion (DEI)</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownEvents" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Events
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownEvents">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Upcoming Events</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Event Calendar</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Latest Events</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link text-white" href="#">Community</a>
-              </li>
-              <li class="nav-item dropdown me-3">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownCareers" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Careers
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownCareers">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Browse Jobs</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">For Employers</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="d-flex align-self-start justify-content-between">
-          <!-- Account Dropdown --showing on mobiles on bottom-->
-          <div class="dropdown" id="account-icon-bottom">
-            <a class="nav-link px-2" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <img src="../assets/images/account.svg" alt="account" class="bi mt-2 bi-person-circle" />
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="accountDropdown">
-              <li><a class="dropdown-item text-white" href="#">Login</a></li>
-              <li>
-                <a class="dropdown-item text-white" href="#">Register</a>
-              </li>
-              <li>
-                <a class="dropdown-item text-white" href="#">Profile</a>
-              </li>
-              <li><a class="dropdown-item text-white" href="#">Logout</a></li>
-            </ul>
-          </div>
 
-          <!--search box-->
-          <div class="dropdown">
-            <div class="ms-auto dropdown">
-              <a class="nav-link mt-1" href="#" role="button" data-bs-toggle="dropdown">
-                <img src="../assets/images/search-icon-black-circle.svg" alt="Search" class="img-fluid mt-2" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end search-menu bg-dark" style="width: 320px">
-                <li>
-                  <div class="d-flex align-items-center bg-white rounded-pill border border-dark mt-2 px-2">
-                    <img src="../assets/images/filter-icon.svg" alt="Filter" class="me-2"
-                      style="width: 20px; height: 20px" />
-                    <div class="border-end me-2" style="height: 20px"></div>
-                    <img src="../assets/images/search-icon.svg" alt="Search" class="me-2"
-                      style="width: 20px; height: 20px" />
-                    <input type="text" class="flex-grow-1 border-0" placeholder=" Search..." />
-                    <button type="button" class="btn p-0">
-                      <img src="../assets/images/close-icon.svg" alt="Close" style="width: 15px; height: 15px" />
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Bottom NavBar Ends-->
-    </nav>
-    <!--End of Navbar-->
-
-    <!-- start of content -->
-    <div class="container-fluid">
-      <!--the image-->
-      <div class="row bg-dark px-5 py-4 mb-3">
-        <h3 class="fw-bold fs-2 text-white pb-2 pt-3 text-center">
-          HRs Magazine Jobs
-        </h3>
-        <div class="col">
-          <div class="card bg-dark text-white landing-img mx-lg-3 mx-md-3 mx-1" style="height: 695px">
-            <img src="../assets/images/browse-jobs.jpeg" class="card-img rounded-4 image-center" alt="..." />
-          </div>
-        </div>
-      </div>
-      <!--single Card-->
-      <div class="row align-items-center justify-content-center bg-primary mt-4 px-3">
-        <div class="m-3 bg-light border-0">
-          <div class="row g-0 align-items-center justify-content-center">
-            <nav>
-              <div class="col my-4">
-                <h2 class="fw-bold">
-                  Available Jobs
-                  <span class="float-end">
-                    Sort By:
-                    <span class="dropdown">
-                      <button type="button" class="bg-light border-0 text-muted dropdown-toggle"
-                        data-bs-toggle="dropdown">
-                        Publish Date
+            <!--search box-->
+            <div class="dropdown">
+              <div class="ms-auto dropdown">
+                <a
+                  class="nav-link mt-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="../assets/images/search-icon-black-circle.svg"
+                    alt="Search"
+                    class="img-fluid mt-2"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end search-menu bg-dark"
+                  style="width: 320px"
+                >
+                  <li>
+                    <div
+                      class="d-flex align-items-center bg-white rounded-pill border border-dark mt-2 px-2"
+                    >
+                      <img
+                        src="../assets/images/filter-icon.svg"
+                        alt="Filter"
+                        class="me-2"
+                        style="width: 20px; height: 20px"
+                      />
+                      <div class="border-end me-2" style="height: 20px"></div>
+                      <img
+                        src="../assets/images/search-icon.svg"
+                        alt="Search"
+                        class="me-2"
+                        style="width: 20px; height: 20px"
+                      />
+                      <input
+                        type="text"
+                        class="flex-grow-1 border-0"
+                        placeholder=" Search..."
+                      />
+                      <button type="button" class="btn p-0">
+                        <img
+                          src="../assets/images/close-icon.svg"
+                          alt="Close"
+                          style="width: 15px; height: 15px"
+                        />
                       </button>
-                      <ul class="dropdown-menu dropdown-menu-dark bg-light"
-                        aria-labelledby="navbarDropdownBrowseJobsDate">
-                        <li>
-                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">All</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
-                            href="#">Today</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
-                            href="#">This Week</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
-                            href="#">This Month</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
-                            href="#">This Year</a>
-                        </li>
-                      </ul>
-                    </span>
-                  </span>
-                </h2>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </nav>
-            <!-- navbar -->
+            </div>
           </div>
-          <div class="row">
-            <nav class="navbar navbar-expand-md navbar-dark fw-semibold px-2 mb-3 py-2 bg-dark">
-              <div class="container-fluid">
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#browseJobs" aria-controls="browseJobs" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon text-white"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="browseJobs">
-                  <div class="align-items-center bg-white rounded-4 border border-dark mt-2 px-2"
-                    style="max-width: 90%">
-                    <img src="../assets/images/search-icon.svg" alt="Search" class="me-lg-5 pb-lg-2"
-                      style="max-width: 56px; aspect-ratio: 1" />
-                    <input type="text" class="border-0 fw-bold fs-2 opacity-50 flex-grow-1"
-                      placeholder=" Search..." style="max-width: 75%" />
-                    <button type="button" class="btn p-0 pb-lg-2">
-                      <img src="../assets/images/close-icon2.svg" alt="Close"
-                        style="max-width: 40px; aspect-ratio: 1" />
-                    </button>
-                  </div>
-                  <ul class="navbar-nav me-0">
-                    <li class="nav-item dropdown me-3">
-                      <a class="nav-link text-white dropdown-toggle fs-3 fw-bold" href="#"
-                        id="navbarDropdownBrowseJobsDate" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Date
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
-                        aria-labelledby="navbarDropdownBrowseJobsDate" style="max-height: 20rem">
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Any
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            May 2024
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            April 2024
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            March 2024
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            February 2024
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            January 2024
-                          </label>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown me-3">
-                      <a class="nav-link text-white dropdown-toggle fs-3 fw-bold" href="#"
-                        id="navbarDropdownBrowseJobsCity" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        City
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
-                        aria-labelledby="navbarDropdownBrowseJobsCity" style="max-height: 20rem">
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class=" form-check-input" id="checkbox1" name="optcheckbox"
+        </div>
+        <!--Bottom NavBar Ends-->
+      </nav>
+      <!--End of Navbar-->
+
+      <!-- start of content -->
+      <div class="container-fluid">
+        <!--the image-->
+        <div class="row bg-dark px-5 py-4 mb-3">
+          <h3 class="fw-bold fs-2 text-white pb-2 pt-3 text-center">
+            HRs Magazine Jobs
+          </h3>
+          <div class="col">
+            <div
+              class="card bg-dark text-white landing-img mx-lg-3 mx-md-3 mx-1"
+              style="height: 695px"
+            >
+              <img
+                src="../assets/images/browse-jobs.jpeg"
+                class="card-img rounded-4 image-center"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <!--single Card-->
+        <div
+          class="row align-items-center justify-content-center bg-primary mt-4 px-3"
+        >
+          <div class="m-3 bg-light border-0">
+            <div class="row g-0 align-items-center justify-content-center">
+              <nav>
+                <div class="col my-4">
+                  <h2 class="fw-bold">
+                    Available Jobs
+                    <span class="float-end">
+                      Sort By:
+                      <span class="dropdown">
+                        <button
+                          type="button"
+                          class="bg-light border-0 text-muted dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                        >
+                          Publish Date
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark bg-light"
+                          aria-labelledby="navbarDropdownBrowseJobsDate"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                              >All</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                              href="#"
+                              >Today</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                              href="#"
+                              >This Week</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                              href="#"
+                              >This Month</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark border-bottom text-dark"
+                              href="#"
+                              >This Year</a
+                            >
+                          </li>
+                        </ul>
+                      </span>
+                    </span>
+                  </h2>
+                </div>
+              </nav>
+              <!-- navbar -->
+            </div>
+            <div class="row">
+              <nav
+                class="navbar navbar-expand-md navbar-dark fw-semibold px-2 mb-3 py-2 bg-dark"
+              >
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#browseJobs"
+                    aria-controls="browseJobs"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon text-white"></span>
+                  </button>
+                  <div
+                    class="collapse navbar-collapse d-lg-flex justify-content-between container-fluid"
+                    id="browseJobs"
+                  >
+                  <div class="row justify-content-between w-100">
+                    <div
+                      class="col-md-5 d-flex align-items-center  bg-white rounded-4 border border-dark mt-2 px-2"
+                    >
+                      <img
+                        src="../assets/images/search-icon.svg"
+                        alt="Search"
+                        class="me-lg-5"
+                        style="max-width: 56px; aspect-ratio: 1"
+                      />
+                      <input
+                        type="text"
+                        class="form-control border-0 fw-bold fs-2 opacity-50 flex-grow-1"
+                        placeholder=" Search..."
+                      />
+                      <button type="button" class="btn p-0">
+                        <img
+                          src="../assets/images/close-icon2.svg"
+                          alt="Close"
+                          style="max-width: 40px; aspect-ratio: 1"
+                        />
+                      </button>
+                    </div>
+                    <ul class="col-lg-6 col-xl-4 navbar-nav ps-4 me-0">
+                      <li class="nav-item dropdown me-3">
+                        <a
+                          class="nav-link text-white dropdown-toggle fs-3 fw-bold"
+                          href="#"
+                          id="navbarDropdownBrowseJobsDate"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Date
+                        </a>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
+                          aria-labelledby="navbarDropdownBrowseJobsDate"
+                          style="max-height: 20rem"
+                        >
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Any
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              May 2024
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              April 2024
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              March 2024
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              February 2024
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              January 2024
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown me-3">
+                        <a
+                          class="nav-link text-white dropdown-toggle fs-3 fw-bold"
+                          href="#"
+                          id="navbarDropdownBrowseJobsCity"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          City
+                        </a>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
+                          aria-labelledby="navbarDropdownBrowseJobsCity"
+                          style="max-height: 20rem"
+                        >
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input type="checkbox" class=" form-check-input"
+                              id="checkbox1" name="optcheckbox"
                               value="option1""> All
                             </label>
                           </li>
                           <li>
                             <label
-                              class=" dropdown-item border border-start-0 border-top-0 border-end-0 border-dark
-                              text-dark" href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Cairo
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Giza
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Alexandria
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Sadat City
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Aswan
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Luxor
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Hurghada
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Sharm El Sheikh
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Ismailia
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Sohag
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            6th of October City
-                          </label>
-                        </li>
-                        <li>
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            10th of Ramadan City
-                          </label>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown me-3">
-                      <a class="nav-link text-white dropdown-toggle fs-3 fw-bold" href="#"
-                        id="navbarDropdownBrowseJobsCategory" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Category
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
-                        aria-labelledby="navbarDropdownBrowseJobsCategory"
-                        style="max-height: 20rem; width: fit-content">
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            All
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Arts
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Education & study & training
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Business
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Sales
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Communications
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Finance
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Legal
-                          </label>
-                        </li>
-                        <li class="px-2">
-                          <label
-                            class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
-                            href="#">
-                            <input type="checkbox" class="form-check-input" id="checkbox1" name="optcheckbox"
-                              value="option1" />
-                            Technology
-                          </label>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Cairo
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Giza
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Alexandria
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Sadat City
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Aswan
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Luxor
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Hurghada
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Sharm El Sheikh
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Ismailia
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Sohag
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              6th of October City
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              10th of Ramadan City
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown me-3">
+                        <a
+                          class="nav-link text-white dropdown-toggle fs-3 fw-bold"
+                          href="#"
+                          id="navbarDropdownBrowseJobsCategory"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Category
+                        </a>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark bg-light overflow-auto"
+                          aria-labelledby="navbarDropdownBrowseJobsCategory"
+                          style="max-height: 20rem; width: fit-content"
+                        >
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              All
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Arts
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Education & study & training
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Business
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Sales
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Communications
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Finance
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Legal
+                            </label>
+                          </li>
+                          <li class="px-2">
+                            <label
+                              class="dropdown-item border border-start-0 border-top-0 border-end-0 border-dark text-dark"
+                              href="#"
+                            >
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="checkbox1"
+                                name="optcheckbox"
+                                value="option1"
+                              />
+                              Technology
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
                 </div>
               </div>
-            </nav>
-          </div>
-
-          <div class="col">
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
+              <div class="card-body">
+                <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
+                <p class="card-text fs-6 text-dark mx-auto ms-3">
+                  Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
+                  mi feugiat tristique purus penatibus mauris nam libero. Non
+                  aliquam varius at amet lorem lobortis netus vulputate. Semper
+                  purus turpis vitae nunc urna sodales mauris. Vulputate sit est
+                  pharetra velit eget.
+                </p>
+                <div class="col-md-12 d-flex py-4 w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-primary text-light rounded-4 fs-4 fw-semibold px-5 py-2 m-auto"
+                  >
+                    Apply Job
+                  </button>
+                </div>
               </div>
+              <h5 class="ms-3 mb-3 fs-3 fw-bold">
+                If you dont Found your jobs , click
+                <a href="#" class="text-primary"> here </a>
+              </h5>
             </div>
-            <div class="card-body">
-              <h5 class="card-title text-dark fw-bold fs-3 m-3">Jobs Name</h5>
-              <p class="card-text fs-6 text-dark mx-auto ms-3">
-                Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus
-                mi feugiat tristique purus penatibus mauris nam libero. Non
-                aliquam varius at amet lorem lobortis netus vulputate. Semper
-                purus turpis vitae nunc urna sodales mauris. Vulputate sit est
-                pharetra velit eget.
-              </p>
-              <div class="col-md-12 d-flex py-4 w-100">
-                <button type="submit" class="btn btn-primary text-light rounded-4 fs-4 fw-semibold  px-5 py-2 m-auto">
-                  Apply Job
-                </button>
-              </div>
-            </div>
-            <h5 class="ms-3 mb-3 fs-3 fw-bold">
-              If you dont Found your jobs , click
-              <a href="#" class="text-primary"> here </a>
-            </h5>
           </div>
         </div>
       </div>
-    </div>
-    <!--end of single card-->
+      <!--end of single card-->
 
-    <!--end of content-->
+      <!--end of content-->
 
-    <!-- Footer Start -->
-    <footer class="bg-primary mt-3" class="footer d-flex flex-column">
-      <div class="p-5 container-fluid">
-        <div class="row justify-content-between g-0">
-          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <div class="img-container text-center">
-              <img src="../assets/images/logo.png" alt="Logo" />
-            </div>
-            <!-- <p class="fs-1">HRs Magazin</p> -->
-            <p class="font-italic text-light fw-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
-              pellentesque dictum posuere id diam rutrum.
-            </p>
-            <!-- Social links -->
-            <div class="d-flex justify-content-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/facebook.svg" class="icon" alt="facebook" />
-                  </div>
-                </li>
-                <li class="list-inline-item">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/twitter.svg" class="icon" alt="twitter" />
-                  </div>
-                </li>
-                <li class="list-inline-item">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/youtube.svg" alt="youtube" />
-                  </div>
-                </li>
-                <li class="list-inline-item">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/instagram.svg" class="icon" alt="instagram" />
-                  </div>
-                </li>
-                <li class="list-inline-item">
-                  <div class="icon-circle me-2">
-                    <img src="../assets/images/linkedin.svg" class="icon" alt="linkedin" />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Two colums of links div-->
-          <div class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center">
-            <div class="col-lg-6 mb-lg-0 fw-semibold">
-              <ul class="list-unstyled mb-0 text-center">
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Articles</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Workplace Culture</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Ladies in HR</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">About us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6 mb-lg-0 fw-semibold">
-              <ul class="list-unstyled mb-0 text-center">
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Events</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Community</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Careers</a>
-                </li>
-                <li class="mb-5">
-                  <a href="#" class="text-light link-underline link-underline-opacity-0">Contact us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Third Column: Subscription Form -->
-          <div class="col-lg-4 col-md-6 text-white text-center bg-dark rounded-4 py-4 px-5">
-            <h6 class="text-uppercase mb-4 oran-font fs-4">Stay In Touch</h6>
-            <p class="small mb-4">
-              To be updated with all the latest news, offers and special
-              announcements.
-            </p>
-            <form class="d-flex flex-column align-items-center">
-              <input type="email" class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder"
-                placeholder="Your email address" />
-              <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
-              <button type="submit" class="btn btn-lg btn-primary text-white rounded-pill px-4 oran-font fs-4">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- Copyrights -->
-      <div class="bg-dark">
-        <div class="container">
-          <div class="row text-light">
-            <div class="col-md-6">
-              <div class="copyright-menu in">
-                <ul class="d-flex flex-row list-unstyled mt-3 justify-content-start">
-                  <li class="me-5">
-                    <a href="#" class="text-light link-underline link-underline-opacity-0">Privacy Policy</a>
+      <!-- Footer Start -->
+      <footer class="bg-primary mt-3" class="footer d-flex flex-column">
+        <div class="p-5 container-fluid">
+          <div class="row justify-content-between g-0">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="img-container text-center">
+                <img src="../assets/images/logo.png" alt="Logo" />
+              </div>
+              <!-- <p class="fs-1">HRs Magazin</p> -->
+              <p class="font-italic text-light fw-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
+                pellentesque dictum posuere id diam rutrum.
+              </p>
+              <!-- Social links -->
+              <div class="d-flex justify-content-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/facebook.svg"
+                        class="icon"
+                        alt="facebook"
+                      />
+                    </div>
                   </li>
-                  <li class="mx-4">
-                    <a href="#" class="text-light link-underline link-underline-opacity-0">Terms & Conditions</a>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/twitter.svg"
+                        class="icon"
+                        alt="twitter"
+                      />
+                    </div>
                   </li>
-
-                  <li class="mx-5">
-                    <a href="#" class="text-light link-underline link-underline-opacity-0">Sitmap</a>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img src="../assets/images/youtube.svg" alt="youtube" />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/instagram.svg"
+                        class="icon"
+                        alt="instagram"
+                      />
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="icon-circle me-2">
+                      <img
+                        src="../assets/images/linkedin.svg"
+                        class="icon"
+                        alt="linkedin"
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <!-- End Col -->
-
-            <div class="col-md-6 text-light d-flex justify-content-end align-items-center me-0">
-              <span>© Copyright 2024 HRs Magazin
-                <span>|</span>
-                <span>Registered in Egypt No. 02120366</span>
-              </span>
+            <!--Two colums of links div-->
+            <div
+              class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-between align-items-center"
+            >
+              <div class="col-lg-6 mb-lg-0 fw-semibold">
+                <ul class="list-unstyled mb-0 text-center">
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Articles</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Workplace Culture</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Ladies in HR</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >About us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 mb-lg-0 fw-semibold">
+                <ul class="list-unstyled mb-0 text-center">
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Events</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Careers</a
+                    >
+                  </li>
+                  <li class="mb-5">
+                    <a
+                      href="#"
+                      class="text-light link-underline link-underline-opacity-0"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- End col -->
+            <!-- Third Column: Subscription Form -->
+            <div
+              class="col-lg-4 col-md-6 text-white text-center bg-dark rounded-4 py-4 px-5"
+            >
+              <h6 class="text-uppercase mb-4 oran-font fs-4">Stay In Touch</h6>
+              <p class="small mb-4">
+                To be updated with all the latest news, offers and special
+                announcements.
+              </p>
+              <form class="d-flex flex-column align-items-center">
+                <input
+                  type="email"
+                  class="form-control mb-4 rounded-pill border-danger w-75 centered-placeholder"
+                  placeholder="Your email address"
+                />
+                <!-- Adjusted button with Bootstrap classes and custom class for elliptical shape -->
+                <button
+                  type="submit"
+                  class="btn btn-lg btn-primary text-white rounded-pill px-4 oran-font fs-4"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
           </div>
-          <!-- End Row -->
         </div>
-      </div>
-    </footer>
-    <!-- Footer End -->
-  </main>
-</body>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/date.js"></script>
+        <!-- Copyrights -->
+        <div class="bg-dark">
+          <div class="container">
+            <div class="row text-light">
+              <div class="col-md-6">
+                <div class="copyright-menu in">
+                  <ul
+                    class="d-flex flex-row list-unstyled mt-3 justify-content-start"
+                  >
+                    <li class="me-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li class="mx-4">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Terms & Conditions</a
+                      >
+                    </li>
 
+                    <li class="mx-5">
+                      <a
+                        href="#"
+                        class="text-light link-underline link-underline-opacity-0"
+                        >Sitmap</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div
+                class="col-md-6 text-light d-flex justify-content-end align-items-center me-0"
+              >
+                <span
+                  >© Copyright 2024 HRs Magazin
+                  <span>|</span>
+                  <span>Registered in Egypt No. 02120366</span>
+                </span>
+              </div>
+              <!-- End col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </main>
+  </body>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/date.js"></script>
 </html>

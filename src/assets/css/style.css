@@ -159,7 +159,7 @@ a.dropdown-item {
   white-space: normal;
 }
 .dropdown-item:hover {
-  background-color: #dbdbdb ;
+  background-color: #dbdbdb;
 }
 
 /*drop down arrows on bottom navbar*/
@@ -175,10 +175,8 @@ a.dropdown-item {
 /*to make the arrow color red*/
 #navbarDropdownBrowseJobsDate::after,
 #navbarDropdownBrowseJobsCity::after,
-#navbarDropdownBrowseJobsCategory::after
-  {
-  border-top-color: #BE111F !important; /* Change the arrow color to red */
-
+#navbarDropdownBrowseJobsCategory::after {
+  border-top-color: #be111f !important; /* Change the arrow color to red */
 }
 /* to make the arrow flip up when menu is opened*/
 .dropdown-toggle::after {
@@ -687,7 +685,7 @@ a.dropdown-item {
 }
 
 .offcanvas-item {
-  color: #FFF;
+  color: #fff;
   opacity: 1;
   border-bottom: 2px solid;
   margin-bottom: 0.75rem;
@@ -699,7 +697,7 @@ a.dropdown-item {
 
 .offcanvas-item:hover {
   opacity: 0.7;
-}/* legal-compliance page */
+} /* legal-compliance page */
 
 .readMoreLink:hover,
 .readMoreLink:active {
@@ -807,11 +805,10 @@ a.dropdown-item {
     width: 80px;
     height: 80px;
   }
-  .rounded-circle-small img{
-    margin-right: 0!important;
+  .rounded-circle-small img {
+    margin-right: 0 !important;
   }
 }
-
 
 /* end image circle */
 
@@ -819,57 +816,29 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
-/* Start Marquee Animation */
-:root {
-  --size: clamp(10rem, 1rem + 40vmin, 30rem);  /*  clamp() function to set the size of an element dynamically based on the viewport size  */
-  --gap: calc(var(--size) / 14);
-  --duration: 15s;
-  --scroll-start: 0;
-  --scroll-end: calc(-80% - var(--gap));
-}
-.animation {
-  -webkit-animation: scroll-y var(--duration) linear infinite alternate;
-  animation: scroll-y var(--duration) linear infinite alternate;
-  user-select: none;   /*  prevent select  */
-}
-.animation:hover {
-  animation-play-state: paused;
-}
-@keyframes scroll-y {
-  from {
-    transform: translateY(var(--scroll-start));
-  }
-  to {
-    transform: translateY(var(--scroll-end));
-    -webkit-transform: translateY(var(--scroll-end));
-    -moz-transform: translateY(var(--scroll-end));
-    -ms-transform: translateY(var(--scroll-end));
-    -o-transform: translateY(var(--scroll-end));
-}
-}
+
 /* End Marquee Animation */
 
 .shadow-effect {
-  box-shadow: 
-    11px 20px 15px 2px rgba(237, 237, 237, 0.25),
+  box-shadow: 11px 20px 15px 2px rgba(237, 237, 237, 0.25),
     0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .border-secondary {
-  border-color: #f9f9f9!important;
+  border-color: #f9f9f9 !important;
 }
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 992px) {
   .event-btn {
-    justify-content: end!important; 
+    justify-content: end !important;
   }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .btn-grow-0 {
-    flex-grow: 0!important;
+    flex-grow: 0 !important;
   }
 }
 
@@ -882,12 +851,7 @@ button:focus {
 .slide_group {
   position: relative;
 }
-.slide_custom {
-  display: none; /* Initially hide all slides */
-}
-.slide_custom.active {
-  display: block; /* Show slides with 'active' class */
-}
+
 .arrow-container {
   position: absolute;
   top: 48.5%;
@@ -896,18 +860,18 @@ button:focus {
   right: 0;
   left: 90%;
 }
-@media  (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .arrow-container {
-    top: 55%
+    top: 55%;
   }
 }
 @media (max-width: 1200px) {
-  .previous_btn img ,
-  .next_btn img { 
+  .previous_btn img,
+  .next_btn img {
     width: 30px;
   }
 }
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   .hs {
     font-size: large !important;
   }

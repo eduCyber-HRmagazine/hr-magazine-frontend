@@ -7,3 +7,17 @@ function toggleReplyBox(replyBoxId) {
     }
 }
 
+function edit(comment) {
+    commentElement = document.getElementById(comment);
+    textarea = commentElement.querySelector('textarea');
+    buttonWrapper = commentElement.querySelector('.button-wrapper');
+    
+    if(textarea.disabled) {
+        textarea.disabled = false;
+        textarea.focus();
+        
+        buttonWrapper.classList.remove('d-none');
+    }
+
+}
+

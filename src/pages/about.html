@@ -396,6 +396,7 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   <img
                     src="../assets/images/search-icon-black-circle.svg"
@@ -403,41 +404,238 @@
                     class="img-fluid mt-2"
                   />
                 </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end search-menu bg-dark"
-                  style="width: 320px"
-                >
+                <ul class="dropdown-menu dropdown-menu-end search-menu bg-dark">
                   <li>
                     <div
-                      class="d-flex align-items-center bg-white rounded-pill border border-dark mt-2 px-2"
+                      class="d-flex align-items-center bg-white rounded-pill border border-dark px-2"
+                      style="height: 53px"
                     >
-                      <img
-                        src="../assets/images/filter-icon.svg"
-                        alt="Filter"
-                        class="me-2"
-                        style="width: 20px; height: 20px"
-                      />
-                      <div class="border-end me-2" style="height: 20px"></div>
-                      <img
-                        src="../assets/images/search-icon.svg"
-                        alt="Search"
-                        class="me-2"
-                        style="width: 20px; height: 20px"
-                      />
+                      <button type="button" class="btn p-0 ms-2">
+                        <img
+                          src="../assets/images/search-icon.svg"
+                          alt="Search"
+                          class="m-1 me-2"
+                          style="max-width: 30px; aspect-ratio: 1"
+                        />
+                      </button>
                       <input
                         type="text"
-                        class="flex-grow-1 border-0"
+                        class="flex-grow-1 border-0 form-control fs-4"
                         placeholder=" Search..."
+                        style="max-width: 500px; width: calc(100vw - 170px)"
                       />
                       <button type="button" class="btn p-0 ms-2">
                         <img
                           src="../assets/images/close-icon.svg"
                           alt="Close"
-                          style="width: 15px; height: 15px"
+                          style="max-width: 30px; aspect-ratio: 1"
                         />
                       </button>
                     </div>
                   </li>
+                  <div class="row mt-3">
+                    <div class="col-md-5 border-end">
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                            onclick="search('industry-news-and-trends', this)"
+                          />
+                          Industry News & Trends
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Trends & Insights
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Global HR Prespectives
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Feature Articles
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Expert Interviews
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Professional Spotlight
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Training & Development
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Ladies Case Studies
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Ladies Interviews
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Journey to Excellence
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Legal Corner
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Workplace Culture
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Diversity, Equality & Inclusion
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Wellness Programs
+                        </label>
+                      </div>
+                      <div
+                        class="form-control pb-2 border-bottom bg-dark border-0 text-white rounded-0"
+                      >
+                        <label for="" class="form-check-label">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id=""
+                            class="form-check-input"
+                          />
+                          Mental Health in Workplace
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-7" id="search-container">
+                    
+                    </div>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -804,5 +1002,24 @@
     </main>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/date.js"></script>
+    <script>
+      articlesName = {
+        "industry-news-and-trends": [
+          {
+            'title': "test title one",
+            'url': "#",
+          },
+          {
+            'title': "test title two",
+            'url': "#",
+          },
+          {
+            'title': "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+            'url': "#",
+          },
+        ],
+      };
+    </script>
+    <script src="../assets/js/search.js"></script>
   </body>
 </html>

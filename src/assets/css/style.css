@@ -821,3 +821,97 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+/* Start Marquee Animation */
+:root {
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);  /*  clamp() function to set the size of an element dynamically based on the viewport size  */
+  --gap: calc(var(--size) / 14);
+  --duration: 15s;
+  --scroll-start: 0;
+  --scroll-end: calc(-80% - var(--gap));
+}
+.animation {
+  -webkit-animation: scroll-y var(--duration) linear infinite alternate;
+  animation: scroll-y var(--duration) linear infinite alternate;
+  user-select: none;   /*  prevent select  */
+}
+.animation:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll-y {
+  from {
+    transform: translateY(var(--scroll-start));
+  }
+  to {
+    transform: translateY(var(--scroll-end));
+    -webkit-transform: translateY(var(--scroll-end));
+    -moz-transform: translateY(var(--scroll-end));
+    -ms-transform: translateY(var(--scroll-end));
+    -o-transform: translateY(var(--scroll-end));
+}
+}
+/* End Marquee Animation */
+
+.shadow-effect {
+  box-shadow: 
+    11px 20px 15px 2px rgba(237, 237, 237, 0.25),
+    0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.border-secondary {
+  border-color: #f9f9f9!important;
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .event-btn {
+    justify-content: end!important; 
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .btn-grow-0 {
+    flex-grow: 0!important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #slideWrapper {
+    justify-content: space-around;
+  }
+}
+.slide_group {
+  position: relative;
+}
+.slide_custom {
+  display: none; /* Initially hide all slides */
+}
+.slide_custom.active {
+  display: block; /* Show slides with 'active' class */
+}
+.arrow-container {
+  position: absolute;
+  top: 48.5%;
+}
+.next_btn {
+  right: 0;
+  left: 90%;
+}
+@media  (min-width: 768px) and (max-width: 1200px) {
+  .arrow-container {
+    top: 55%
+  }
+}
+@media (max-width: 1200px) {
+  .previous_btn img ,
+  .next_btn img { 
+    width: 30px;
+  }
+}
+@media  (max-width: 768px) {
+  .hs {
+    font-size: large !important;
+  }
+  .ps {
+    font-size: small !important;
+  }
+}

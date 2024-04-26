@@ -512,303 +512,312 @@
         </div>
         
         <!---------------------mini videos scroller---------------------->
-        <div
+        <!-- <div
           id="carouselExampleControls"
           class="carousel slide bg-dark"
           data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row flex-nowrap overflow-auto">
-                <!-- First card -->
-                <div class="col-md-8 py-3 px-4">
-                  <div class="card mb-3 bg-dark border-0">
-                    <div
-                      class="row g-0 align-items-center justify-content-center"
-                    >
-                      <div
-                        class="col-4 overflow-hidden position-relative"
-                        style="height: 170px"
-                      >
-                        <div class="ratio ratio-16x9">
-                          <!-- Default Image -->
-                          <img
-                            src="../assets/images/sm-video1-p8.jpg"
-                            alt="Default Video Image"
-                            class="embed-cover"
-                          />
-                          <!-- Iframe for Video -->
-                          <iframe
-                            src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
-                            class="youtube-video embed-cover"
-                            style="display: none"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
+        > -->
+          <!-- <div class="carousel-inner"> -->
+            <!-- <div class="carousel-item active"> -->
+              <div id="event-slider" class="row mw-100 m-auto justify-content-around mt-5 align-items-center mb-5">
+                <div class="row slide_group overflow-hidden px-md-5 px-lg-0 g-0" id="slideContainer">
+                  <div class="d-flex flex-nowrap overflow-auto" id="slideWrapper">
+                    <!-- First card -->
+                      <div class="col-12 col-md-8 py-3 px-4 slide_custom">
+                        <div class="card mb-3 bg-dark border-0">
+                          <div
+                            class="row g-0 align-items-center justify-content-center"
                           >
-                          </iframe>
-
-                          <!-- Custom Play Button -->
-                          <button
-                            type="button"
-                            class="btn position-absolute top-50 start-50 translate-middle"
-                            aria-label="Play Video"
-                            onclick="playVideo()"
-                          >
-                            <img
-                              src="../assets/images/video-play-btn.svg"
-                              alt="Play Video"
-                              class="embed-cover-btn"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary fw-bold fs-5">
-                            HRs Expert Interviews
-                          </h5>
-                          <p class="card-text fs-6 text-white">
-                            Thursday Dec 12 2023
-                          </p>
-                          <p class="fw-semibold text-white fs-7">
-                            Amged S. El-Hawrani
-                          </p>
-                          <p class="card-text fs-7 text-white w-75">
-                            Lorem ipsum dolor sit amet consectetur. Pellentesque
-                            faucibus mi feugiat tristique purus penatibus mauris
-                            nam libero. Non aliquam varius at amet lorem
-                            lobortis netus vulputate. Semper purus turpis vitae
-                            nunc urna sodales mauris.....<a
-                              href="#"
-                              class="fw-semibold text-white text-decoration-none"
-                              >Read more</a
+                            <div
+                              class="col-4 overflow-hidden position-relative"
+                              style="height: 170px"
                             >
-                          </p>
+                              <div class="ratio ratio-16x9">
+                                <!-- Default Image -->
+                                <img
+                                  src="../assets/images/sm-video1-p8.jpg"
+                                  alt="Default Video Image"
+                                  class="embed-cover"
+                                />
+                                <!-- Iframe for Video -->
+                                <iframe
+                                  src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                                  class="youtube-video embed-cover"
+                                  style="display: none"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen
+                                >
+                                </iframe>
+
+                                <!-- Custom Play Button -->
+                                <button
+                                  type="button"
+                                  class="btn position-absolute top-50 start-50 translate-middle"
+                                  aria-label="Play Video"
+                                  onclick="playVideo()"
+                                >
+                                  <img
+                                    src="../assets/images/video-play-btn.svg"
+                                    alt="Play Video"
+                                    class="embed-cover-btn"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="card-body">
+                                <h5 class="card-title text-primary fw-bold fs-5 hs">
+                                  HRs Expert Interviews
+                                </h5>
+                                <p class="card-text fs-6 text-white ps">
+                                  Thursday Dec 12 2023
+                                </p>
+                                <p class="fw-semibold text-white fs-7 ps">
+                                  Amged S. El-Hawrani
+                                </p>
+                                <p class="card-text fs-7 text-white ps">
+                                  Lorem ipsum dolor sit amet consectetur. Pellentesque
+                                  faucibus mi feugiat tristique purus penatibus mauris
+                                  nam libero. Non aliquam varius at amet lorem
+                                  lobortis netus vulputate. Semper purus turpis vitae
+                                  nunc urna sodales mauris.....<a
+                                    href="#"
+                                    class="fw-semibold text-white text-decoration-none"
+                                    >Read more</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                      <!-- Second card -->
+                      <div class="col-12 col-md-8 py-3 px-4 slide_custom">
+                        <div class="card mb-3 bg-dark border-0">
+                          <div
+                            class="row g-0 align-items-center justify-content-center"
+                          >
+                            <div
+                              class="col-4 overflow-hidden position-relative"
+                              style="height: 170px"
+                            >
+                              <div class="ratio ratio-16x9">
+                                <!-- Default Image -->
+                                <img
+                                  src="../assets/images/sm-video2-p8.jpg"
+                                  alt="Default Video Image"
+                                  class="embed-cover"
+                                />
+                                <!-- Iframe for Video -->
+                                <iframe
+                                  src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                                  class="youtube-video embed-cover"
+                                  style="display: none"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen
+                                >
+                                </iframe>
+
+                                <!-- Custom Play Button -->
+                                <button
+                                  type="button"
+                                  class="btn position-absolute top-50 start-50 translate-middle"
+                                  aria-label="Play Video"
+                                  onclick="playVideo()"
+                                >
+                                  <img
+                                    src="../assets/images/video-play-btn.svg"
+                                    alt="Play Video"
+                                    class="embed-cover-btn"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="card-body">
+                                <h5 class="card-title text-primary fw-bold fs-5 hs">
+                                  HRs Expert Interviews
+                                </h5>
+                                <p class="card-text fs-6 text-white ps">
+                                  Thursday Dec 12 2023
+                                </p>
+                                <p class="fw-semibold text-white fs-7 ps">
+                                  Amged S. El-Hawrani
+                                </p>
+                                <p class="card-text fs-7 text-white ps">
+                                  Lorem ipsum dolor sit amet consectetur. Pellentesque
+                                  faucibus mi feugiat tristique purus penatibus mauris
+                                  nam libero. Non aliquam varius at amet lorem
+                                  lobortis netus vulputate. Semper purus turpis vitae
+                                  nunc urna sodales mauris.....<a
+                                    href="#"
+                                    class="fw-semibold text-white text-decoration-none"
+                                    >Read more</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <!-- </div> -->
+                    <!-- <div class="carousel-item"> -->
+                      <!-- <div class="row flex-nowrap overflow-auto"> -->
+                        <!-- Third card -->
+                        <div class="col-12 col-md-8 py-3 px-4 slide_custom">
+                          <div class="card mb-3 bg-dark border-0">
+                            <div
+                              class="row g-0 align-items-center justify-content-center"
+                            >
+                              <div
+                                class="col-4 overflow-hidden position-relative"
+                                style="height: 170px"
+                              >
+                                <div class="ratio ratio-16x9">
+                                  <!-- Default Image -->
+                                  <img
+                                    src="../assets/images/sm-video3-p8.jpg"
+                                    alt="Default Video Image"
+                                    class="embed-cover"
+                                  />
+                                  <!-- Iframe for Video -->
+                                  <iframe
+                                    src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                                    class="youtube-video embed-cover"
+                                    style="display: none"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                  >
+                                  </iframe>
+
+                                  <!-- Custom Play Button -->
+                                  <button
+                                    type="button"
+                                    class="btn position-absolute top-50 start-50 translate-middle"
+                                    aria-label="Play Video"
+                                    onclick="playVideo()"
+                                  >
+                                    <img
+                                      src="../assets/images/video-play-btn.svg"
+                                      alt="Play Video"
+                                      class="embed-cover-btn"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col-7">
+                                <div class="card-body">
+                                  <h5 class="card-title text-primary fw-bold fs-5 hs">
+                                    HRs Expert interviews
+                                  </h5>
+                                  <p class="card-text fs-6 text-white ps">
+                                    Thursday Dec 12 2023
+                                  </p>
+                                  <p class="fw-semibold text-white fs-7 ps">
+                                    Amged S. El-Hawrani
+                                  </p>
+                                  <p class="card-text fs-7 text-white ps">
+                                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                                    faucibus mi feugiat tristique purus penatibus mauris
+                                    nam libero. Non aliquam varius at amet lorem
+                                    lobortis netus vulputate. Semper purus turpis vitae
+                                    nunc urna sodales mauris.....<a
+                                      href="#"
+                                      class="fw-semibold text-white text-decoration-none"
+                                      >Read more</a
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fourth card -->
+                        <div class="col-12 col-md-8 py-3 px-4 slide_custom">
+                          <div class="card mb-3 bg-dark border-0">
+                            <div
+                              class="row g-0 align-items-center justify-content-center"
+                            >
+                              <div
+                                class="col-4 overflow-hidden position-relative"
+                                style="height: 170px"
+                              >
+                                <div class="ratio ratio-16x9">
+                                  <!-- Default Image -->
+                                  <img
+                                    src="../assets/images/sm-video-4-p8.jpg"
+                                    alt="Default Video Image"
+                                    class="embed-cover"
+                                  />
+                                  <!-- Iframe for Video -->
+                                  <iframe
+                                    src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
+                                    class="youtube-video embed-cover"
+                                    style="display: none"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                  >
+                                  </iframe>
+
+                                  <!-- Custom Play Button -->
+                                  <button
+                                    type="button"
+                                    class="btn position-absolute top-50 start-50 translate-middle"
+                                    aria-label="Play Video"
+                                    onclick="playVideo()"
+                                  >
+                                    <img
+                                      src="../assets/images/video-play-btn.svg"
+                                      alt="Play Video"
+                                      class="embed-cover-btn"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col-7">
+                                <div class="card-body">
+                                  <h5 class="card-title text-primary fw-bold fs-5 hs">
+                                    HRs Expert Interviews
+                                  </h5>
+                                  <p class="card-text fs-6 text-white ps">
+                                    Thursday Dec 12 2023
+                                  </p>
+                                  <p class="fw-semibold text-white fs-7 ps">
+                                    Amged S. El-Hawrani
+                                  </p>
+                                  <p class="card-text fs-7 text-white ps">
+                                    Lorem ipsum dolor sit amet consectetur. Pellentesque
+                                    faucibus mi feugiat tristique purus penatibus mauris
+                                    nam libero. Non aliquam varius at amet lorem
+                                    lobortis netus vulputate. Semper purus turpis vitae
+                                    nunc urna sodales mauris.....<a
+                                      href="#"
+                                      class="fw-semibold text-white text-decoration-none"
+                                      >Read more</a
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- </div> -->
                   </div>
-                </div>
-                <!-- Second card -->
-                <div class="col-md-8 py-3 px-4">
-                  <div class="card mb-3 bg-dark border-0">
-                    <div
-                      class="row g-0 align-items-center justify-content-center"
-                    >
-                      <div
-                        class="col-4 overflow-hidden position-relative"
-                        style="height: 170px"
-                      >
-                        <div class="ratio ratio-16x9">
-                          <!-- Default Image -->
-                          <img
-                            src="../assets/images/sm-video2-p8.jpg"
-                            alt="Default Video Image"
-                            class="embed-cover"
-                          />
-                          <!-- Iframe for Video -->
-                          <iframe
-                            src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
-                            class="youtube-video embed-cover"
-                            style="display: none"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          >
-                          </iframe>
-
-                          <!-- Custom Play Button -->
-                          <button
-                            type="button"
-                            class="btn position-absolute top-50 start-50 translate-middle"
-                            aria-label="Play Video"
-                            onclick="playVideo()"
-                          >
-                            <img
-                              src="../assets/images/video-play-btn.svg"
-                              alt="Play Video"
-                              class="embed-cover-btn"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary fw-bold fs-5">
-                            HRs Expert Interviews
-                          </h5>
-                          <p class="card-text fs-6 text-white">
-                            Thursday Dec 12 2023
-                          </p>
-                          <p class="fw-semibold text-white fs-7">
-                            Amged S. El-Hawrani
-                          </p>
-                          <p class="card-text fs-7 text-white w-75">
-                            Lorem ipsum dolor sit amet consectetur. Pellentesque
-                            faucibus mi feugiat tristique purus penatibus mauris
-                            nam libero. Non aliquam varius at amet lorem
-                            lobortis netus vulputate. Semper purus turpis vitae
-                            nunc urna sodales mauris.....<a
-                              href="#"
-                              class="fw-semibold text-white text-decoration-none"
-                              >Read more</a
-                            >
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="arrow-container d-flex justify-content-between">
+                    <a class="previous_btn"><img src="../assets/images/Arrow_left.svg" alt="arrow img left"></a>
+                    <a class="next_btn"><img src="../assets/images/Arrow_right.svg" alt="arrow img right"></a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row flex-nowrap overflow-auto">
-                <!-- Third card -->
-                <div class="col-md-8 py-3 px-4">
-                  <div class="card mb-3 bg-dark border-0">
-                    <div
-                      class="row g-0 align-items-center justify-content-center"
-                    >
-                      <div
-                        class="col-4 overflow-hidden position-relative"
-                        style="height: 170px"
-                      >
-                        <div class="ratio ratio-16x9">
-                          <!-- Default Image -->
-                          <img
-                            src="../assets/images/sm-video3-p8.jpg"
-                            alt="Default Video Image"
-                            class="embed-cover"
-                          />
-                          <!-- Iframe for Video -->
-                          <iframe
-                            src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
-                            class="youtube-video embed-cover"
-                            style="display: none"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          >
-                          </iframe>
-
-                          <!-- Custom Play Button -->
-                          <button
-                            type="button"
-                            class="btn position-absolute top-50 start-50 translate-middle"
-                            aria-label="Play Video"
-                            onclick="playVideo()"
-                          >
-                            <img
-                              src="../assets/images/video-play-btn.svg"
-                              alt="Play Video"
-                              class="embed-cover-btn"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary fw-bold fs-5">
-                            HRs Expert interviews
-                          </h5>
-                          <p class="card-text fs-6 text-white">
-                            Thursday Dec 12 2023
-                          </p>
-                          <p class="fw-semibold text-white fs-7">
-                            Amged S. El-Hawrani
-                          </p>
-                          <p class="card-text fs-7 text-white w-75">
-                            Lorem ipsum dolor sit amet consectetur. Pellentesque
-                            faucibus mi feugiat tristique purus penatibus mauris
-                            nam libero. Non aliquam varius at amet lorem
-                            lobortis netus vulputate. Semper purus turpis vitae
-                            nunc urna sodales mauris.....<a
-                              href="#"
-                              class="fw-semibold text-white text-decoration-none"
-                              >Read more</a
-                            >
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Fourth card -->
-                <div class="col-md-8 py-3 px-4">
-                  <div class="card mb-3 bg-dark border-0">
-                    <div
-                      class="row g-0 align-items-center justify-content-center"
-                    >
-                      <div
-                        class="col-4 overflow-hidden position-relative"
-                        style="height: 170px"
-                      >
-                        <div class="ratio ratio-16x9">
-                          <!-- Default Image -->
-                          <img
-                            src="../assets/images/sm-video-4-p8.jpg"
-                            alt="Default Video Image"
-                            class="embed-cover"
-                          />
-                          <!-- Iframe for Video -->
-                          <iframe
-                            src="https://www.youtube.com/embed/7S0Lj4scspU?list=PL7h7VRXAvXNpehO1CPzEPdNEJNqItu6HM&enablejsapi=1"
-                            class="youtube-video embed-cover"
-                            style="display: none"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          >
-                          </iframe>
-
-                          <!-- Custom Play Button -->
-                          <button
-                            type="button"
-                            class="btn position-absolute top-50 start-50 translate-middle"
-                            aria-label="Play Video"
-                            onclick="playVideo()"
-                          >
-                            <img
-                              src="../assets/images/video-play-btn.svg"
-                              alt="Play Video"
-                              class="embed-cover-btn"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary fw-bold fs-5">
-                            HRs Expert Interviews
-                          </h5>
-                          <p class="card-text fs-6 text-white">
-                            Thursday Dec 12 2023
-                          </p>
-                          <p class="fw-semibold text-white fs-7">
-                            Amged S. El-Hawrani
-                          </p>
-                          <p class="card-text fs-7 text-white w-75">
-                            Lorem ipsum dolor sit amet consectetur. Pellentesque
-                            faucibus mi feugiat tristique purus penatibus mauris
-                            nam libero. Non aliquam varius at amet lorem
-                            lobortis netus vulputate. Semper purus turpis vitae
-                            nunc urna sodales mauris.....<a
-                              href="#"
-                              class="fw-semibold text-white text-decoration-none"
-                              >Read more</a
-                            >
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!-- </div> -->
+          <!-- </div> -->
           <!-- Carousel controls  -->
-          <button
+          <!-- <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleControls"
@@ -825,8 +834,8 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"> </span>
             <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+          </button> -->
+        <!-- </div> -->
         <!-----------End of mini videos scroller---------------->
         <!--cards Caousel-->
         <div class="row bg-white my-3 pb-3">
@@ -1058,296 +1067,298 @@
           <!--cards list-->
           <div class="col-12">
             <div class="scrollable-card-container">
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/cv1.png"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
+              <div class="animation">
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/cv1.png"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/cv2.svg"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/cv3.svg"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/cv2.svg"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/author22.png"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/author.png"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/cv3.svg"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/GlobalHRPerspectives3.jpg"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
-                <div
-                  class="row align-items-center gx-5 mx-2 justify-content-center"
-                >
-                  <!-- Card Content -->
-                  <div class="col-lg-3 col-4">
-                    <div
-                      class="position-relative overflow-hidden"
-                      style="max-width: 218px; aspect-ratio: 1"
-                    >
-                      <img
-                        src="../assets/images/st77.png"
-                        class="rounded-circle border-light image-center"
-                        alt="Profile Image"
-                      />
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/author22.png"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="card-body col-8">
-                    <div>
-                      <h5 class="card-title fw-bold fs-3">
-                        HR Case Studies
-                      </h5>
-                      <p class="card-text fw-semibold fs-4">
-                        Thursday Dec 12 2023
-                      </p>
-                      <p class="card-text fw-semibold fs-4">
-                        Nadia S. El-Hawrani
-                      </p>
-                      <p class="carousel-p card-text fw-medium fs-5">
-                        Lorem ipsum dolor sit amet consectetur. Pellentesque
-                        faucibus mi feugiat tristique purus penatibus mauris nam
-                        libero....
-                        <a
-                          href="#"
-                          class="fw-bold text-dark text-decoration-none"
-                          >Read more</a
-                        >
-                      </p>
+                </div>
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/author.png"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/GlobalHRPerspectives3.jpg"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white text-dark mx-auto mx-lg-5 my-3">
+                  <div
+                    class="row align-items-center gx-5 mx-2 justify-content-center"
+                  >
+                    <!-- Card Content -->
+                    <div class="col-lg-3 col-4">
+                      <div
+                        class="position-relative overflow-hidden"
+                        style="max-width: 218px; aspect-ratio: 1"
+                      >
+                        <img
+                          src="../assets/images/st77.png"
+                          class="rounded-circle border-light image-center"
+                          alt="Profile Image"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body col-8">
+                      <div>
+                        <h5 class="card-title fw-bold fs-3">
+                          HR Case Studies
+                        </h5>
+                        <p class="card-text fw-semibold fs-4">
+                          Thursday Dec 12 2023
+                        </p>
+                        <p class="card-text fw-semibold fs-4">
+                          Nadia S. El-Hawrani
+                        </p>
+                        <p class="carousel-p card-text fw-medium fs-5">
+                          Lorem ipsum dolor sit amet consectetur. Pellentesque
+                          faucibus mi feugiat tristique purus penatibus mauris nam
+                          libero....
+                          <a
+                            href="#"
+                            class="fw-bold text-dark text-decoration-none"
+                            >Read more</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1572,6 +1583,7 @@
     </main>
   </body>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/slider.js"></script>
   <script src="../assets/js/date.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="../assets/js/play-video.js"></script>

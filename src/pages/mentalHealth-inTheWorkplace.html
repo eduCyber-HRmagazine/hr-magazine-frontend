@@ -448,9 +448,6 @@
       </nav>
       <!--End of Navbar-->
 
-      <!--content-->
-      <!--Start of Wellness Programs-->
-
       <!-- breadcrumb -->
       <section id="nav-author" class="bg-dark text-light py-3">
         <div class="container-fluid ps-3">
@@ -474,7 +471,7 @@
       <div class="container-fluid g-0 bg-light pt-3 pb-5 px-lg-5 px-md-3 px-1">
         <!-- image header -->
         <div
-          class="position-relative overflow-hidden mx-3 mb-3"
+          class="position-relative overflow-hidden mx-md-3 mx-1 mb-3"
           style="height: 695px"
         >
           <img
@@ -610,7 +607,7 @@
         </div>
         <!-- team info -->
         <div class="row d-flex justify-content-center">
-          <div class="col-xl-2 col-md-3 col-sm-6">
+          <div class="col-xl-2 col-md-3 ">
             <div class="mt-5 rounded-circle-container">
               <img
                 src="../assets/images/mental-health-profile.png"
@@ -619,7 +616,7 @@
               />
             </div>
           </div>
-          <div class="col-xl-10 col-md-9 col-sm-6">
+          <div class="col-xl-10 col-md-9 ">
             <h4 class="fw-bold mt-5 pb-2">Nadia S. El-Hawrani</h4>
             <p class="fs-4 fw-semibold mt-2 pb-2">
               Lorem ipsum dolor sit amet consectetur. Pellentesque faucibus mi
@@ -635,7 +632,7 @@
 
       <!-- add comments section -->
       <div class="container-fluid pb-3 g-0 justify-content-center">
-        <div class="p-5 bg-dark text-white">
+        <div class="p-md-5 py-5 px-1 bg-dark text-white">
           <h2 class="fw-bold fs-2 pt-3 pb-5">Add comments</h2>
           <div class="block border border-dark border rounded-4 mt-3 bg-light">
             <div class="row d-flex text-dark">
@@ -661,7 +658,7 @@
                       style="width: 85%"
                     >
 Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut lectus netus. A diam nibh mauriset turpis at aliquet non. Nisl tristique ante ut maecenas nulla non. At lacus aliquam eget quis. Tincidunt.
-  </textarea
+</textarea
                     >
                   </div>
                 </div>
@@ -698,7 +695,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
             </div>
           </div>
           <div class="row d-flex mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-12">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c4.jpeg"
@@ -708,7 +705,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-10 col-md-9 col-sm-6 align-items-center">
+            <div class="col-xl-10 col-md-9 col-sm-12 align-items-center">
               <div class="d-flex flex-column align-items-center">
                 <div
                   class="d-flex justify-content-between align-items-center w-100 mt-2"
@@ -716,26 +713,68 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
                   <div class="d-flex align-items-center me-5">
                     <h3 class="mt-5 pb-2 fw-bold">Maged S. El-Hawrani</h3>
                   </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-three-dots-vertical me-4"
-                    viewBox="0 0 16 16"
+                  <div
+                    class="btn border-0 dropdown bg-dark"
+                    id="dropdownComment-1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <path
-                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-                    />
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#FFF"
+                      class="bi bi-three-dots-vertical me-4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                      />
+                    </svg>
+                    <ul
+                      class="dropdown-menu dropdown-menu-dark p-1"
+                      aria-labelledby="dropdownComment-1"
+                    >
+                      <li
+                        class="py-2 border-bottom btn rounded-0 d-block text-decoration-underline"
+                        onclick="edit('comment-1')"
+                      >
+                        Edit
+                      </li>
+                      <li class="py-2 btn d-block"><a href="#">Delete</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <p class="fs-4 fw-normal px-3">
-                Lorem ipsum dolor sit amet consectetur. Vestibulum sit
-                sollicitudin elementum ut lectus netus. A diam nibh mauris et
-                turpis at aliquet non. Nisl tristique ante ut maecenas nulla
-                non. At lacus aliquam eget quis. Tincidunt.
-              </p>
+              <form action="">
+                <div id="comment-1" class="position-relative">
+                  <textarea
+                    class="form-control bg-dark fs-4 fw-normal px-3 text-white border-0"
+                    rows="4"
+                    disabled
+                  >
+Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut lectus netus. A diam nibh mauriset turpis at aliquet non. Nisl tristique ante ut maecenas nulla non. At lacus aliquam eget quis. Tincidunt.
+</textarea
+                  >
+                  <div
+                    class="button-wrapper position-absolute end-0 bottom-0 d-none"
+                  >
+                    <button
+                      id="btn-comment"
+                      class="btn btn-md btn-primary text-white rounded-pill px-4"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      id="btn-comment"
+                      type="cancel"
+                      class="btn btn-md btn-light text-dark rounded-pill px-3"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </form>
               <div class="d-flex flex-column align-items-center">
                 <span
                   class="d-inline-flex justify-content-center bg-light me-5 mt-3"
@@ -794,7 +833,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
             </div>
           </div>
           <div class="row d-flex justify-content-center mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-10">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c5.jpeg"
@@ -804,38 +843,80 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-8 col-md-9 col-sm-6 align-items-center">
-              <div class="d-flex flex-column align-items-center">
-                <div
-                  class="d-flex justify-content-between align-items-center w-100 mt-2"
-                >
-                  <div class="d-flex align-items-center me-5">
-                    <h3 class="mt-5 pb-2 fs-4">Maged S. El-Hawrani</h3>
-                  </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-three-dots-vertical me-4"
-                    viewBox="0 0 16 16"
+            <div class="col-xl-8 col-md-9 col-sm-10 align-items-center">
+              <form action="">
+                <div class="d-flex flex-column align-items-center">
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 mt-2"
                   >
-                    <path
-                      d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
-                    />
-                  </svg>
+                    <div class="d-flex align-items-center me-5">
+                      <h3 class="mt-5 pb-2 fs-4">Maged S. El-Hawrani</h3>
+                    </div>
+                    <div
+                      class="btn border-0 dropdown bg-dark"
+                      id="dropdownComment-2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="#FFF"
+                        class="bi bi-three-dots-vertical me-4"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                        />
+                      </svg>
+                      <ul
+                        class="dropdown-menu dropdown-menu-dark p-1"
+                        aria-labelledby="dropdownComment-2"
+                      >
+                        <li
+                          class="py-2 border-bottom btn rounded-0 d-block text-decoration-underline"
+                          onclick="edit('comment-2')"
+                        >
+                          Edit
+                        </li>
+                        <li class="py-2 btn d-block"><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <p class="fs-5 fw-normal px-3">
-                Lorem ipsum dolor sit amet consectetur. Vestibulum sit
-                sollicitudin elementum ut lectus netus. A diam nibh mauris et
-                turpis at aliquet non. Nisl tristique ante ut maecenas nulla
-                non. At lacus aliquam eget quis. Tincidunt.
-              </p>
+                <div id="comment-2" class="position-relative">
+                  <textarea
+                    class="form-control bg-dark fs-4 fw-normal px-3 text-white border-0"
+                    rows="4"
+                    disabled
+                  >
+Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut lectus netus. A diam nibh mauriset turpis at aliquet non. Nisl tristique ante ut maecenas nulla non. At lacus aliquam eget quis. Tincidunt.
+</textarea
+                  >
+                  <div
+                    class="button-wrapper position-absolute end-0 bottom-0 d-none"
+                  >
+                    <button
+                      id="btn-comment"
+                      class="btn btn-md btn-primary text-white rounded-pill px-4"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      id="btn-comment"
+                      type="cancel"
+                      class="btn btn-md btn-light text-dark rounded-pill px-3"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
           <div class="row d-flex mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-12">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c6.jpeg"
@@ -845,7 +926,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-10 col-md-9 col-sm-6 align-items-center">
+            <div class="col-xl-10 col-md-9 col-sm-12 align-items-center">
               <div class="d-flex flex-column align-items-center">
                 <div
                   class="d-flex justify-content-between align-items-center w-100 mt-2"
@@ -928,7 +1009,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
             </div>
           </div>
           <div class="row d-flex justify-content-center mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-10">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c7.jpeg"
@@ -938,7 +1019,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-8 col-md-9 col-sm-6 align-items-center">
+            <div class="col-xl-8 col-md-9 col-sm-10 align-items-center">
               <div class="d-flex flex-column align-items-center">
                 <div
                   class="d-flex justify-content-between align-items-center w-100 mt-2"
@@ -969,7 +1050,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
             </div>
           </div>
           <div class="row d-flex justify-content-center mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-10">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c8.jpeg"
@@ -979,7 +1060,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-8 col-md-9 col-sm-6 align-items-center">
+            <div class="col-xl-8 col-md-9 col-sm-10 align-items-center">
               <div class="d-flex flex-column align-items-center">
                 <div
                   class="d-flex justify-content-between align-items-center w-100 mt-2"
@@ -1010,7 +1091,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
             </div>
           </div>
           <div class="row d-flex mx-3">
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-12">
               <div class="mt-5 ms-3 rounded-circle-small">
                 <img
                   src="../assets/images/w-c9.jpeg"
@@ -1020,7 +1101,7 @@ Lorem ipsum dolor sit amet consectetur. Vestibulum sit sollicitudin elementum ut
               </div>
             </div>
 
-            <div class="col-xl-10 col-md-9 col-sm-6 align-items-center">
+            <div class="col-xl-10 col-md-9 col-sm-12 align-items-center">
               <div class="d-flex flex-column align-items-center">
                 <div
                   class="d-flex justify-content-between align-items-center w-100 mt-2"
